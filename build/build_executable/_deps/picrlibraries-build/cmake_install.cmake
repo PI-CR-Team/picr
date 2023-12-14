@@ -1,4 +1,4 @@
-# Install script for directory: /home/matthewalgo/Projects/CPPBuildTemplate/lib_sources
+# Install script for directory: /home/matthewalgo/Projects/picr/lib_sources
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

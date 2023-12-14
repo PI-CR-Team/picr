@@ -1,4 +1,4 @@
-# Install script for directory: /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/modules/cpp-terminal-gui
+# Install script for directory: /home/matthewalgo/Projects/picr/executable_sources/modules/cpp-terminal-gui
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

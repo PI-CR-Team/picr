@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "Args"
   "Args.pdb"
-  "Args_tests-3fac3c2.cmake"
+  "Args_tests-b858cb2.cmake"
   "CMakeFiles/Args.dir/args.test.cpp.o"
   "CMakeFiles/Args.dir/args.test.cpp.o.d"
 )

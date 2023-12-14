@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/doctest-src/doctest/parts/doctest.cpp" "_deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o" "gcc" "_deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o.d"
+  "/home/matthewalgo/Projects/picr/build/build_executable/_deps/doctest-src/doctest/parts/doctest.cpp" "_deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o" "gcc" "_deps/doctest-build/CMakeFiles/doctest_with_main.dir/doctest/parts/doctest.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -1,4 +1,4 @@
-# Install script for directory: /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/tests
+# Install script for directory: /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/doctest-build/cmake_install.cmake")
+  include("/home/matthewalgo/Projects/picr/build/build_executable/_deps/doctest-build/cmake_install.cmake")
 
 endif()
 

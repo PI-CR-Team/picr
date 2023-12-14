@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild
+CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild
+CMAKE_BINARY_DIR = /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild
 
 # Utility rule file for picrlibraries-populate.
 
@@ -77,57 +77,57 @@ CMakeFiles/picrlibraries-populate-complete: picrlibraries-populate-prefix/src/pi
 CMakeFiles/picrlibraries-populate-complete: picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-build
 CMakeFiles/picrlibraries-populate-complete: picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-install
 CMakeFiles/picrlibraries-populate-complete: picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-test
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'picrlibraries-populate'"
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles
-	/usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles/picrlibraries-populate-complete
-	/usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'picrlibraries-populate'"
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles
+	/usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles/picrlibraries-populate-complete
+	/usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-done
 
 picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-build: picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'picrlibraries-populate'"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build && /usr/bin/cmake -E echo_append
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'picrlibraries-populate'"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build && /usr/bin/cmake -E echo_append
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-build
 
 picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-configure: picrlibraries-populate-prefix/tmp/picrlibraries-populate-cfgcmd.txt
 picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-configure: picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'picrlibraries-populate'"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build && /usr/bin/cmake -E echo_append
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'picrlibraries-populate'"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build && /usr/bin/cmake -E echo_append
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-configure
 
 picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-download: picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'picrlibraries-populate'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'picrlibraries-populate'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-download
+	/usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-download
 
 picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-install: picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'picrlibraries-populate'"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build && /usr/bin/cmake -E echo_append
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'picrlibraries-populate'"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build && /usr/bin/cmake -E echo_append
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-install
 
 picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'picrlibraries-populate'"
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/../lib_sources
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/tmp
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp
-	/usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'picrlibraries-populate'"
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/executable_sources/../lib_sources
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/tmp
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp
+	/usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-mkdir
 
 picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-patch: picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'picrlibraries-populate'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'picrlibraries-populate'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-patch
+	/usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-patch
 
 picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-test: picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'picrlibraries-populate'"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build && /usr/bin/cmake -E echo_append
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-test
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'picrlibraries-populate'"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build && /usr/bin/cmake -E echo_append
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-test
 
 picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-update: picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No update step for 'picrlibraries-populate'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No update step for 'picrlibraries-populate'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-update
+	/usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-update
 
 picrlibraries-populate: CMakeFiles/picrlibraries-populate
 picrlibraries-populate: CMakeFiles/picrlibraries-populate-complete
@@ -151,6 +151,6 @@ CMakeFiles/picrlibraries-populate.dir/clean:
 .PHONY : CMakeFiles/picrlibraries-populate.dir/clean
 
 CMakeFiles/picrlibraries-populate.dir/depend:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles/picrlibraries-populate.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles/picrlibraries-populate.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/picrlibraries-populate.dir/depend
 

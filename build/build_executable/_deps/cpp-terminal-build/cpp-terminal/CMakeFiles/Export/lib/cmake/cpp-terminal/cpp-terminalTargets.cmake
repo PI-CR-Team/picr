@@ -16,7 +16,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_targetsDefined)
 set(_targetsNotDefined)
 set(_expectedTargets)
-foreach(_expectedTarget cpp-terminal::cpp-terminal cpp-terminal::cpp-terminal-private cpp-terminal::cpp-terminalWarnings)
+foreach(_expectedTarget cpp-terminal::cpp-terminal cpp-terminal::cpp-terminal-platforms cpp-terminal::cpp-terminalWarnings)
   list(APPEND _expectedTargets ${_expectedTarget})
   if(NOT TARGET ${_expectedTarget})
     list(APPEND _targetsNotDefined ${_expectedTarget})
@@ -55,13 +55,13 @@ add_library(cpp-terminal::cpp-terminal STATIC IMPORTED)
 
 set_target_properties(cpp-terminal::cpp-terminal PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
-  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:cpp-terminal::cpp-terminalWarnings>;\$<LINK_ONLY:cpp-terminal::cpp-terminal-private>"
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:cpp-terminal::cpp-terminalWarnings>;\$<LINK_ONLY:cpp-terminal::cpp-terminal-platforms>"
 )
 
-# Create imported target cpp-terminal::cpp-terminal-private
-add_library(cpp-terminal::cpp-terminal-private STATIC IMPORTED)
+# Create imported target cpp-terminal::cpp-terminal-platforms
+add_library(cpp-terminal::cpp-terminal-platforms STATIC IMPORTED)
 
-set_target_properties(cpp-terminal::cpp-terminal-private PROPERTIES
+set_target_properties(cpp-terminal::cpp-terminal-platforms PROPERTIES
   INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:cpp-terminal::cpp-terminalWarnings>;Threads::Threads"
 )
 

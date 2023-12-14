@@ -1,4 +1,4 @@
-# Install script for directory: /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/docs
+# Install script for directory: /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/docs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

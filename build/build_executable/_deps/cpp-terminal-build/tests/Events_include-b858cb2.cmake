@@ -1,0 +1,5 @@
+if(EXISTS "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/tests/Events_tests-b858cb2.cmake")
+  include("/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/tests/Events_tests-b858cb2.cmake")
+else()
+  add_test(Events_NOT_BUILT-b858cb2 Events_NOT_BUILT-b858cb2)
+endif()

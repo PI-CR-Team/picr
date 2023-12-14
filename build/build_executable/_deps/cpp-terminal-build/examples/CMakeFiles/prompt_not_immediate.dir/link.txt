@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/prompt_not_immediate.dir/prompt_not_immediate.cpp.o -o prompt_not_immediate  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/private/libcpp-terminal-private.a 
+/usr/bin/c++ CMakeFiles/prompt_not_immediate.dir/prompt_not_immediate.cpp.o -o prompt_not_immediate  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/platforms/libcpp-terminal-platforms.a 

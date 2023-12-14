@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14...3.22)
-set (CMAKE_CXX_STANDARD 20)
+set (CMAKE_CXX_STANDARD 17)
 set(INTERNAL_MODULES_PATH "modules")
 project(PiCrExecutable LANGUAGES CXX)
 
@@ -24,7 +24,7 @@ include(../cmake/CPM.cmake)
 CPMAddPackage (
   NAME cpp-terminal
   GITHUB_REPOSITORY jupyter-xeus/cpp-terminal
-  GIT_TAG master
+  GIT_TAG 80d1dd8
 )
 # Find the ncurses library
 find_package(Curses REQUIRED)
@@ -38,7 +38,7 @@ file(GLOB sources CONFIGURE_DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/source/*.cpp)
 
 add_executable(${PROJECT_NAME} ${sources})
 
-set_target_properties(${PROJECT_NAME} PROPERTIES CXX_STANDARD 20 OUTPUT_NAME "PiCr")
+set_target_properties(${PROJECT_NAME} PROPERTIES CXX_STANDARD 17 OUTPUT_NAME "PiCr")
 
 target_link_libraries(${PROJECT_NAME} PiCrLibraries ${CURSES_LIBRARIES} cpp-terminal ${UNIX_LIBRARIES})
 

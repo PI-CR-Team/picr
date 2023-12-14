@@ -27,8 +27,7 @@ target_include_directories(cpp-terminal-gui PUBLIC
 	${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-target_link_libraries(cpp-terminal-gui
- 
+target_link_libraries(cpp-terminal-gui 
 	unicode
 	cpp-terminal
 )

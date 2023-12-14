@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild
+CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild
+CMAKE_BINARY_DIR = /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild
 
 # Utility rule file for unicode-populate.
 
@@ -77,57 +77,57 @@ CMakeFiles/unicode-populate-complete: unicode-populate-prefix/src/unicode-popula
 CMakeFiles/unicode-populate-complete: unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-build
 CMakeFiles/unicode-populate-complete: unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-install
 CMakeFiles/unicode-populate-complete: unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-test
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'unicode-populate'"
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/CMakeFiles
-	/usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/CMakeFiles/unicode-populate-complete
-	/usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'unicode-populate'"
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/CMakeFiles
+	/usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/CMakeFiles/unicode-populate-complete
+	/usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-done
 
 unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-build: unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'unicode-populate'"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-build && /usr/bin/cmake -E echo_append
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'unicode-populate'"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-build && /usr/bin/cmake -E echo_append
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-build
 
 unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-configure: unicode-populate-prefix/tmp/unicode-populate-cfgcmd.txt
 unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-configure: unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'unicode-populate'"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-build && /usr/bin/cmake -E echo_append
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'unicode-populate'"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-build && /usr/bin/cmake -E echo_append
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-configure
 
 unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-download: unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'unicode-populate'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'unicode-populate'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-download
+	/usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-download
 
 unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-install: unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'unicode-populate'"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-build && /usr/bin/cmake -E echo_append
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'unicode-populate'"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-build && /usr/bin/cmake -E echo_append
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-install
 
 unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'unicode-populate'"
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/../executable_sources/modules/unicode
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-build
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/tmp
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp
-	/usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'unicode-populate'"
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/executable_sources/../executable_sources/modules/unicode
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-build
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/tmp
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp
+	/usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-mkdir
 
 unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-patch: unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'unicode-populate'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'unicode-populate'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-patch
+	/usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-patch
 
 unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-test: unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'unicode-populate'"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-build && /usr/bin/cmake -E echo_append
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-test
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'unicode-populate'"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-build && /usr/bin/cmake -E echo_append
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-test
 
 unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-update: unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No update step for 'unicode-populate'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No update step for 'unicode-populate'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-update
+	/usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-update
 
 unicode-populate: CMakeFiles/unicode-populate
 unicode-populate: CMakeFiles/unicode-populate-complete
@@ -151,6 +151,6 @@ CMakeFiles/unicode-populate.dir/clean:
 .PHONY : CMakeFiles/unicode-populate.dir/clean
 
 CMakeFiles/unicode-populate.dir/depend:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/CMakeFiles/unicode-populate.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild /home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-subbuild/CMakeFiles/unicode-populate.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/unicode-populate.dir/depend
 

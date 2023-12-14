@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/prompt_simple.dir/prompt_simple.cpp.o -o prompt_simple  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/private/libcpp-terminal-private.a 
+/usr/bin/c++ CMakeFiles/prompt_simple.dir/prompt_simple.cpp.o -o prompt_simple  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/platforms/libcpp-terminal-platforms.a 

@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/keys.dir/keys.cpp.o -o keys  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/private/libcpp-terminal-private.a 
+/usr/bin/c++ CMakeFiles/keys.dir/keys.cpp.o -o keys  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/platforms/libcpp-terminal-platforms.a 

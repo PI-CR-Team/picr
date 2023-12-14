@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources
+CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/picr/executable_sources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable
+CMAKE_BINARY_DIR = /home/matthewalgo/Projects/picr/build/build_executable
 
 # Include any dependencies generated for this target.
 include _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/depend.make
@@ -72,16 +72,16 @@ include _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/flags.make
 _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/minimal.cpp.o: _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/flags.make
 _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/minimal.cpp.o: _deps/cpp-terminal-src/examples/minimal.cpp
 _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/minimal.cpp.o: _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/minimal.cpp.o"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/minimal.cpp.o -MF CMakeFiles/minimal.dir/minimal.cpp.o.d -o CMakeFiles/minimal.dir/minimal.cpp.o -c /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/examples/minimal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/minimal.cpp.o"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/minimal.cpp.o -MF CMakeFiles/minimal.dir/minimal.cpp.o.d -o CMakeFiles/minimal.dir/minimal.cpp.o -c /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/examples/minimal.cpp
 
 _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/minimal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/minimal.dir/minimal.cpp.i"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/examples/minimal.cpp > CMakeFiles/minimal.dir/minimal.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/examples/minimal.cpp > CMakeFiles/minimal.dir/minimal.cpp.i
 
 _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/minimal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/minimal.dir/minimal.cpp.s"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/examples/minimal.cpp -o CMakeFiles/minimal.dir/minimal.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/examples/minimal.cpp -o CMakeFiles/minimal.dir/minimal.cpp.s
 
 # Object files for target minimal
 minimal_OBJECTS = \
@@ -93,20 +93,20 @@ minimal_EXTERNAL_OBJECTS =
 _deps/cpp-terminal-build/examples/minimal: _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/minimal.cpp.o
 _deps/cpp-terminal-build/examples/minimal: _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/build.make
 _deps/cpp-terminal-build/examples/minimal: _deps/cpp-terminal-build/cpp-terminal/libcpp-terminal.a
-_deps/cpp-terminal-build/examples/minimal: _deps/cpp-terminal-build/cpp-terminal/private/libcpp-terminal-private.a
+_deps/cpp-terminal-build/examples/minimal: _deps/cpp-terminal-build/cpp-terminal/platforms/libcpp-terminal-platforms.a
 _deps/cpp-terminal-build/examples/minimal: _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable minimal"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/minimal.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable minimal"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/minimal.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/build: _deps/cpp-terminal-build/examples/minimal
 .PHONY : _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/build
 
 _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/clean:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/examples && $(CMAKE_COMMAND) -P CMakeFiles/minimal.dir/cmake_clean.cmake
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/examples && $(CMAKE_COMMAND) -P CMakeFiles/minimal.dir/cmake_clean.cmake
 .PHONY : _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/clean
 
 _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/depend:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/examples /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/examples /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthewalgo/Projects/picr/executable_sources /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/examples /home/matthewalgo/Projects/picr/build/build_executable /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/examples /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/depend
 

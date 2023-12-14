@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles/picrlibraries-populate"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles/picrlibraries-populate"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles/picrlibraries-populate.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles/picrlibraries-populate.rule"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles/picrlibraries-populate-complete.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/CMakeFiles/picrlibraries-populate-complete.rule"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-build.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-build.rule"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-configure.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-configure.rule"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-download.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-download.rule"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-install.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-install.rule"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-mkdir.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-mkdir.rule"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-patch.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-patch.rule"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-test.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-test.rule"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-update.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-subbuild/picrlibraries-populate-prefix/src/picrlibraries-populate-stamp/picrlibraries-populate-update.rule"
 		}
 	],
 	"target" : 

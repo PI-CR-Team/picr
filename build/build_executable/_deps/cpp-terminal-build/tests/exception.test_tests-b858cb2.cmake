@@ -1,5 +1,0 @@
-add_test( Exception /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests/exception.test [==[--test-case=Exception]==])
-set_tests_properties( Exception PROPERTIES WORKING_DIRECTORY /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests LABELS)
-add_test( ErrnoException /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests/exception.test [==[--test-case=ErrnoException]==])
-set_tests_properties( ErrnoException PROPERTIES WORKING_DIRECTORY /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests LABELS)
-set( exception.test_TESTS Exception ErrnoException)

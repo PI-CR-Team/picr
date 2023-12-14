@@ -3,24 +3,24 @@
 cmake_policy(SET CMP0009 NEW)
 
 # sources at CMakeLists.txt:37 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/*.cpp")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/matthewalgo/Projects/picr/executable_sources/source/*.cpp")
 set(OLD_GLOB
-  "/home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/file_reader.cpp"
-  "/home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/line.cpp"
-  "/home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/main.cpp"
-  "/home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/terminal_renderer.cpp"
+  "/home/matthewalgo/Projects/picr/executable_sources/source/file_reader.cpp"
+  "/home/matthewalgo/Projects/picr/executable_sources/source/line.cpp"
+  "/home/matthewalgo/Projects/picr/executable_sources/source/main.cpp"
+  "/home/matthewalgo/Projects/picr/executable_sources/source/terminal_renderer.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles/cmake.verify_globs")
 endif()
 
-# sources at /home/matthewalgo/Projects/CPPBuildTemplate/lib_sources/CMakeLists.txt:18 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/matthewalgo/Projects/CPPBuildTemplate/lib_sources/source/*.cpp")
+# sources at /home/matthewalgo/Projects/picr/lib_sources/CMakeLists.txt:18 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/matthewalgo/Projects/picr/lib_sources/source/*.cpp")
 set(OLD_GLOB
-  "/home/matthewalgo/Projects/CPPBuildTemplate/lib_sources/source/lib.cpp"
+  "/home/matthewalgo/Projects/picr/lib_sources/source/lib.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles/cmake.verify_globs")
 endif()

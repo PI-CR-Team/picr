@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources
+CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/picr/executable_sources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable
+CMAKE_BINARY_DIR = /home/matthewalgo/Projects/picr/build/build_executable
 
 # Include any dependencies generated for this target.
 include _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/depend.make
@@ -72,16 +72,16 @@ include _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/flags.make
 _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/args.test.cpp.o: _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/flags.make
 _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/args.test.cpp.o: _deps/cpp-terminal-src/tests/args.test.cpp
 _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/args.test.cpp.o: _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/args.test.cpp.o"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/args.test.cpp.o -MF CMakeFiles/Args.dir/args.test.cpp.o.d -o CMakeFiles/Args.dir/args.test.cpp.o -c /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/tests/args.test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/args.test.cpp.o"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/args.test.cpp.o -MF CMakeFiles/Args.dir/args.test.cpp.o.d -o CMakeFiles/Args.dir/args.test.cpp.o -c /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/tests/args.test.cpp
 
 _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/args.test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Args.dir/args.test.cpp.i"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/tests/args.test.cpp > CMakeFiles/Args.dir/args.test.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/tests/args.test.cpp > CMakeFiles/Args.dir/args.test.cpp.i
 
 _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/args.test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Args.dir/args.test.cpp.s"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/tests/args.test.cpp -o CMakeFiles/Args.dir/args.test.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/tests/args.test.cpp -o CMakeFiles/Args.dir/args.test.cpp.s
 
 # Object files for target Args
 Args_OBJECTS = \
@@ -93,21 +93,21 @@ Args_EXTERNAL_OBJECTS =
 _deps/cpp-terminal-build/tests/Args: _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/args.test.cpp.o
 _deps/cpp-terminal-build/tests/Args: _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/build.make
 _deps/cpp-terminal-build/tests/Args: _deps/cpp-terminal-build/cpp-terminal/libcpp-terminal.a
-_deps/cpp-terminal-build/tests/Args: _deps/cpp-terminal-build/cpp-terminal/private/libcpp-terminal-private.a
+_deps/cpp-terminal-build/tests/Args: _deps/cpp-terminal-build/cpp-terminal/platforms/libcpp-terminal-platforms.a
 _deps/cpp-terminal-build/tests/Args: _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Args"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Args.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests && /usr/bin/cmake -D TEST_TARGET=Args -D TEST_EXECUTABLE=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests/Args -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests -D TEST_SPEC= -D "TEST_EXTRA_ARGS=Bonjour;Hello;你好" -D TEST_PROPERTIES= -D TEST_ADD_LABELS= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=Args_TESTS -D TEST_JUNIT_OUTPUT_DIR= -D CTEST_FILE=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests/Args_tests-3fac3c2.cmake -P /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/doctest-src/scripts/cmake/doctestAddTests.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Args"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Args.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/tests && /usr/bin/cmake -D TEST_TARGET=Args -D TEST_EXECUTABLE=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/tests/Args -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/tests -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_ADD_LABELS= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=Args_TESTS -D TEST_JUNIT_OUTPUT_DIR= -D CTEST_FILE=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/tests/Args_tests-b858cb2.cmake -P /home/matthewalgo/Projects/picr/build/build_executable/_deps/doctest-src/scripts/cmake/doctestAddTests.cmake
 
 # Rule to build all files generated by this target.
 _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/build: _deps/cpp-terminal-build/tests/Args
 .PHONY : _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/build
 
 _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/clean:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests && $(CMAKE_COMMAND) -P CMakeFiles/Args.dir/cmake_clean.cmake
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/tests && $(CMAKE_COMMAND) -P CMakeFiles/Args.dir/cmake_clean.cmake
 .PHONY : _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/clean
 
 _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/depend:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/tests /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthewalgo/Projects/picr/executable_sources /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/tests /home/matthewalgo/Projects/picr/build/build_executable /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/tests /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/depend
 

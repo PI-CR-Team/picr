@@ -1,4 +1,4 @@
-# Install script for directory: /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-subbuild
+# Install script for directory: /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-subbuild
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-subbuild/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-subbuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/Args.dir/args.test.cpp.o -o Args  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/private/libcpp-terminal-private.a 
+/usr/bin/c++ CMakeFiles/Args.dir/args.test.cpp.o -o Args  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/platforms/libcpp-terminal-platforms.a 

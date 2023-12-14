@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources
+CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/picr/executable_sources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable
+CMAKE_BINARY_DIR = /home/matthewalgo/Projects/picr/build/build_executable
 
 # Include any dependencies generated for this target.
 include _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/depend.make
@@ -72,16 +72,16 @@ include _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/flags.mak
 _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/prompt_simple.cpp.o: _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/flags.make
 _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/prompt_simple.cpp.o: _deps/cpp-terminal-src/examples/prompt_simple.cpp
 _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/prompt_simple.cpp.o: _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/prompt_simple.cpp.o"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/prompt_simple.cpp.o -MF CMakeFiles/prompt_simple.dir/prompt_simple.cpp.o.d -o CMakeFiles/prompt_simple.dir/prompt_simple.cpp.o -c /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/examples/prompt_simple.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/prompt_simple.cpp.o"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/prompt_simple.cpp.o -MF CMakeFiles/prompt_simple.dir/prompt_simple.cpp.o.d -o CMakeFiles/prompt_simple.dir/prompt_simple.cpp.o -c /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/examples/prompt_simple.cpp
 
 _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/prompt_simple.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/prompt_simple.dir/prompt_simple.cpp.i"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/examples/prompt_simple.cpp > CMakeFiles/prompt_simple.dir/prompt_simple.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/examples/prompt_simple.cpp > CMakeFiles/prompt_simple.dir/prompt_simple.cpp.i
 
 _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/prompt_simple.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/prompt_simple.dir/prompt_simple.cpp.s"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/examples/prompt_simple.cpp -o CMakeFiles/prompt_simple.dir/prompt_simple.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/examples/prompt_simple.cpp -o CMakeFiles/prompt_simple.dir/prompt_simple.cpp.s
 
 # Object files for target prompt_simple
 prompt_simple_OBJECTS = \
@@ -93,20 +93,20 @@ prompt_simple_EXTERNAL_OBJECTS =
 _deps/cpp-terminal-build/examples/prompt_simple: _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/prompt_simple.cpp.o
 _deps/cpp-terminal-build/examples/prompt_simple: _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/build.make
 _deps/cpp-terminal-build/examples/prompt_simple: _deps/cpp-terminal-build/cpp-terminal/libcpp-terminal.a
-_deps/cpp-terminal-build/examples/prompt_simple: _deps/cpp-terminal-build/cpp-terminal/private/libcpp-terminal-private.a
+_deps/cpp-terminal-build/examples/prompt_simple: _deps/cpp-terminal-build/cpp-terminal/platforms/libcpp-terminal-platforms.a
 _deps/cpp-terminal-build/examples/prompt_simple: _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable prompt_simple"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/prompt_simple.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable prompt_simple"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/prompt_simple.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/build: _deps/cpp-terminal-build/examples/prompt_simple
 .PHONY : _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/build
 
 _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/clean:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/examples && $(CMAKE_COMMAND) -P CMakeFiles/prompt_simple.dir/cmake_clean.cmake
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/examples && $(CMAKE_COMMAND) -P CMakeFiles/prompt_simple.dir/cmake_clean.cmake
 .PHONY : _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/clean
 
 _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/depend:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/examples /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/examples /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthewalgo/Projects/picr/executable_sources /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/examples /home/matthewalgo/Projects/picr/build/build_executable /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/examples /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/depend
 

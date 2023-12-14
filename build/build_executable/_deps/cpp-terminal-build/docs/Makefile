@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources
+CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/picr/executable_sources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable
+CMAKE_BINARY_DIR = /home/matthewalgo/Projects/picr/build/build_executable
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/docs//CMakeFiles/progress.marks
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/docs/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles 0
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/docs//CMakeFiles/progress.marks
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/docs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/docs/clean
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/docs/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/docs/preinstall
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/docs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/docs/preinstall
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/docs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -P /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles/VerifyGlobs.cmake
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -P /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles/VerifyGlobs.cmake
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/cpp-terminal-build/docs/CMakeFiles/docs.dir/rule:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/docs/CMakeFiles/docs.dir/rule
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/docs/CMakeFiles/docs.dir/rule
 .PHONY : _deps/cpp-terminal-build/docs/CMakeFiles/docs.dir/rule
 
 # Convenience name for target.
@@ -173,12 +173,12 @@ docs: _deps/cpp-terminal-build/docs/CMakeFiles/docs.dir/rule
 
 # fast build rule for target.
 docs/fast:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/docs/CMakeFiles/docs.dir/build.make _deps/cpp-terminal-build/docs/CMakeFiles/docs.dir/build
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/docs/CMakeFiles/docs.dir/build.make _deps/cpp-terminal-build/docs/CMakeFiles/docs.dir/build
 .PHONY : docs/fast
 
 # Convenience name for target.
 _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/rule:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/rule
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/rule
 .PHONY : _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/rule
 
 # Convenience name for target.
@@ -187,12 +187,12 @@ doc-html: _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/rule
 
 # fast build rule for target.
 doc-html/fast:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/build.make _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/build
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/build.make _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/build
 .PHONY : doc-html/fast
 
 # Convenience name for target.
 _deps/cpp-terminal-build/docs/CMakeFiles/doc-latex.dir/rule:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/docs/CMakeFiles/doc-latex.dir/rule
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/docs/CMakeFiles/doc-latex.dir/rule
 .PHONY : _deps/cpp-terminal-build/docs/CMakeFiles/doc-latex.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ doc-latex: _deps/cpp-terminal-build/docs/CMakeFiles/doc-latex.dir/rule
 
 # fast build rule for target.
 doc-latex/fast:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/docs/CMakeFiles/doc-latex.dir/build.make _deps/cpp-terminal-build/docs/CMakeFiles/doc-latex.dir/build
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/docs/CMakeFiles/doc-latex.dir/build.make _deps/cpp-terminal-build/docs/CMakeFiles/doc-latex.dir/build
 .PHONY : doc-latex/fast
 
 # Help Target
@@ -230,7 +230,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -P /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles/VerifyGlobs.cmake
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -P /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles/VerifyGlobs.cmake
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

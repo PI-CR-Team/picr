@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/matthewalgo/Projects/CPPBuildTemplate/lib_sources/../include
+CXX_INCLUDES = -I/home/matthewalgo/Projects/picr/lib_sources/../include
 
 CXX_FLAGS = -std=c++17
 

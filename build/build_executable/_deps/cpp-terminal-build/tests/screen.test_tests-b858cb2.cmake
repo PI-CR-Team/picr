@@ -1,5 +1,0 @@
-add_test( [==[Test Term::Screen]==] /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests/screen.test [==[--test-case=Test Term::Screen]==])
-set_tests_properties( [==[Test Term::Screen]==] PROPERTIES WORKING_DIRECTORY /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests LABELS)
-add_test( [==[Test Term::Screen(5,10)]==] /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests/screen.test [==[--test-case=Test Term::Screen(5\,10)]==])
-set_tests_properties( [==[Test Term::Screen(5,10)]==] PROPERTIES WORKING_DIRECTORY /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests LABELS)
-set( screen.test_TESTS [==[Test Term::Screen]==] [==[Test Term::Screen(5,10)]==])

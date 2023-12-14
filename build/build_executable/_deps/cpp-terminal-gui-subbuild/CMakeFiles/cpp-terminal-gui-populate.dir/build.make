@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild
+CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild
+CMAKE_BINARY_DIR = /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild
 
 # Utility rule file for cpp-terminal-gui-populate.
 
@@ -77,57 +77,57 @@ CMakeFiles/cpp-terminal-gui-populate-complete: cpp-terminal-gui-populate-prefix/
 CMakeFiles/cpp-terminal-gui-populate-complete: cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-build
 CMakeFiles/cpp-terminal-gui-populate-complete: cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-install
 CMakeFiles/cpp-terminal-gui-populate-complete: cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-test
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'cpp-terminal-gui-populate'"
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles
-	/usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles/cpp-terminal-gui-populate-complete
-	/usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'cpp-terminal-gui-populate'"
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles
+	/usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles/cpp-terminal-gui-populate-complete
+	/usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-done
 
 cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-build: cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'cpp-terminal-gui-populate'"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-build && /usr/bin/cmake -E echo_append
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'cpp-terminal-gui-populate'"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-build && /usr/bin/cmake -E echo_append
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-build
 
 cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-configure: cpp-terminal-gui-populate-prefix/tmp/cpp-terminal-gui-populate-cfgcmd.txt
 cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-configure: cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'cpp-terminal-gui-populate'"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-build && /usr/bin/cmake -E echo_append
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'cpp-terminal-gui-populate'"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-build && /usr/bin/cmake -E echo_append
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-configure
 
 cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-download: cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'cpp-terminal-gui-populate'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'cpp-terminal-gui-populate'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-download
+	/usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-download
 
 cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-install: cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'cpp-terminal-gui-populate'"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-build && /usr/bin/cmake -E echo_append
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'cpp-terminal-gui-populate'"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-build && /usr/bin/cmake -E echo_append
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-install
 
 cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'cpp-terminal-gui-populate'"
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/../executable_sources/modules/cpp-terminal-gui
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-build
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/tmp
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src
-	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp
-	/usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'cpp-terminal-gui-populate'"
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/executable_sources/../executable_sources/modules/cpp-terminal-gui
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-build
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/tmp
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src
+	/usr/bin/cmake -E make_directory /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp
+	/usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-mkdir
 
 cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-patch: cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'cpp-terminal-gui-populate'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'cpp-terminal-gui-populate'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-patch
+	/usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-patch
 
 cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-test: cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'cpp-terminal-gui-populate'"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-build && /usr/bin/cmake -E echo_append
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-test
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'cpp-terminal-gui-populate'"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-build && /usr/bin/cmake -E echo_append
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-build && /usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-test
 
 cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-update: cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No update step for 'cpp-terminal-gui-populate'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No update step for 'cpp-terminal-gui-populate'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-update
+	/usr/bin/cmake -E touch /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-update
 
 cpp-terminal-gui-populate: CMakeFiles/cpp-terminal-gui-populate
 cpp-terminal-gui-populate: CMakeFiles/cpp-terminal-gui-populate-complete
@@ -151,6 +151,6 @@ CMakeFiles/cpp-terminal-gui-populate.dir/clean:
 .PHONY : CMakeFiles/cpp-terminal-gui-populate.dir/clean
 
 CMakeFiles/cpp-terminal-gui-populate.dir/depend:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles/cpp-terminal-gui-populate.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles/cpp-terminal-gui-populate.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cpp-terminal-gui-populate.dir/depend
 

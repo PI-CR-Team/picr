@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/attach_console.dir/attach_console.cpp.o -o attach_console  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/private/libcpp-terminal-private.a 

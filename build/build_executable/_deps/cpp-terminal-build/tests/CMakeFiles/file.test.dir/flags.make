@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/doctest-src -I/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src -I/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build
+CXX_INCLUDES = -I/home/matthewalgo/Projects/picr/build/build_executable/_deps/doctest-src -I/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src -I/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build
 
 CXX_FLAGS = -fPIE -std=c++20
 

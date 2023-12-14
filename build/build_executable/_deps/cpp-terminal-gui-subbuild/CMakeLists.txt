@@ -14,8 +14,8 @@ project(cpp-terminal-gui-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(cpp-terminal-gui-populate
                      "UPDATE_DISCONNECTED" "False"
-                    SOURCE_DIR          "/home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/../executable_sources/modules/cpp-terminal-gui"
-                    BINARY_DIR          "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-build"
+                    SOURCE_DIR          "/home/matthewalgo/Projects/picr/executable_sources/../executable_sources/modules/cpp-terminal-gui"
+                    BINARY_DIR          "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

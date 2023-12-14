@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/cin_raw.dir/cin_raw.cpp.o -o cin_raw  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/private/libcpp-terminal-private.a 
+/usr/bin/c++ CMakeFiles/cin_raw.dir/cin_raw.cpp.o -o cin_raw  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/platforms/libcpp-terminal-platforms.a 

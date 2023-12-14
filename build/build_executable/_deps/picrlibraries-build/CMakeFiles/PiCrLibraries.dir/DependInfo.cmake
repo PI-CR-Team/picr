@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/matthewalgo/Projects/CPPBuildTemplate/lib_sources/source/lib.cpp" "_deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/source/lib.cpp.o" "gcc" "_deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/source/lib.cpp.o.d"
+  "/home/matthewalgo/Projects/picr/lib_sources/source/lib.cpp" "_deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/source/lib.cpp.o" "gcc" "_deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/source/lib.cpp.o.d"
   )
 
 # Targets to which this target links.

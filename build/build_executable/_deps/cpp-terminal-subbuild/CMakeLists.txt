@@ -21,9 +21,9 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 
 include(ExternalProject)
 ExternalProject_Add(cpp-terminal-populate
-                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/jupyter-xeus/cpp-terminal.git" "GIT_TAG" "master"
-                    SOURCE_DIR          "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src"
-                    BINARY_DIR          "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build"
+                     "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/jupyter-xeus/cpp-terminal.git" "GIT_TAG" "80d1dd8"
+                    SOURCE_DIR          "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src"
+                    BINARY_DIR          "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

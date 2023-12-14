@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources
+CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/picr/executable_sources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable
+CMAKE_BINARY_DIR = /home/matthewalgo/Projects/picr/build/build_executable
 
 # Include any dependencies generated for this target.
 include CMakeFiles/PiCrExecutable.dir/depend.make
@@ -70,60 +70,60 @@ include CMakeFiles/PiCrExecutable.dir/progress.make
 include CMakeFiles/PiCrExecutable.dir/flags.make
 
 CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.o: CMakeFiles/PiCrExecutable.dir/flags.make
-CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.o: /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/file_reader.cpp
+CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.o: /home/matthewalgo/Projects/picr/executable_sources/source/file_reader.cpp
 CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.o: CMakeFiles/PiCrExecutable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.o -MF CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.o.d -o CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.o -c /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/file_reader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.o -MF CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.o.d -o CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.o -c /home/matthewalgo/Projects/picr/executable_sources/source/file_reader.cpp
 
 CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/file_reader.cpp > CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthewalgo/Projects/picr/executable_sources/source/file_reader.cpp > CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.i
 
 CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/file_reader.cpp -o CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthewalgo/Projects/picr/executable_sources/source/file_reader.cpp -o CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.s
 
 CMakeFiles/PiCrExecutable.dir/source/line.cpp.o: CMakeFiles/PiCrExecutable.dir/flags.make
-CMakeFiles/PiCrExecutable.dir/source/line.cpp.o: /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/line.cpp
+CMakeFiles/PiCrExecutable.dir/source/line.cpp.o: /home/matthewalgo/Projects/picr/executable_sources/source/line.cpp
 CMakeFiles/PiCrExecutable.dir/source/line.cpp.o: CMakeFiles/PiCrExecutable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PiCrExecutable.dir/source/line.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiCrExecutable.dir/source/line.cpp.o -MF CMakeFiles/PiCrExecutable.dir/source/line.cpp.o.d -o CMakeFiles/PiCrExecutable.dir/source/line.cpp.o -c /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/line.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PiCrExecutable.dir/source/line.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiCrExecutable.dir/source/line.cpp.o -MF CMakeFiles/PiCrExecutable.dir/source/line.cpp.o.d -o CMakeFiles/PiCrExecutable.dir/source/line.cpp.o -c /home/matthewalgo/Projects/picr/executable_sources/source/line.cpp
 
 CMakeFiles/PiCrExecutable.dir/source/line.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PiCrExecutable.dir/source/line.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/line.cpp > CMakeFiles/PiCrExecutable.dir/source/line.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthewalgo/Projects/picr/executable_sources/source/line.cpp > CMakeFiles/PiCrExecutable.dir/source/line.cpp.i
 
 CMakeFiles/PiCrExecutable.dir/source/line.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PiCrExecutable.dir/source/line.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/line.cpp -o CMakeFiles/PiCrExecutable.dir/source/line.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthewalgo/Projects/picr/executable_sources/source/line.cpp -o CMakeFiles/PiCrExecutable.dir/source/line.cpp.s
 
 CMakeFiles/PiCrExecutable.dir/source/main.cpp.o: CMakeFiles/PiCrExecutable.dir/flags.make
-CMakeFiles/PiCrExecutable.dir/source/main.cpp.o: /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/main.cpp
+CMakeFiles/PiCrExecutable.dir/source/main.cpp.o: /home/matthewalgo/Projects/picr/executable_sources/source/main.cpp
 CMakeFiles/PiCrExecutable.dir/source/main.cpp.o: CMakeFiles/PiCrExecutable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PiCrExecutable.dir/source/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiCrExecutable.dir/source/main.cpp.o -MF CMakeFiles/PiCrExecutable.dir/source/main.cpp.o.d -o CMakeFiles/PiCrExecutable.dir/source/main.cpp.o -c /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PiCrExecutable.dir/source/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiCrExecutable.dir/source/main.cpp.o -MF CMakeFiles/PiCrExecutable.dir/source/main.cpp.o.d -o CMakeFiles/PiCrExecutable.dir/source/main.cpp.o -c /home/matthewalgo/Projects/picr/executable_sources/source/main.cpp
 
 CMakeFiles/PiCrExecutable.dir/source/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PiCrExecutable.dir/source/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/main.cpp > CMakeFiles/PiCrExecutable.dir/source/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthewalgo/Projects/picr/executable_sources/source/main.cpp > CMakeFiles/PiCrExecutable.dir/source/main.cpp.i
 
 CMakeFiles/PiCrExecutable.dir/source/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PiCrExecutable.dir/source/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/main.cpp -o CMakeFiles/PiCrExecutable.dir/source/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthewalgo/Projects/picr/executable_sources/source/main.cpp -o CMakeFiles/PiCrExecutable.dir/source/main.cpp.s
 
 CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.o: CMakeFiles/PiCrExecutable.dir/flags.make
-CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.o: /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/terminal_renderer.cpp
+CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.o: /home/matthewalgo/Projects/picr/executable_sources/source/terminal_renderer.cpp
 CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.o: CMakeFiles/PiCrExecutable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.o -MF CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.o.d -o CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.o -c /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/terminal_renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.o -MF CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.o.d -o CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.o -c /home/matthewalgo/Projects/picr/executable_sources/source/terminal_renderer.cpp
 
 CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/terminal_renderer.cpp > CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthewalgo/Projects/picr/executable_sources/source/terminal_renderer.cpp > CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.i
 
 CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/source/terminal_renderer.cpp -o CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthewalgo/Projects/picr/executable_sources/source/terminal_renderer.cpp -o CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.s
 
 # Object files for target PiCrExecutable
 PiCrExecutable_OBJECTS = \
@@ -144,9 +144,9 @@ PiCr: _deps/picrlibraries-build/libPiCrLibraries.a
 PiCr: /usr/lib/x86_64-linux-gnu/libcurses.so
 PiCr: /usr/lib/x86_64-linux-gnu/libform.so
 PiCr: _deps/cpp-terminal-build/cpp-terminal/libcpp-terminal.a
-PiCr: _deps/cpp-terminal-build/cpp-terminal/private/libcpp-terminal-private.a
+PiCr: _deps/cpp-terminal-build/cpp-terminal/platforms/libcpp-terminal-platforms.a
 PiCr: CMakeFiles/PiCrExecutable.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable PiCr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable PiCr"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PiCrExecutable.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -158,6 +158,6 @@ CMakeFiles/PiCrExecutable.dir/clean:
 .PHONY : CMakeFiles/PiCrExecutable.dir/clean
 
 CMakeFiles/PiCrExecutable.dir/depend:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles/PiCrExecutable.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthewalgo/Projects/picr/executable_sources /home/matthewalgo/Projects/picr/executable_sources /home/matthewalgo/Projects/picr/build/build_executable /home/matthewalgo/Projects/picr/build/build_executable /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles/PiCrExecutable.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PiCrExecutable.dir/depend
 

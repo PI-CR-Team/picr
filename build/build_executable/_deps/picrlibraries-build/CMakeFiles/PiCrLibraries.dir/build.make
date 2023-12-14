@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources
+CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/picr/executable_sources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable
+CMAKE_BINARY_DIR = /home/matthewalgo/Projects/picr/build/build_executable
 
 # Include any dependencies generated for this target.
 include _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/depend.make
@@ -70,18 +70,18 @@ include _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/progress.make
 include _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/flags.make
 
 _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/source/lib.cpp.o: _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/flags.make
-_deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/source/lib.cpp.o: /home/matthewalgo/Projects/CPPBuildTemplate/lib_sources/source/lib.cpp
+_deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/source/lib.cpp.o: /home/matthewalgo/Projects/picr/lib_sources/source/lib.cpp
 _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/source/lib.cpp.o: _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/source/lib.cpp.o"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/source/lib.cpp.o -MF CMakeFiles/PiCrLibraries.dir/source/lib.cpp.o.d -o CMakeFiles/PiCrLibraries.dir/source/lib.cpp.o -c /home/matthewalgo/Projects/CPPBuildTemplate/lib_sources/source/lib.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/source/lib.cpp.o"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/source/lib.cpp.o -MF CMakeFiles/PiCrLibraries.dir/source/lib.cpp.o.d -o CMakeFiles/PiCrLibraries.dir/source/lib.cpp.o -c /home/matthewalgo/Projects/picr/lib_sources/source/lib.cpp
 
 _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/source/lib.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PiCrLibraries.dir/source/lib.cpp.i"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthewalgo/Projects/CPPBuildTemplate/lib_sources/source/lib.cpp > CMakeFiles/PiCrLibraries.dir/source/lib.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/matthewalgo/Projects/picr/lib_sources/source/lib.cpp > CMakeFiles/PiCrLibraries.dir/source/lib.cpp.i
 
 _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/source/lib.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PiCrLibraries.dir/source/lib.cpp.s"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthewalgo/Projects/CPPBuildTemplate/lib_sources/source/lib.cpp -o CMakeFiles/PiCrLibraries.dir/source/lib.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/matthewalgo/Projects/picr/lib_sources/source/lib.cpp -o CMakeFiles/PiCrLibraries.dir/source/lib.cpp.s
 
 # Object files for target PiCrLibraries
 PiCrLibraries_OBJECTS = \
@@ -93,19 +93,19 @@ PiCrLibraries_EXTERNAL_OBJECTS =
 _deps/picrlibraries-build/libPiCrLibraries.a: _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/source/lib.cpp.o
 _deps/picrlibraries-build/libPiCrLibraries.a: _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/build.make
 _deps/picrlibraries-build/libPiCrLibraries.a: _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libPiCrLibraries.a"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build && $(CMAKE_COMMAND) -P CMakeFiles/PiCrLibraries.dir/cmake_clean_target.cmake
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PiCrLibraries.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libPiCrLibraries.a"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build && $(CMAKE_COMMAND) -P CMakeFiles/PiCrLibraries.dir/cmake_clean_target.cmake
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PiCrLibraries.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/build: _deps/picrlibraries-build/libPiCrLibraries.a
 .PHONY : _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/build
 
 _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/clean:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build && $(CMAKE_COMMAND) -P CMakeFiles/PiCrLibraries.dir/cmake_clean.cmake
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build && $(CMAKE_COMMAND) -P CMakeFiles/PiCrLibraries.dir/cmake_clean.cmake
 .PHONY : _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/clean
 
 _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/depend:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources /home/matthewalgo/Projects/CPPBuildTemplate/lib_sources /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthewalgo/Projects/picr/executable_sources /home/matthewalgo/Projects/picr/lib_sources /home/matthewalgo/Projects/picr/build/build_executable /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build /home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/depend
 

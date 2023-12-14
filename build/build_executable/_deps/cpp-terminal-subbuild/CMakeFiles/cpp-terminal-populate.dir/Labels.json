@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-subbuild/CMakeFiles/cpp-terminal-populate"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-subbuild/CMakeFiles/cpp-terminal-populate"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-subbuild/CMakeFiles/cpp-terminal-populate.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-subbuild/CMakeFiles/cpp-terminal-populate.rule"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-subbuild/CMakeFiles/cpp-terminal-populate-complete.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-subbuild/CMakeFiles/cpp-terminal-populate-complete.rule"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-subbuild/cpp-terminal-populate-prefix/src/cpp-terminal-populate-stamp/cpp-terminal-populate-build.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-subbuild/cpp-terminal-populate-prefix/src/cpp-terminal-populate-stamp/cpp-terminal-populate-build.rule"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-subbuild/cpp-terminal-populate-prefix/src/cpp-terminal-populate-stamp/cpp-terminal-populate-configure.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-subbuild/cpp-terminal-populate-prefix/src/cpp-terminal-populate-stamp/cpp-terminal-populate-configure.rule"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-subbuild/cpp-terminal-populate-prefix/src/cpp-terminal-populate-stamp/cpp-terminal-populate-download.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-subbuild/cpp-terminal-populate-prefix/src/cpp-terminal-populate-stamp/cpp-terminal-populate-download.rule"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-subbuild/cpp-terminal-populate-prefix/src/cpp-terminal-populate-stamp/cpp-terminal-populate-install.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-subbuild/cpp-terminal-populate-prefix/src/cpp-terminal-populate-stamp/cpp-terminal-populate-install.rule"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-subbuild/cpp-terminal-populate-prefix/src/cpp-terminal-populate-stamp/cpp-terminal-populate-mkdir.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-subbuild/cpp-terminal-populate-prefix/src/cpp-terminal-populate-stamp/cpp-terminal-populate-mkdir.rule"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-subbuild/cpp-terminal-populate-prefix/src/cpp-terminal-populate-stamp/cpp-terminal-populate-patch.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-subbuild/cpp-terminal-populate-prefix/src/cpp-terminal-populate-stamp/cpp-terminal-populate-patch.rule"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-subbuild/cpp-terminal-populate-prefix/src/cpp-terminal-populate-stamp/cpp-terminal-populate-test.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-subbuild/cpp-terminal-populate-prefix/src/cpp-terminal-populate-stamp/cpp-terminal-populate-test.rule"
 		},
 		{
-			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-subbuild/cpp-terminal-populate-prefix/src/cpp-terminal-populate-stamp/cpp-terminal-populate-update.rule"
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-subbuild/cpp-terminal-populate-prefix/src/cpp-terminal-populate-stamp/cpp-terminal-populate-update.rule"
 		}
 	],
 	"target" : 

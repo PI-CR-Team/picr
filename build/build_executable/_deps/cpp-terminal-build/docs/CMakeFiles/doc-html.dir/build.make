@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources
+CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/picr/executable_sources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable
+CMAKE_BINARY_DIR = /home/matthewalgo/Projects/picr/build/build_executable
 
 # Utility rule file for doc-html.
 
@@ -67,8 +67,8 @@ include _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/compiler_depend.ma
 include _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/progress.make
 
 _deps/cpp-terminal-build/docs/CMakeFiles/doc-html:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Doxygen is not found !!"
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/docs && /usr/bin/cmake -E true
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Doxygen is not found !!"
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/docs && /usr/bin/cmake -E true
 
 doc-html: _deps/cpp-terminal-build/docs/CMakeFiles/doc-html
 doc-html: _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/build.make
@@ -79,10 +79,10 @@ _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/build: doc-html
 .PHONY : _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/build
 
 _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/clean:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/docs && $(CMAKE_COMMAND) -P CMakeFiles/doc-html.dir/cmake_clean.cmake
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/docs && $(CMAKE_COMMAND) -P CMakeFiles/doc-html.dir/cmake_clean.cmake
 .PHONY : _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/clean
 
 _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/depend:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/docs /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/docs /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matthewalgo/Projects/picr/executable_sources /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/docs /home/matthewalgo/Projects/picr/build/build_executable /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/docs /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/depend
 

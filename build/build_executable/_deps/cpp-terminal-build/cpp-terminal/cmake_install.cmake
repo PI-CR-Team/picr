@@ -1,4 +1,4 @@
-# Install script for directory: /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal
+# Install script for directory: /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,47 +43,41 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/libcpp-terminal.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/libcpp-terminal.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cpp-terminal" TYPE FILE FILES
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/args.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/buffer.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/color.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/cursor.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/event.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/exception.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/focus.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/input.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/iostream_initializer.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/iostream.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/key.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/mouse.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/options.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/prompt.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/screen.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/stream.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/style.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/terminal_impl.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/terminal_initializer.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/terminal.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/terminfo.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/tty.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/version.hpp"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/window.hpp"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cpp-terminal/platforms" TYPE FILE FILES
+    "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/platforms/conversion.hpp"
+    "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/platforms/macros.hpp"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/private/libcpp-terminal-private.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cpp-terminal" TYPE FILE FILES
+    "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/focus.hpp"
+    "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/options.hpp"
+    "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/event.hpp"
+    "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/key.hpp"
+    "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/tty.hpp"
+    "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/terminal.hpp"
+    "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/cursor.hpp"
+    "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/style.hpp"
+    "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/prompt.hpp"
+    "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/window.hpp"
+    "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/version.hpp"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/platforms/libcpp-terminal-platforms.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/cpp-terminal/cpp-terminalTargets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/cpp-terminal/cpp-terminalTargets.cmake"
-         "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/CMakeFiles/Export/lib/cmake/cpp-terminal/cpp-terminalTargets.cmake")
+         "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/CMakeFiles/Export/lib/cmake/cpp-terminal/cpp-terminalTargets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/cpp-terminal/cpp-terminalTargets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -92,22 +86,22 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/cpp-terminal" TYPE FILE FILES "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/CMakeFiles/Export/lib/cmake/cpp-terminal/cpp-terminalTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/cpp-terminal" TYPE FILE FILES "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/CMakeFiles/Export/lib/cmake/cpp-terminal/cpp-terminalTargets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/cpp-terminal" TYPE FILE FILES "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/CMakeFiles/Export/lib/cmake/cpp-terminal/cpp-terminalTargets-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/cpp-terminal" TYPE FILE FILES "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/CMakeFiles/Export/lib/cmake/cpp-terminal/cpp-terminalTargets-noconfig.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/cpp-terminal" TYPE FILE FILES
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/cmake/cpp-terminalConfig.cmake"
-    "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/cpp-terminalConfigVersion.cmake"
+    "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/cmake/cpp-terminalConfig.cmake"
+    "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/cpp-terminalConfigVersion.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/private/cmake_install.cmake")
+  include("/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/platforms/cmake_install.cmake")
 
 endif()
 

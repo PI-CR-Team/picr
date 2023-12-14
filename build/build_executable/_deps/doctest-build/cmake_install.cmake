@@ -1,4 +1,4 @@
-# Install script for directory: /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/doctest-src
+# Install script for directory: /home/matthewalgo/Projects/picr/build/build_executable/_deps/doctest-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

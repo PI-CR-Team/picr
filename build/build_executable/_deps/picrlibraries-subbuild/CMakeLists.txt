@@ -14,8 +14,8 @@ project(picrlibraries-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(picrlibraries-populate
                      "UPDATE_DISCONNECTED" "False"
-                    SOURCE_DIR          "/home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/../lib_sources"
-                    BINARY_DIR          "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build"
+                    SOURCE_DIR          "/home/matthewalgo/Projects/picr/executable_sources/../lib_sources"
+                    BINARY_DIR          "/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

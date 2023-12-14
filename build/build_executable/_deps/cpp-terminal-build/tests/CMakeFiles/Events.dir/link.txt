@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Events.dir/events.test.cpp.o -o Events  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/platforms/libcpp-terminal-platforms.a 

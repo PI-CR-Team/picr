@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/utf8.dir/utf8.cpp.o -o utf8  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/private/libcpp-terminal-private.a 
+/usr/bin/c++ CMakeFiles/utf8.dir/utf8.cpp.o -o utf8  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/platforms/libcpp-terminal-platforms.a 

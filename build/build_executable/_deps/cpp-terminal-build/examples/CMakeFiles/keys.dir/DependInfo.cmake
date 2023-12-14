@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src/examples/keys.cpp" "_deps/cpp-terminal-build/examples/CMakeFiles/keys.dir/keys.cpp.o" "gcc" "_deps/cpp-terminal-build/examples/CMakeFiles/keys.dir/keys.cpp.o.d"
+  "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/examples/keys.cpp" "_deps/cpp-terminal-build/examples/CMakeFiles/keys.dir/keys.cpp.o" "gcc" "_deps/cpp-terminal-build/examples/CMakeFiles/keys.dir/keys.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/DependInfo.cmake"
-  "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/DependInfo.cmake"
+  "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/DependInfo.cmake"
+  "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/platforms/CMakeFiles/cpp-terminal-platforms.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

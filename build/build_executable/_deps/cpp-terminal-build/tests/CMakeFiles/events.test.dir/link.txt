@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/events.test.dir/events.test.cpp.o -o events.test  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/private/libcpp-terminal-private.a 

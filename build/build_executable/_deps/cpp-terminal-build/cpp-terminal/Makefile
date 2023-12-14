@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources
+CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/picr/executable_sources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable
+CMAKE_BINARY_DIR = /home/matthewalgo/Projects/picr/build/build_executable
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/cpp-terminal//CMakeFiles/progress.marks
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/cpp-terminal/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles 0
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/cpp-terminal//CMakeFiles/progress.marks
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/cpp-terminal/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/cpp-terminal/clean
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/cpp-terminal/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/cpp-terminal/preinstall
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/cpp-terminal/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/cpp-terminal/preinstall
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/cpp-terminal/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -P /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles/VerifyGlobs.cmake
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -P /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles/VerifyGlobs.cmake
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/rule:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/rule
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/rule
 .PHONY : _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/rule
 
 # Convenience name for target.
@@ -173,7 +173,7 @@ cpp-terminal: _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/
 
 # fast build rule for target.
 cpp-terminal/fast:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build
 .PHONY : cpp-terminal/fast
 
 args.o: args.cpp.o
@@ -181,7 +181,7 @@ args.o: args.cpp.o
 
 # target to build an object file
 args.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/args.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/args.cpp.o
 .PHONY : args.cpp.o
 
 args.i: args.cpp.i
@@ -189,7 +189,7 @@ args.i: args.cpp.i
 
 # target to preprocess a source file
 args.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/args.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/args.cpp.i
 .PHONY : args.cpp.i
 
 args.s: args.cpp.s
@@ -197,7 +197,7 @@ args.s: args.cpp.s
 
 # target to generate assembly for a file
 args.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/args.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/args.cpp.s
 .PHONY : args.cpp.s
 
 buffer.o: buffer.cpp.o
@@ -205,7 +205,7 @@ buffer.o: buffer.cpp.o
 
 # target to build an object file
 buffer.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/buffer.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/buffer.cpp.o
 .PHONY : buffer.cpp.o
 
 buffer.i: buffer.cpp.i
@@ -213,7 +213,7 @@ buffer.i: buffer.cpp.i
 
 # target to preprocess a source file
 buffer.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/buffer.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/buffer.cpp.i
 .PHONY : buffer.cpp.i
 
 buffer.s: buffer.cpp.s
@@ -221,7 +221,7 @@ buffer.s: buffer.cpp.s
 
 # target to generate assembly for a file
 buffer.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/buffer.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/buffer.cpp.s
 .PHONY : buffer.cpp.s
 
 color.o: color.cpp.o
@@ -229,7 +229,7 @@ color.o: color.cpp.o
 
 # target to build an object file
 color.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/color.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/color.cpp.o
 .PHONY : color.cpp.o
 
 color.i: color.cpp.i
@@ -237,7 +237,7 @@ color.i: color.cpp.i
 
 # target to preprocess a source file
 color.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/color.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/color.cpp.i
 .PHONY : color.cpp.i
 
 color.s: color.cpp.s
@@ -245,7 +245,7 @@ color.s: color.cpp.s
 
 # target to generate assembly for a file
 color.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/color.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/color.cpp.s
 .PHONY : color.cpp.s
 
 cursor.o: cursor.cpp.o
@@ -253,7 +253,7 @@ cursor.o: cursor.cpp.o
 
 # target to build an object file
 cursor.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/cursor.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/cursor.cpp.o
 .PHONY : cursor.cpp.o
 
 cursor.i: cursor.cpp.i
@@ -261,7 +261,7 @@ cursor.i: cursor.cpp.i
 
 # target to preprocess a source file
 cursor.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/cursor.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/cursor.cpp.i
 .PHONY : cursor.cpp.i
 
 cursor.s: cursor.cpp.s
@@ -269,7 +269,7 @@ cursor.s: cursor.cpp.s
 
 # target to generate assembly for a file
 cursor.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/cursor.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/cursor.cpp.s
 .PHONY : cursor.cpp.s
 
 event.o: event.cpp.o
@@ -277,7 +277,7 @@ event.o: event.cpp.o
 
 # target to build an object file
 event.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/event.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/event.cpp.o
 .PHONY : event.cpp.o
 
 event.i: event.cpp.i
@@ -285,7 +285,7 @@ event.i: event.cpp.i
 
 # target to preprocess a source file
 event.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/event.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/event.cpp.i
 .PHONY : event.cpp.i
 
 event.s: event.cpp.s
@@ -293,7 +293,7 @@ event.s: event.cpp.s
 
 # target to generate assembly for a file
 event.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/event.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/event.cpp.s
 .PHONY : event.cpp.s
 
 focus.o: focus.cpp.o
@@ -301,7 +301,7 @@ focus.o: focus.cpp.o
 
 # target to build an object file
 focus.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/focus.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/focus.cpp.o
 .PHONY : focus.cpp.o
 
 focus.i: focus.cpp.i
@@ -309,7 +309,7 @@ focus.i: focus.cpp.i
 
 # target to preprocess a source file
 focus.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/focus.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/focus.cpp.i
 .PHONY : focus.cpp.i
 
 focus.s: focus.cpp.s
@@ -317,7 +317,7 @@ focus.s: focus.cpp.s
 
 # target to generate assembly for a file
 focus.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/focus.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/focus.cpp.s
 .PHONY : focus.cpp.s
 
 iostream.o: iostream.cpp.o
@@ -325,7 +325,7 @@ iostream.o: iostream.cpp.o
 
 # target to build an object file
 iostream.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream.cpp.o
 .PHONY : iostream.cpp.o
 
 iostream.i: iostream.cpp.i
@@ -333,7 +333,7 @@ iostream.i: iostream.cpp.i
 
 # target to preprocess a source file
 iostream.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream.cpp.i
 .PHONY : iostream.cpp.i
 
 iostream.s: iostream.cpp.s
@@ -341,39 +341,15 @@ iostream.s: iostream.cpp.s
 
 # target to generate assembly for a file
 iostream.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream.cpp.s
 .PHONY : iostream.cpp.s
-
-iostream_initializer.o: iostream_initializer.cpp.o
-.PHONY : iostream_initializer.o
-
-# target to build an object file
-iostream_initializer.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream_initializer.cpp.o
-.PHONY : iostream_initializer.cpp.o
-
-iostream_initializer.i: iostream_initializer.cpp.i
-.PHONY : iostream_initializer.i
-
-# target to preprocess a source file
-iostream_initializer.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream_initializer.cpp.i
-.PHONY : iostream_initializer.cpp.i
-
-iostream_initializer.s: iostream_initializer.cpp.s
-.PHONY : iostream_initializer.s
-
-# target to generate assembly for a file
-iostream_initializer.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream_initializer.cpp.s
-.PHONY : iostream_initializer.cpp.s
 
 key.o: key.cpp.o
 .PHONY : key.o
 
 # target to build an object file
 key.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/key.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/key.cpp.o
 .PHONY : key.cpp.o
 
 key.i: key.cpp.i
@@ -381,7 +357,7 @@ key.i: key.cpp.i
 
 # target to preprocess a source file
 key.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/key.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/key.cpp.i
 .PHONY : key.cpp.i
 
 key.s: key.cpp.s
@@ -389,7 +365,7 @@ key.s: key.cpp.s
 
 # target to generate assembly for a file
 key.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/key.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/key.cpp.s
 .PHONY : key.cpp.s
 
 mouse.o: mouse.cpp.o
@@ -397,7 +373,7 @@ mouse.o: mouse.cpp.o
 
 # target to build an object file
 mouse.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/mouse.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/mouse.cpp.o
 .PHONY : mouse.cpp.o
 
 mouse.i: mouse.cpp.i
@@ -405,7 +381,7 @@ mouse.i: mouse.cpp.i
 
 # target to preprocess a source file
 mouse.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/mouse.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/mouse.cpp.i
 .PHONY : mouse.cpp.i
 
 mouse.s: mouse.cpp.s
@@ -413,7 +389,7 @@ mouse.s: mouse.cpp.s
 
 # target to generate assembly for a file
 mouse.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/mouse.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/mouse.cpp.s
 .PHONY : mouse.cpp.s
 
 options.o: options.cpp.o
@@ -421,7 +397,7 @@ options.o: options.cpp.o
 
 # target to build an object file
 options.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/options.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/options.cpp.o
 .PHONY : options.cpp.o
 
 options.i: options.cpp.i
@@ -429,7 +405,7 @@ options.i: options.cpp.i
 
 # target to preprocess a source file
 options.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/options.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/options.cpp.i
 .PHONY : options.cpp.i
 
 options.s: options.cpp.s
@@ -437,7 +413,7 @@ options.s: options.cpp.s
 
 # target to generate assembly for a file
 options.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/options.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/options.cpp.s
 .PHONY : options.cpp.s
 
 prompt.o: prompt.cpp.o
@@ -445,7 +421,7 @@ prompt.o: prompt.cpp.o
 
 # target to build an object file
 prompt.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.o
 .PHONY : prompt.cpp.o
 
 prompt.i: prompt.cpp.i
@@ -453,7 +429,7 @@ prompt.i: prompt.cpp.i
 
 # target to preprocess a source file
 prompt.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.i
 .PHONY : prompt.cpp.i
 
 prompt.s: prompt.cpp.s
@@ -461,7 +437,7 @@ prompt.s: prompt.cpp.s
 
 # target to generate assembly for a file
 prompt.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.s
 .PHONY : prompt.cpp.s
 
 screen.o: screen.cpp.o
@@ -469,7 +445,7 @@ screen.o: screen.cpp.o
 
 # target to build an object file
 screen.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/screen.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/screen.cpp.o
 .PHONY : screen.cpp.o
 
 screen.i: screen.cpp.i
@@ -477,7 +453,7 @@ screen.i: screen.cpp.i
 
 # target to preprocess a source file
 screen.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/screen.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/screen.cpp.i
 .PHONY : screen.cpp.i
 
 screen.s: screen.cpp.s
@@ -485,7 +461,7 @@ screen.s: screen.cpp.s
 
 # target to generate assembly for a file
 screen.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/screen.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/screen.cpp.s
 .PHONY : screen.cpp.s
 
 stream.o: stream.cpp.o
@@ -493,7 +469,7 @@ stream.o: stream.cpp.o
 
 # target to build an object file
 stream.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/stream.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/stream.cpp.o
 .PHONY : stream.cpp.o
 
 stream.i: stream.cpp.i
@@ -501,7 +477,7 @@ stream.i: stream.cpp.i
 
 # target to preprocess a source file
 stream.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/stream.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/stream.cpp.i
 .PHONY : stream.cpp.i
 
 stream.s: stream.cpp.s
@@ -509,7 +485,7 @@ stream.s: stream.cpp.s
 
 # target to generate assembly for a file
 stream.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/stream.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/stream.cpp.s
 .PHONY : stream.cpp.s
 
 style.o: style.cpp.o
@@ -517,7 +493,7 @@ style.o: style.cpp.o
 
 # target to build an object file
 style.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/style.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/style.cpp.o
 .PHONY : style.cpp.o
 
 style.i: style.cpp.i
@@ -525,7 +501,7 @@ style.i: style.cpp.i
 
 # target to preprocess a source file
 style.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/style.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/style.cpp.i
 .PHONY : style.cpp.i
 
 style.s: style.cpp.s
@@ -533,7 +509,7 @@ style.s: style.cpp.s
 
 # target to generate assembly for a file
 style.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/style.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/style.cpp.s
 .PHONY : style.cpp.s
 
 terminal.o: terminal.cpp.o
@@ -541,7 +517,7 @@ terminal.o: terminal.cpp.o
 
 # target to build an object file
 terminal.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal.cpp.o
 .PHONY : terminal.cpp.o
 
 terminal.i: terminal.cpp.i
@@ -549,7 +525,7 @@ terminal.i: terminal.cpp.i
 
 # target to preprocess a source file
 terminal.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal.cpp.i
 .PHONY : terminal.cpp.i
 
 terminal.s: terminal.cpp.s
@@ -557,63 +533,39 @@ terminal.s: terminal.cpp.s
 
 # target to generate assembly for a file
 terminal.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal.cpp.s
 .PHONY : terminal.cpp.s
 
-terminal_impl.o: terminal_impl.cpp.o
-.PHONY : terminal_impl.o
+version.o: version.cpp.o
+.PHONY : version.o
 
 # target to build an object file
-terminal_impl.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal_impl.cpp.o
-.PHONY : terminal_impl.cpp.o
+version.cpp.o:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/version.cpp.o
+.PHONY : version.cpp.o
 
-terminal_impl.i: terminal_impl.cpp.i
-.PHONY : terminal_impl.i
-
-# target to preprocess a source file
-terminal_impl.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal_impl.cpp.i
-.PHONY : terminal_impl.cpp.i
-
-terminal_impl.s: terminal_impl.cpp.s
-.PHONY : terminal_impl.s
-
-# target to generate assembly for a file
-terminal_impl.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal_impl.cpp.s
-.PHONY : terminal_impl.cpp.s
-
-terminal_initializer.o: terminal_initializer.cpp.o
-.PHONY : terminal_initializer.o
-
-# target to build an object file
-terminal_initializer.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal_initializer.cpp.o
-.PHONY : terminal_initializer.cpp.o
-
-terminal_initializer.i: terminal_initializer.cpp.i
-.PHONY : terminal_initializer.i
+version.i: version.cpp.i
+.PHONY : version.i
 
 # target to preprocess a source file
-terminal_initializer.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal_initializer.cpp.i
-.PHONY : terminal_initializer.cpp.i
+version.cpp.i:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/version.cpp.i
+.PHONY : version.cpp.i
 
-terminal_initializer.s: terminal_initializer.cpp.s
-.PHONY : terminal_initializer.s
+version.s: version.cpp.s
+.PHONY : version.s
 
 # target to generate assembly for a file
-terminal_initializer.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal_initializer.cpp.s
-.PHONY : terminal_initializer.cpp.s
+version.cpp.s:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/version.cpp.s
+.PHONY : version.cpp.s
 
 window.o: window.cpp.o
 .PHONY : window.o
 
 # target to build an object file
 window.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/window.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/window.cpp.o
 .PHONY : window.cpp.o
 
 window.i: window.cpp.i
@@ -621,7 +573,7 @@ window.i: window.cpp.i
 
 # target to preprocess a source file
 window.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/window.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/window.cpp.i
 .PHONY : window.cpp.i
 
 window.s: window.cpp.s
@@ -629,7 +581,7 @@ window.s: window.cpp.s
 
 # target to generate assembly for a file
 window.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/window.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/window.cpp.s
 .PHONY : window.cpp.s
 
 # Help Target
@@ -666,9 +618,6 @@ help:
 	@echo "... iostream.o"
 	@echo "... iostream.i"
 	@echo "... iostream.s"
-	@echo "... iostream_initializer.o"
-	@echo "... iostream_initializer.i"
-	@echo "... iostream_initializer.s"
 	@echo "... key.o"
 	@echo "... key.i"
 	@echo "... key.s"
@@ -693,12 +642,9 @@ help:
 	@echo "... terminal.o"
 	@echo "... terminal.i"
 	@echo "... terminal.s"
-	@echo "... terminal_impl.o"
-	@echo "... terminal_impl.i"
-	@echo "... terminal_impl.s"
-	@echo "... terminal_initializer.o"
-	@echo "... terminal_initializer.i"
-	@echo "... terminal_initializer.s"
+	@echo "... version.o"
+	@echo "... version.i"
+	@echo "... version.s"
 	@echo "... window.o"
 	@echo "... window.i"
 	@echo "... window.s"
@@ -713,7 +659,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -P /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles/VerifyGlobs.cmake
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -P /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles/VerifyGlobs.cmake
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Screen.dir/screen.test.cpp.o -o Screen  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/platforms/libcpp-terminal-platforms.a 

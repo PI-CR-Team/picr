@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources
+CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/picr/executable_sources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable
+CMAKE_BINARY_DIR = /home/matthewalgo/Projects/picr/build/build_executable
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles /home/matthewalgo/Projects/picr/build/build_executable//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -158,7 +158,7 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -189,17 +189,56 @@ cpp-terminal/fast:
 .PHONY : cpp-terminal/fast
 
 #=============================================================================
-# Target rules for targets named cpp-terminal-private
+# Target rules for targets named cpp-terminal-platforms
 
 # Build rule for target.
-cpp-terminal-private: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp-terminal-private
-.PHONY : cpp-terminal-private
+cpp-terminal-platforms: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp-terminal-platforms
+.PHONY : cpp-terminal-platforms
 
 # fast build rule for target.
-cpp-terminal-private/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/build.make _deps/cpp-terminal-build/cpp-terminal/private/CMakeFiles/cpp-terminal-private.dir/build
-.PHONY : cpp-terminal-private/fast
+cpp-terminal-platforms/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/platforms/CMakeFiles/cpp-terminal-platforms.dir/build.make _deps/cpp-terminal-build/cpp-terminal/platforms/CMakeFiles/cpp-terminal-platforms.dir/build
+.PHONY : cpp-terminal-platforms/fast
+
+#=============================================================================
+# Target rules for targets named test_terminal
+
+# Build rule for target.
+test_terminal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_terminal
+.PHONY : test_terminal
+
+# fast build rule for target.
+test_terminal/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/test_terminal.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/test_terminal.dir/build
+.PHONY : test_terminal/fast
+
+#=============================================================================
+# Target rules for targets named AttachConsole
+
+# Build rule for target.
+AttachConsole: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AttachConsole
+.PHONY : AttachConsole
+
+# fast build rule for target.
+AttachConsole/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsole.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsole.dir/build
+.PHONY : AttachConsole/fast
+
+#=============================================================================
+# Target rules for targets named AttachConsoleMinimal
+
+# Build rule for target.
+AttachConsoleMinimal: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AttachConsoleMinimal
+.PHONY : AttachConsoleMinimal
+
+# fast build rule for target.
+AttachConsoleMinimal/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsoleMinimal.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsoleMinimal.dir/build
+.PHONY : AttachConsoleMinimal/fast
 
 #=============================================================================
 # Target rules for targets named file.test
@@ -215,95 +254,56 @@ file.test/fast:
 .PHONY : file.test/fast
 
 #=============================================================================
-# Target rules for targets named key.test
+# Target rules for targets named Key
 
 # Build rule for target.
-key.test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 key.test
-.PHONY : key.test
+Key: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Key
+.PHONY : Key
 
 # fast build rule for target.
-key.test/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/key.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/key.test.dir/build
-.PHONY : key.test/fast
+Key/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Key.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Key.dir/build
+.PHONY : Key/fast
 
 #=============================================================================
-# Target rules for targets named screen.test
+# Target rules for targets named Screen
 
 # Build rule for target.
-screen.test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 screen.test
-.PHONY : screen.test
+Screen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Screen
+.PHONY : Screen
 
 # fast build rule for target.
-screen.test/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/screen.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/screen.test.dir/build
-.PHONY : screen.test/fast
+Screen/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Screen.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Screen.dir/build
+.PHONY : Screen/fast
 
 #=============================================================================
-# Target rules for targets named events.test
+# Target rules for targets named Events
 
 # Build rule for target.
-events.test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 events.test
-.PHONY : events.test
+Events: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Events
+.PHONY : Events
 
 # fast build rule for target.
-events.test/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/events.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/events.test.dir/build
-.PHONY : events.test/fast
+Events/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Events.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Events.dir/build
+.PHONY : Events/fast
 
 #=============================================================================
-# Target rules for targets named exception.test
+# Target rules for targets named IOStream
 
 # Build rule for target.
-exception.test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 exception.test
-.PHONY : exception.test
+IOStream: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 IOStream
+.PHONY : IOStream
 
 # fast build rule for target.
-exception.test/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/exception.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/exception.test.dir/build
-.PHONY : exception.test/fast
-
-#=============================================================================
-# Target rules for targets named unicode.test
-
-# Build rule for target.
-unicode.test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unicode.test
-.PHONY : unicode.test
-
-# fast build rule for target.
-unicode.test/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/unicode.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/unicode.test.dir/build
-.PHONY : unicode.test/fast
-
-#=============================================================================
-# Target rules for targets named options.test
-
-# Build rule for target.
-options.test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 options.test
-.PHONY : options.test
-
-# fast build rule for target.
-options.test/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/options.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/options.test.dir/build
-.PHONY : options.test/fast
-
-#=============================================================================
-# Target rules for targets named version.test
-
-# Build rule for target.
-version.test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 version.test
-.PHONY : version.test
-
-# fast build rule for target.
-version.test/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/version.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/version.test.dir/build
-.PHONY : version.test/fast
+IOStream/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/IOStream.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/IOStream.dir/build
+.PHONY : IOStream/fast
 
 #=============================================================================
 # Target rules for targets named Args
@@ -566,32 +566,6 @@ utf8/fast:
 .PHONY : utf8/fast
 
 #=============================================================================
-# Target rules for targets named attach_console
-
-# Build rule for target.
-attach_console: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 attach_console
-.PHONY : attach_console
-
-# fast build rule for target.
-attach_console/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/attach_console.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/attach_console.dir/build
-.PHONY : attach_console/fast
-
-#=============================================================================
-# Target rules for targets named attach_console_minimal
-
-# Build rule for target.
-attach_console_minimal: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 attach_console_minimal
-.PHONY : attach_console_minimal
-
-# fast build rule for target.
-attach_console_minimal/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/attach_console_minimal.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/attach_console_minimal.dir/build
-.PHONY : attach_console_minimal/fast
-
-#=============================================================================
 # Target rules for targets named docs
 
 # Build rule for target.
@@ -768,40 +742,38 @@ help:
 	@echo "... doc-latex"
 	@echo "... docs"
 	@echo "... Args"
+	@echo "... AttachConsole"
+	@echo "... AttachConsoleMinimal"
+	@echo "... Events"
+	@echo "... IOStream"
+	@echo "... Key"
 	@echo "... PiCrExecutable"
 	@echo "... PiCrLibraries"
+	@echo "... Screen"
 	@echo "... args"
-	@echo "... attach_console"
-	@echo "... attach_console_minimal"
 	@echo "... cin_cooked"
 	@echo "... cin_raw"
 	@echo "... colors"
 	@echo "... cout"
 	@echo "... cpp-terminal"
 	@echo "... cpp-terminal-gui"
-	@echo "... cpp-terminal-private"
+	@echo "... cpp-terminal-platforms"
 	@echo "... doctest_with_main"
 	@echo "... events"
-	@echo "... events.test"
-	@echo "... exception.test"
 	@echo "... file.test"
-	@echo "... key.test"
 	@echo "... keys"
 	@echo "... kilo"
 	@echo "... menu"
 	@echo "... menu_window"
 	@echo "... minimal"
-	@echo "... options.test"
 	@echo "... prompt_immediate"
 	@echo "... prompt_multiline"
 	@echo "... prompt_not_immediate"
 	@echo "... prompt_simple"
-	@echo "... screen.test"
 	@echo "... slow_events"
 	@echo "... styles"
-	@echo "... unicode.test"
+	@echo "... test_terminal"
 	@echo "... utf8"
-	@echo "... version.test"
 	@echo "... source/file_reader.o"
 	@echo "... source/file_reader.i"
 	@echo "... source/file_reader.s"
@@ -825,7 +797,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

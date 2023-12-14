@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources
+CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/picr/executable_sources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable
+CMAKE_BINARY_DIR = /home/matthewalgo/Projects/picr/build/build_executable
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-build//CMakeFiles/progress.marks
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-gui-build/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles 0
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-build//CMakeFiles/progress.marks
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-gui-build/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-gui-build/clean
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-gui-build/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-gui-build/preinstall
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-gui-build/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-gui-build/preinstall
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-gui-build/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -P /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles/VerifyGlobs.cmake
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -P /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles/VerifyGlobs.cmake
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/rule:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/rule
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/rule
 .PHONY : _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/rule
 
 # Convenience name for target.
@@ -173,7 +173,7 @@ cpp-terminal-gui: _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/r
 
 # fast build rule for target.
 cpp-terminal-gui/fast:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build
 .PHONY : cpp-terminal-gui/fast
 
 cpp-terminal-gui/ColorString.o: cpp-terminal-gui/ColorString.cpp.o
@@ -181,7 +181,7 @@ cpp-terminal-gui/ColorString.o: cpp-terminal-gui/ColorString.cpp.o
 
 # target to build an object file
 cpp-terminal-gui/ColorString.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/ColorString.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/ColorString.cpp.o
 .PHONY : cpp-terminal-gui/ColorString.cpp.o
 
 cpp-terminal-gui/ColorString.i: cpp-terminal-gui/ColorString.cpp.i
@@ -189,7 +189,7 @@ cpp-terminal-gui/ColorString.i: cpp-terminal-gui/ColorString.cpp.i
 
 # target to preprocess a source file
 cpp-terminal-gui/ColorString.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/ColorString.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/ColorString.cpp.i
 .PHONY : cpp-terminal-gui/ColorString.cpp.i
 
 cpp-terminal-gui/ColorString.s: cpp-terminal-gui/ColorString.cpp.s
@@ -197,7 +197,7 @@ cpp-terminal-gui/ColorString.s: cpp-terminal-gui/ColorString.cpp.s
 
 # target to generate assembly for a file
 cpp-terminal-gui/ColorString.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/ColorString.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/ColorString.cpp.s
 .PHONY : cpp-terminal-gui/ColorString.cpp.s
 
 cpp-terminal-gui/CommandLine.o: cpp-terminal-gui/CommandLine.cpp.o
@@ -205,7 +205,7 @@ cpp-terminal-gui/CommandLine.o: cpp-terminal-gui/CommandLine.cpp.o
 
 # target to build an object file
 cpp-terminal-gui/CommandLine.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/CommandLine.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/CommandLine.cpp.o
 .PHONY : cpp-terminal-gui/CommandLine.cpp.o
 
 cpp-terminal-gui/CommandLine.i: cpp-terminal-gui/CommandLine.cpp.i
@@ -213,7 +213,7 @@ cpp-terminal-gui/CommandLine.i: cpp-terminal-gui/CommandLine.cpp.i
 
 # target to preprocess a source file
 cpp-terminal-gui/CommandLine.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/CommandLine.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/CommandLine.cpp.i
 .PHONY : cpp-terminal-gui/CommandLine.cpp.i
 
 cpp-terminal-gui/CommandLine.s: cpp-terminal-gui/CommandLine.cpp.s
@@ -221,7 +221,7 @@ cpp-terminal-gui/CommandLine.s: cpp-terminal-gui/CommandLine.cpp.s
 
 # target to generate assembly for a file
 cpp-terminal-gui/CommandLine.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/CommandLine.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/CommandLine.cpp.s
 .PHONY : cpp-terminal-gui/CommandLine.cpp.s
 
 cpp-terminal-gui/FontStyleList.o: cpp-terminal-gui/FontStyleList.cpp.o
@@ -229,7 +229,7 @@ cpp-terminal-gui/FontStyleList.o: cpp-terminal-gui/FontStyleList.cpp.o
 
 # target to build an object file
 cpp-terminal-gui/FontStyleList.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/FontStyleList.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/FontStyleList.cpp.o
 .PHONY : cpp-terminal-gui/FontStyleList.cpp.o
 
 cpp-terminal-gui/FontStyleList.i: cpp-terminal-gui/FontStyleList.cpp.i
@@ -237,7 +237,7 @@ cpp-terminal-gui/FontStyleList.i: cpp-terminal-gui/FontStyleList.cpp.i
 
 # target to preprocess a source file
 cpp-terminal-gui/FontStyleList.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/FontStyleList.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/FontStyleList.cpp.i
 .PHONY : cpp-terminal-gui/FontStyleList.cpp.i
 
 cpp-terminal-gui/FontStyleList.s: cpp-terminal-gui/FontStyleList.cpp.s
@@ -245,7 +245,7 @@ cpp-terminal-gui/FontStyleList.s: cpp-terminal-gui/FontStyleList.cpp.s
 
 # target to generate assembly for a file
 cpp-terminal-gui/FontStyleList.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/FontStyleList.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/FontStyleList.cpp.s
 .PHONY : cpp-terminal-gui/FontStyleList.cpp.s
 
 cpp-terminal-gui/GridCell.o: cpp-terminal-gui/GridCell.cpp.o
@@ -253,7 +253,7 @@ cpp-terminal-gui/GridCell.o: cpp-terminal-gui/GridCell.cpp.o
 
 # target to build an object file
 cpp-terminal-gui/GridCell.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/GridCell.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/GridCell.cpp.o
 .PHONY : cpp-terminal-gui/GridCell.cpp.o
 
 cpp-terminal-gui/GridCell.i: cpp-terminal-gui/GridCell.cpp.i
@@ -261,7 +261,7 @@ cpp-terminal-gui/GridCell.i: cpp-terminal-gui/GridCell.cpp.i
 
 # target to preprocess a source file
 cpp-terminal-gui/GridCell.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/GridCell.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/GridCell.cpp.i
 .PHONY : cpp-terminal-gui/GridCell.cpp.i
 
 cpp-terminal-gui/GridCell.s: cpp-terminal-gui/GridCell.cpp.s
@@ -269,7 +269,7 @@ cpp-terminal-gui/GridCell.s: cpp-terminal-gui/GridCell.cpp.s
 
 # target to generate assembly for a file
 cpp-terminal-gui/GridCell.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/GridCell.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/GridCell.cpp.s
 .PHONY : cpp-terminal-gui/GridCell.cpp.s
 
 cpp-terminal-gui/HorizontalGrid.o: cpp-terminal-gui/HorizontalGrid.cpp.o
@@ -277,7 +277,7 @@ cpp-terminal-gui/HorizontalGrid.o: cpp-terminal-gui/HorizontalGrid.cpp.o
 
 # target to build an object file
 cpp-terminal-gui/HorizontalGrid.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/HorizontalGrid.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/HorizontalGrid.cpp.o
 .PHONY : cpp-terminal-gui/HorizontalGrid.cpp.o
 
 cpp-terminal-gui/HorizontalGrid.i: cpp-terminal-gui/HorizontalGrid.cpp.i
@@ -285,7 +285,7 @@ cpp-terminal-gui/HorizontalGrid.i: cpp-terminal-gui/HorizontalGrid.cpp.i
 
 # target to preprocess a source file
 cpp-terminal-gui/HorizontalGrid.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/HorizontalGrid.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/HorizontalGrid.cpp.i
 .PHONY : cpp-terminal-gui/HorizontalGrid.cpp.i
 
 cpp-terminal-gui/HorizontalGrid.s: cpp-terminal-gui/HorizontalGrid.cpp.s
@@ -293,7 +293,7 @@ cpp-terminal-gui/HorizontalGrid.s: cpp-terminal-gui/HorizontalGrid.cpp.s
 
 # target to generate assembly for a file
 cpp-terminal-gui/HorizontalGrid.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/HorizontalGrid.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/HorizontalGrid.cpp.s
 .PHONY : cpp-terminal-gui/HorizontalGrid.cpp.s
 
 cpp-terminal-gui/Label.o: cpp-terminal-gui/Label.cpp.o
@@ -301,7 +301,7 @@ cpp-terminal-gui/Label.o: cpp-terminal-gui/Label.cpp.o
 
 # target to build an object file
 cpp-terminal-gui/Label.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/Label.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/Label.cpp.o
 .PHONY : cpp-terminal-gui/Label.cpp.o
 
 cpp-terminal-gui/Label.i: cpp-terminal-gui/Label.cpp.i
@@ -309,7 +309,7 @@ cpp-terminal-gui/Label.i: cpp-terminal-gui/Label.cpp.i
 
 # target to preprocess a source file
 cpp-terminal-gui/Label.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/Label.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/Label.cpp.i
 .PHONY : cpp-terminal-gui/Label.cpp.i
 
 cpp-terminal-gui/Label.s: cpp-terminal-gui/Label.cpp.s
@@ -317,7 +317,7 @@ cpp-terminal-gui/Label.s: cpp-terminal-gui/Label.cpp.s
 
 # target to generate assembly for a file
 cpp-terminal-gui/Label.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/Label.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/Label.cpp.s
 .PHONY : cpp-terminal-gui/Label.cpp.s
 
 cpp-terminal-gui/TextCursor.o: cpp-terminal-gui/TextCursor.cpp.o
@@ -325,7 +325,7 @@ cpp-terminal-gui/TextCursor.o: cpp-terminal-gui/TextCursor.cpp.o
 
 # target to build an object file
 cpp-terminal-gui/TextCursor.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/TextCursor.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/TextCursor.cpp.o
 .PHONY : cpp-terminal-gui/TextCursor.cpp.o
 
 cpp-terminal-gui/TextCursor.i: cpp-terminal-gui/TextCursor.cpp.i
@@ -333,7 +333,7 @@ cpp-terminal-gui/TextCursor.i: cpp-terminal-gui/TextCursor.cpp.i
 
 # target to preprocess a source file
 cpp-terminal-gui/TextCursor.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/TextCursor.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/TextCursor.cpp.i
 .PHONY : cpp-terminal-gui/TextCursor.cpp.i
 
 cpp-terminal-gui/TextCursor.s: cpp-terminal-gui/TextCursor.cpp.s
@@ -341,7 +341,7 @@ cpp-terminal-gui/TextCursor.s: cpp-terminal-gui/TextCursor.cpp.s
 
 # target to generate assembly for a file
 cpp-terminal-gui/TextCursor.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/TextCursor.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/TextCursor.cpp.s
 .PHONY : cpp-terminal-gui/TextCursor.cpp.s
 
 cpp-terminal-gui/TextEditor.o: cpp-terminal-gui/TextEditor.cpp.o
@@ -349,7 +349,7 @@ cpp-terminal-gui/TextEditor.o: cpp-terminal-gui/TextEditor.cpp.o
 
 # target to build an object file
 cpp-terminal-gui/TextEditor.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/TextEditor.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/TextEditor.cpp.o
 .PHONY : cpp-terminal-gui/TextEditor.cpp.o
 
 cpp-terminal-gui/TextEditor.i: cpp-terminal-gui/TextEditor.cpp.i
@@ -357,7 +357,7 @@ cpp-terminal-gui/TextEditor.i: cpp-terminal-gui/TextEditor.cpp.i
 
 # target to preprocess a source file
 cpp-terminal-gui/TextEditor.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/TextEditor.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/TextEditor.cpp.i
 .PHONY : cpp-terminal-gui/TextEditor.cpp.i
 
 cpp-terminal-gui/TextEditor.s: cpp-terminal-gui/TextEditor.cpp.s
@@ -365,7 +365,7 @@ cpp-terminal-gui/TextEditor.s: cpp-terminal-gui/TextEditor.cpp.s
 
 # target to generate assembly for a file
 cpp-terminal-gui/TextEditor.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/TextEditor.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/TextEditor.cpp.s
 .PHONY : cpp-terminal-gui/TextEditor.cpp.s
 
 cpp-terminal-gui/VerticalGrid.o: cpp-terminal-gui/VerticalGrid.cpp.o
@@ -373,7 +373,7 @@ cpp-terminal-gui/VerticalGrid.o: cpp-terminal-gui/VerticalGrid.cpp.o
 
 # target to build an object file
 cpp-terminal-gui/VerticalGrid.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/VerticalGrid.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/VerticalGrid.cpp.o
 .PHONY : cpp-terminal-gui/VerticalGrid.cpp.o
 
 cpp-terminal-gui/VerticalGrid.i: cpp-terminal-gui/VerticalGrid.cpp.i
@@ -381,7 +381,7 @@ cpp-terminal-gui/VerticalGrid.i: cpp-terminal-gui/VerticalGrid.cpp.i
 
 # target to preprocess a source file
 cpp-terminal-gui/VerticalGrid.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/VerticalGrid.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/VerticalGrid.cpp.i
 .PHONY : cpp-terminal-gui/VerticalGrid.cpp.i
 
 cpp-terminal-gui/VerticalGrid.s: cpp-terminal-gui/VerticalGrid.cpp.s
@@ -389,7 +389,7 @@ cpp-terminal-gui/VerticalGrid.s: cpp-terminal-gui/VerticalGrid.cpp.s
 
 # target to generate assembly for a file
 cpp-terminal-gui/VerticalGrid.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/VerticalGrid.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/cpp-terminal-gui/VerticalGrid.cpp.s
 .PHONY : cpp-terminal-gui/VerticalGrid.cpp.s
 
 # Help Target
@@ -443,7 +443,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -P /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles/VerifyGlobs.cmake
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -P /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles/VerifyGlobs.cmake
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

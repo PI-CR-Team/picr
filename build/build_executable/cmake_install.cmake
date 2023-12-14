@@ -1,4 +1,4 @@
-# Install script for directory: /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources
+# Install script for directory: /home/matthewalgo/Projects/picr/executable_sources
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,22 +44,22 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/cmake_install.cmake")
+  include("/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build/cmake_install.cmake")
+  include("/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-build/cmake_install.cmake")
+  include("/home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-build/cmake_install.cmake")
+  include("/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-build/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -70,5 +70,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/matthewalgo/Projects/picr/build/build_executable/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

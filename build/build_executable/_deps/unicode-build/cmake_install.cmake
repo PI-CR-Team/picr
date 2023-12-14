@@ -1,4 +1,4 @@
-# Install script for directory: /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/modules/unicode
+# Install script for directory: /home/matthewalgo/Projects/picr/executable_sources/modules/unicode
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

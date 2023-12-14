@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/minimal.dir/minimal.cpp.o -o minimal  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/private/libcpp-terminal-private.a 
+/usr/bin/c++ CMakeFiles/minimal.dir/minimal.cpp.o -o minimal  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/platforms/libcpp-terminal-platforms.a 

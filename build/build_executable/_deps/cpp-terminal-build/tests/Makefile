@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/executable_sources
+CMAKE_SOURCE_DIR = /home/matthewalgo/Projects/picr/executable_sources
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable
+CMAKE_BINARY_DIR = /home/matthewalgo/Projects/picr/build/build_executable
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests//CMakeFiles/progress.marks
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles 0
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/tests//CMakeFiles/progress.marks
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/clean
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,65 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/preinstall
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/preinstall
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -P /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles/VerifyGlobs.cmake
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -P /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles/VerifyGlobs.cmake
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
+_deps/cpp-terminal-build/tests/CMakeFiles/test_terminal.dir/rule:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/CMakeFiles/test_terminal.dir/rule
+.PHONY : _deps/cpp-terminal-build/tests/CMakeFiles/test_terminal.dir/rule
+
+# Convenience name for target.
+test_terminal: _deps/cpp-terminal-build/tests/CMakeFiles/test_terminal.dir/rule
+.PHONY : test_terminal
+
+# fast build rule for target.
+test_terminal/fast:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/test_terminal.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/test_terminal.dir/build
+.PHONY : test_terminal/fast
+
+# Convenience name for target.
+_deps/cpp-terminal-build/tests/CMakeFiles/AttachConsole.dir/rule:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsole.dir/rule
+.PHONY : _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsole.dir/rule
+
+# Convenience name for target.
+AttachConsole: _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsole.dir/rule
+.PHONY : AttachConsole
+
+# fast build rule for target.
+AttachConsole/fast:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsole.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsole.dir/build
+.PHONY : AttachConsole/fast
+
+# Convenience name for target.
+_deps/cpp-terminal-build/tests/CMakeFiles/AttachConsoleMinimal.dir/rule:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsoleMinimal.dir/rule
+.PHONY : _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsoleMinimal.dir/rule
+
+# Convenience name for target.
+AttachConsoleMinimal: _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsoleMinimal.dir/rule
+.PHONY : AttachConsoleMinimal
+
+# fast build rule for target.
+AttachConsoleMinimal/fast:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsoleMinimal.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsoleMinimal.dir/build
+.PHONY : AttachConsoleMinimal/fast
+
+# Convenience name for target.
 _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/rule:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/rule
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/rule
 .PHONY : _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/rule
 
 # Convenience name for target.
@@ -173,110 +215,68 @@ file.test: _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/rule
 
 # fast build rule for target.
 file.test/fast:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/build
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/build
 .PHONY : file.test/fast
 
 # Convenience name for target.
-_deps/cpp-terminal-build/tests/CMakeFiles/key.test.dir/rule:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/CMakeFiles/key.test.dir/rule
-.PHONY : _deps/cpp-terminal-build/tests/CMakeFiles/key.test.dir/rule
+_deps/cpp-terminal-build/tests/CMakeFiles/Key.dir/rule:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/CMakeFiles/Key.dir/rule
+.PHONY : _deps/cpp-terminal-build/tests/CMakeFiles/Key.dir/rule
 
 # Convenience name for target.
-key.test: _deps/cpp-terminal-build/tests/CMakeFiles/key.test.dir/rule
-.PHONY : key.test
+Key: _deps/cpp-terminal-build/tests/CMakeFiles/Key.dir/rule
+.PHONY : Key
 
 # fast build rule for target.
-key.test/fast:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/key.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/key.test.dir/build
-.PHONY : key.test/fast
+Key/fast:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Key.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Key.dir/build
+.PHONY : Key/fast
 
 # Convenience name for target.
-_deps/cpp-terminal-build/tests/CMakeFiles/screen.test.dir/rule:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/CMakeFiles/screen.test.dir/rule
-.PHONY : _deps/cpp-terminal-build/tests/CMakeFiles/screen.test.dir/rule
+_deps/cpp-terminal-build/tests/CMakeFiles/Screen.dir/rule:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/CMakeFiles/Screen.dir/rule
+.PHONY : _deps/cpp-terminal-build/tests/CMakeFiles/Screen.dir/rule
 
 # Convenience name for target.
-screen.test: _deps/cpp-terminal-build/tests/CMakeFiles/screen.test.dir/rule
-.PHONY : screen.test
+Screen: _deps/cpp-terminal-build/tests/CMakeFiles/Screen.dir/rule
+.PHONY : Screen
 
 # fast build rule for target.
-screen.test/fast:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/screen.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/screen.test.dir/build
-.PHONY : screen.test/fast
+Screen/fast:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Screen.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Screen.dir/build
+.PHONY : Screen/fast
 
 # Convenience name for target.
-_deps/cpp-terminal-build/tests/CMakeFiles/events.test.dir/rule:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/CMakeFiles/events.test.dir/rule
-.PHONY : _deps/cpp-terminal-build/tests/CMakeFiles/events.test.dir/rule
+_deps/cpp-terminal-build/tests/CMakeFiles/Events.dir/rule:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/CMakeFiles/Events.dir/rule
+.PHONY : _deps/cpp-terminal-build/tests/CMakeFiles/Events.dir/rule
 
 # Convenience name for target.
-events.test: _deps/cpp-terminal-build/tests/CMakeFiles/events.test.dir/rule
-.PHONY : events.test
+Events: _deps/cpp-terminal-build/tests/CMakeFiles/Events.dir/rule
+.PHONY : Events
 
 # fast build rule for target.
-events.test/fast:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/events.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/events.test.dir/build
-.PHONY : events.test/fast
+Events/fast:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Events.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Events.dir/build
+.PHONY : Events/fast
 
 # Convenience name for target.
-_deps/cpp-terminal-build/tests/CMakeFiles/exception.test.dir/rule:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/CMakeFiles/exception.test.dir/rule
-.PHONY : _deps/cpp-terminal-build/tests/CMakeFiles/exception.test.dir/rule
+_deps/cpp-terminal-build/tests/CMakeFiles/IOStream.dir/rule:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/CMakeFiles/IOStream.dir/rule
+.PHONY : _deps/cpp-terminal-build/tests/CMakeFiles/IOStream.dir/rule
 
 # Convenience name for target.
-exception.test: _deps/cpp-terminal-build/tests/CMakeFiles/exception.test.dir/rule
-.PHONY : exception.test
+IOStream: _deps/cpp-terminal-build/tests/CMakeFiles/IOStream.dir/rule
+.PHONY : IOStream
 
 # fast build rule for target.
-exception.test/fast:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/exception.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/exception.test.dir/build
-.PHONY : exception.test/fast
-
-# Convenience name for target.
-_deps/cpp-terminal-build/tests/CMakeFiles/unicode.test.dir/rule:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/CMakeFiles/unicode.test.dir/rule
-.PHONY : _deps/cpp-terminal-build/tests/CMakeFiles/unicode.test.dir/rule
-
-# Convenience name for target.
-unicode.test: _deps/cpp-terminal-build/tests/CMakeFiles/unicode.test.dir/rule
-.PHONY : unicode.test
-
-# fast build rule for target.
-unicode.test/fast:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/unicode.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/unicode.test.dir/build
-.PHONY : unicode.test/fast
-
-# Convenience name for target.
-_deps/cpp-terminal-build/tests/CMakeFiles/options.test.dir/rule:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/CMakeFiles/options.test.dir/rule
-.PHONY : _deps/cpp-terminal-build/tests/CMakeFiles/options.test.dir/rule
-
-# Convenience name for target.
-options.test: _deps/cpp-terminal-build/tests/CMakeFiles/options.test.dir/rule
-.PHONY : options.test
-
-# fast build rule for target.
-options.test/fast:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/options.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/options.test.dir/build
-.PHONY : options.test/fast
-
-# Convenience name for target.
-_deps/cpp-terminal-build/tests/CMakeFiles/version.test.dir/rule:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/CMakeFiles/version.test.dir/rule
-.PHONY : _deps/cpp-terminal-build/tests/CMakeFiles/version.test.dir/rule
-
-# Convenience name for target.
-version.test: _deps/cpp-terminal-build/tests/CMakeFiles/version.test.dir/rule
-.PHONY : version.test
-
-# fast build rule for target.
-version.test/fast:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/version.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/version.test.dir/build
-.PHONY : version.test/fast
+IOStream/fast:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/IOStream.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/IOStream.dir/build
+.PHONY : IOStream/fast
 
 # Convenience name for target.
 _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/rule:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/rule
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/rule
 .PHONY : _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/rule
 
 # Convenience name for target.
@@ -285,7 +285,7 @@ Args: _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/rule
 
 # fast build rule for target.
 Args/fast:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/build
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/build
 .PHONY : Args/fast
 
 args.test.o: args.test.cpp.o
@@ -293,7 +293,7 @@ args.test.o: args.test.cpp.o
 
 # target to build an object file
 args.test.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/args.test.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/args.test.cpp.o
 .PHONY : args.test.cpp.o
 
 args.test.i: args.test.cpp.i
@@ -301,7 +301,7 @@ args.test.i: args.test.cpp.i
 
 # target to preprocess a source file
 args.test.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/args.test.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/args.test.cpp.i
 .PHONY : args.test.cpp.i
 
 args.test.s: args.test.cpp.s
@@ -309,15 +309,63 @@ args.test.s: args.test.cpp.s
 
 # target to generate assembly for a file
 args.test.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/args.test.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/args.test.cpp.s
 .PHONY : args.test.cpp.s
+
+attach_console.test.o: attach_console.test.cpp.o
+.PHONY : attach_console.test.o
+
+# target to build an object file
+attach_console.test.cpp.o:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsole.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsole.dir/attach_console.test.cpp.o
+.PHONY : attach_console.test.cpp.o
+
+attach_console.test.i: attach_console.test.cpp.i
+.PHONY : attach_console.test.i
+
+# target to preprocess a source file
+attach_console.test.cpp.i:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsole.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsole.dir/attach_console.test.cpp.i
+.PHONY : attach_console.test.cpp.i
+
+attach_console.test.s: attach_console.test.cpp.s
+.PHONY : attach_console.test.s
+
+# target to generate assembly for a file
+attach_console.test.cpp.s:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsole.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsole.dir/attach_console.test.cpp.s
+.PHONY : attach_console.test.cpp.s
+
+attach_console_minimal.test.o: attach_console_minimal.test.cpp.o
+.PHONY : attach_console_minimal.test.o
+
+# target to build an object file
+attach_console_minimal.test.cpp.o:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsoleMinimal.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsoleMinimal.dir/attach_console_minimal.test.cpp.o
+.PHONY : attach_console_minimal.test.cpp.o
+
+attach_console_minimal.test.i: attach_console_minimal.test.cpp.i
+.PHONY : attach_console_minimal.test.i
+
+# target to preprocess a source file
+attach_console_minimal.test.cpp.i:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsoleMinimal.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsoleMinimal.dir/attach_console_minimal.test.cpp.i
+.PHONY : attach_console_minimal.test.cpp.i
+
+attach_console_minimal.test.s: attach_console_minimal.test.cpp.s
+.PHONY : attach_console_minimal.test.s
+
+# target to generate assembly for a file
+attach_console_minimal.test.cpp.s:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsoleMinimal.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsoleMinimal.dir/attach_console_minimal.test.cpp.s
+.PHONY : attach_console_minimal.test.cpp.s
 
 events.test.o: events.test.cpp.o
 .PHONY : events.test.o
 
 # target to build an object file
 events.test.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/events.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/events.test.dir/events.test.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Events.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Events.dir/events.test.cpp.o
 .PHONY : events.test.cpp.o
 
 events.test.i: events.test.cpp.i
@@ -325,7 +373,7 @@ events.test.i: events.test.cpp.i
 
 # target to preprocess a source file
 events.test.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/events.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/events.test.dir/events.test.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Events.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Events.dir/events.test.cpp.i
 .PHONY : events.test.cpp.i
 
 events.test.s: events.test.cpp.s
@@ -333,39 +381,15 @@ events.test.s: events.test.cpp.s
 
 # target to generate assembly for a file
 events.test.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/events.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/events.test.dir/events.test.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Events.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Events.dir/events.test.cpp.s
 .PHONY : events.test.cpp.s
-
-exception.test.o: exception.test.cpp.o
-.PHONY : exception.test.o
-
-# target to build an object file
-exception.test.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/exception.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/exception.test.dir/exception.test.cpp.o
-.PHONY : exception.test.cpp.o
-
-exception.test.i: exception.test.cpp.i
-.PHONY : exception.test.i
-
-# target to preprocess a source file
-exception.test.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/exception.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/exception.test.dir/exception.test.cpp.i
-.PHONY : exception.test.cpp.i
-
-exception.test.s: exception.test.cpp.s
-.PHONY : exception.test.s
-
-# target to generate assembly for a file
-exception.test.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/exception.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/exception.test.dir/exception.test.cpp.s
-.PHONY : exception.test.cpp.s
 
 file.test.o: file.test.cpp.o
 .PHONY : file.test.o
 
 # target to build an object file
 file.test.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/file.test.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/file.test.cpp.o
 .PHONY : file.test.cpp.o
 
 file.test.i: file.test.cpp.i
@@ -373,7 +397,7 @@ file.test.i: file.test.cpp.i
 
 # target to preprocess a source file
 file.test.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/file.test.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/file.test.cpp.i
 .PHONY : file.test.cpp.i
 
 file.test.s: file.test.cpp.s
@@ -381,15 +405,39 @@ file.test.s: file.test.cpp.s
 
 # target to generate assembly for a file
 file.test.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/file.test.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/file.test.cpp.s
 .PHONY : file.test.cpp.s
+
+iostream.test.o: iostream.test.cpp.o
+.PHONY : iostream.test.o
+
+# target to build an object file
+iostream.test.cpp.o:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/IOStream.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/IOStream.dir/iostream.test.cpp.o
+.PHONY : iostream.test.cpp.o
+
+iostream.test.i: iostream.test.cpp.i
+.PHONY : iostream.test.i
+
+# target to preprocess a source file
+iostream.test.cpp.i:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/IOStream.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/IOStream.dir/iostream.test.cpp.i
+.PHONY : iostream.test.cpp.i
+
+iostream.test.s: iostream.test.cpp.s
+.PHONY : iostream.test.s
+
+# target to generate assembly for a file
+iostream.test.cpp.s:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/IOStream.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/IOStream.dir/iostream.test.cpp.s
+.PHONY : iostream.test.cpp.s
 
 key.test.o: key.test.cpp.o
 .PHONY : key.test.o
 
 # target to build an object file
 key.test.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/key.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/key.test.dir/key.test.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Key.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Key.dir/key.test.cpp.o
 .PHONY : key.test.cpp.o
 
 key.test.i: key.test.cpp.i
@@ -397,7 +445,7 @@ key.test.i: key.test.cpp.i
 
 # target to preprocess a source file
 key.test.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/key.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/key.test.dir/key.test.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Key.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Key.dir/key.test.cpp.i
 .PHONY : key.test.cpp.i
 
 key.test.s: key.test.cpp.s
@@ -405,39 +453,15 @@ key.test.s: key.test.cpp.s
 
 # target to generate assembly for a file
 key.test.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/key.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/key.test.dir/key.test.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Key.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Key.dir/key.test.cpp.s
 .PHONY : key.test.cpp.s
-
-options.test.o: options.test.cpp.o
-.PHONY : options.test.o
-
-# target to build an object file
-options.test.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/options.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/options.test.dir/options.test.cpp.o
-.PHONY : options.test.cpp.o
-
-options.test.i: options.test.cpp.i
-.PHONY : options.test.i
-
-# target to preprocess a source file
-options.test.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/options.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/options.test.dir/options.test.cpp.i
-.PHONY : options.test.cpp.i
-
-options.test.s: options.test.cpp.s
-.PHONY : options.test.s
-
-# target to generate assembly for a file
-options.test.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/options.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/options.test.dir/options.test.cpp.s
-.PHONY : options.test.cpp.s
 
 screen.test.o: screen.test.cpp.o
 .PHONY : screen.test.o
 
 # target to build an object file
 screen.test.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/screen.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/screen.test.dir/screen.test.cpp.o
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Screen.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Screen.dir/screen.test.cpp.o
 .PHONY : screen.test.cpp.o
 
 screen.test.i: screen.test.cpp.i
@@ -445,7 +469,7 @@ screen.test.i: screen.test.cpp.i
 
 # target to preprocess a source file
 screen.test.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/screen.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/screen.test.dir/screen.test.cpp.i
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Screen.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Screen.dir/screen.test.cpp.i
 .PHONY : screen.test.cpp.i
 
 screen.test.s: screen.test.cpp.s
@@ -453,56 +477,32 @@ screen.test.s: screen.test.cpp.s
 
 # target to generate assembly for a file
 screen.test.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/screen.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/screen.test.dir/screen.test.cpp.s
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Screen.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Screen.dir/screen.test.cpp.s
 .PHONY : screen.test.cpp.s
 
-unicode.test.o: unicode.test.cpp.o
-.PHONY : unicode.test.o
+test_terminal.o: test_terminal.cpp.o
+.PHONY : test_terminal.o
 
 # target to build an object file
-unicode.test.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/unicode.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/unicode.test.dir/unicode.test.cpp.o
-.PHONY : unicode.test.cpp.o
+test_terminal.cpp.o:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/test_terminal.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/test_terminal.dir/test_terminal.cpp.o
+.PHONY : test_terminal.cpp.o
 
-unicode.test.i: unicode.test.cpp.i
-.PHONY : unicode.test.i
-
-# target to preprocess a source file
-unicode.test.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/unicode.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/unicode.test.dir/unicode.test.cpp.i
-.PHONY : unicode.test.cpp.i
-
-unicode.test.s: unicode.test.cpp.s
-.PHONY : unicode.test.s
-
-# target to generate assembly for a file
-unicode.test.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/unicode.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/unicode.test.dir/unicode.test.cpp.s
-.PHONY : unicode.test.cpp.s
-
-version.test.o: version.test.cpp.o
-.PHONY : version.test.o
-
-# target to build an object file
-version.test.cpp.o:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/version.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/version.test.dir/version.test.cpp.o
-.PHONY : version.test.cpp.o
-
-version.test.i: version.test.cpp.i
-.PHONY : version.test.i
+test_terminal.i: test_terminal.cpp.i
+.PHONY : test_terminal.i
 
 # target to preprocess a source file
-version.test.cpp.i:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/version.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/version.test.dir/version.test.cpp.i
-.PHONY : version.test.cpp.i
+test_terminal.cpp.i:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/test_terminal.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/test_terminal.dir/test_terminal.cpp.i
+.PHONY : test_terminal.cpp.i
 
-version.test.s: version.test.cpp.s
-.PHONY : version.test.s
+test_terminal.s: test_terminal.cpp.s
+.PHONY : test_terminal.s
 
 # target to generate assembly for a file
-version.test.cpp.s:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/version.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/version.test.dir/version.test.cpp.s
-.PHONY : version.test.cpp.s
+test_terminal.cpp.s:
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/test_terminal.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/test_terminal.dir/test_terminal.cpp.s
+.PHONY : test_terminal.cpp.s
 
 # Help Target
 help:
@@ -517,41 +517,41 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... Args"
-	@echo "... events.test"
-	@echo "... exception.test"
+	@echo "... AttachConsole"
+	@echo "... AttachConsoleMinimal"
+	@echo "... Events"
+	@echo "... IOStream"
+	@echo "... Key"
+	@echo "... Screen"
 	@echo "... file.test"
-	@echo "... key.test"
-	@echo "... options.test"
-	@echo "... screen.test"
-	@echo "... unicode.test"
-	@echo "... version.test"
+	@echo "... test_terminal"
 	@echo "... args.test.o"
 	@echo "... args.test.i"
 	@echo "... args.test.s"
+	@echo "... attach_console.test.o"
+	@echo "... attach_console.test.i"
+	@echo "... attach_console.test.s"
+	@echo "... attach_console_minimal.test.o"
+	@echo "... attach_console_minimal.test.i"
+	@echo "... attach_console_minimal.test.s"
 	@echo "... events.test.o"
 	@echo "... events.test.i"
 	@echo "... events.test.s"
-	@echo "... exception.test.o"
-	@echo "... exception.test.i"
-	@echo "... exception.test.s"
 	@echo "... file.test.o"
 	@echo "... file.test.i"
 	@echo "... file.test.s"
+	@echo "... iostream.test.o"
+	@echo "... iostream.test.i"
+	@echo "... iostream.test.s"
 	@echo "... key.test.o"
 	@echo "... key.test.i"
 	@echo "... key.test.s"
-	@echo "... options.test.o"
-	@echo "... options.test.i"
-	@echo "... options.test.s"
 	@echo "... screen.test.o"
 	@echo "... screen.test.i"
 	@echo "... screen.test.s"
-	@echo "... unicode.test.o"
-	@echo "... unicode.test.i"
-	@echo "... unicode.test.s"
-	@echo "... version.test.o"
-	@echo "... version.test.i"
-	@echo "... version.test.s"
+	@echo "... test_terminal.o"
+	@echo "... test_terminal.i"
+	@echo "... test_terminal.s"
 .PHONY : help
 
 
@@ -563,7 +563,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -P /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles/VerifyGlobs.cmake
-	cd /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -P /home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles/VerifyGlobs.cmake
+	cd /home/matthewalgo/Projects/picr/build/build_executable && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src
+# Install script for directory: /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,10 +44,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/cmake_install.cmake")
-  include("/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests/cmake_install.cmake")
-  include("/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/examples/cmake_install.cmake")
-  include("/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/docs/cmake_install.cmake")
+  include("/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/cmake_install.cmake")
+  include("/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/tests/cmake_install.cmake")
+  include("/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/examples/cmake_install.cmake")
+  include("/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/docs/cmake_install.cmake")
 
 endif()
 
