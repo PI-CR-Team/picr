@@ -1,0 +1,6 @@
+/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles/PiCrExecutable.dir
+/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles/edit_cache.dir
+/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/CMakeFiles/rebuild_cache.dir
+/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir
+/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build/CMakeFiles/edit_cache.dir
+/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build/CMakeFiles/rebuild_cache.dir
