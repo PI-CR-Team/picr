@@ -44,7 +44,22 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/picrlibraries-build/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-build/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-build/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

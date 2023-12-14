@@ -3,4 +3,4 @@
 #include <iostream>
 #include <string>
 
-void createMe(std::string Name);
+void testLib(std::string teststr);

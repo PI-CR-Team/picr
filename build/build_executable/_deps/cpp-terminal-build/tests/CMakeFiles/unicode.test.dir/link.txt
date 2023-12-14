@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/unicode.test.dir/unicode.test.cpp.o -o unicode.test  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/private/libcpp-terminal-private.a 

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/key.test.dir/key.test.cpp.o -o key.test  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/private/libcpp-terminal-private.a 

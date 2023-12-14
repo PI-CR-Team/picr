@@ -1,0 +1,5 @@
+if(EXISTS "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests/Args_tests-3fac3c2.cmake")
+  include("/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build/tests/Args_tests-3fac3c2.cmake")
+else()
+  add_test(Args_NOT_BUILT-3fac3c2 Args_NOT_BUILT-3fac3c2)
+endif()

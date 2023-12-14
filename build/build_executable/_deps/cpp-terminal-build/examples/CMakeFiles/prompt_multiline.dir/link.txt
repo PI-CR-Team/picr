@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/prompt_multiline.dir/prompt_multiline.cpp.o -o prompt_multiline  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/private/libcpp-terminal-private.a 

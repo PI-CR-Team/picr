@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/colors.dir/colors.cpp.o -o colors  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/private/libcpp-terminal-private.a 

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/menu_window.dir/menu_window.cpp.o -o menu_window  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/private/libcpp-terminal-private.a 

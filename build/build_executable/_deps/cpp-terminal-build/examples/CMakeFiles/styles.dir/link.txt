@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/styles.dir/styles.cpp.o -o styles  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/private/libcpp-terminal-private.a 

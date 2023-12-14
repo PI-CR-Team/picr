@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/PiCrExecutable.dir/source/main.cpp.o -o PiCr  ../_deps/picrlibraries-build/libPiCrLibraries.a 

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/screen.test.dir/screen.test.cpp.o -o screen.test  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/private/libcpp-terminal-private.a 

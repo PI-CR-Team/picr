@@ -1,3 +1,0 @@
-/home/matthewalgo/Projects/CPPBuildTemplate/build/build_lib/CMakeFiles/PiCrLibraries.dir
-/home/matthewalgo/Projects/CPPBuildTemplate/build/build_lib/CMakeFiles/edit_cache.dir
-/home/matthewalgo/Projects/CPPBuildTemplate/build/build_lib/CMakeFiles/rebuild_cache.dir

@@ -1,5 +1,5 @@
 #include "lib/lib.h"
 
-void createMe(std::string Name){
-    std::cout<<Name;
+void testLib(std::string teststr){
+    std::cout<<teststr;
 }

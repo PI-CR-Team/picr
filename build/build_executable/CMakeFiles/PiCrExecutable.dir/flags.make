@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/../include -I/home/matthewalgo/Projects/CPPBuildTemplate/lib_sources/../include
+CXX_INCLUDES = -I/home/matthewalgo/Projects/CPPBuildTemplate/executable_sources/../include -I/home/matthewalgo/Projects/CPPBuildTemplate/lib_sources/../include -I/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-src -I/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-build
 
-CXX_FLAGS = 
+CXX_FLAGS = -std=c++20
 

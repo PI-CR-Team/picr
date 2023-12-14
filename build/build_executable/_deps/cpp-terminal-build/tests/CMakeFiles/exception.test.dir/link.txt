@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/exception.test.dir/exception.test.cpp.o -o exception.test  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/private/libcpp-terminal-private.a 

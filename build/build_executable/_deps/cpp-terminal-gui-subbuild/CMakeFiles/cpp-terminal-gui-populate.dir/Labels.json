@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles/cpp-terminal-gui-populate"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles/cpp-terminal-gui-populate.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/CMakeFiles/cpp-terminal-gui-populate-complete.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-build.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-configure.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-download.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-install.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-patch.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-test.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/cpp-terminal-gui-subbuild/cpp-terminal-gui-populate-prefix/src/cpp-terminal-gui-populate-stamp/cpp-terminal-gui-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"cpp-terminal-gui-populate"
+		],
+		"name" : "cpp-terminal-gui-populate"
+	}
+}

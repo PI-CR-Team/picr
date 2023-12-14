@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14...3.22)
-
+set (CMAKE_CXX_STANDARD 20)
 # ---- Project ----
 
 # Note: update this to your new project's name and version

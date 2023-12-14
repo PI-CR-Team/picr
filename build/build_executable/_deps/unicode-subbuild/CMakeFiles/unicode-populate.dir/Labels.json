@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/CMakeFiles/unicode-populate"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/CMakeFiles/unicode-populate.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/CMakeFiles/unicode-populate-complete.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-build.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-configure.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-download.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-install.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-patch.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-test.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/CPPBuildTemplate/build/build_executable/_deps/unicode-subbuild/unicode-populate-prefix/src/unicode-populate-stamp/unicode-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"unicode-populate"
+		],
+		"name" : "unicode-populate"
+	}
+}
