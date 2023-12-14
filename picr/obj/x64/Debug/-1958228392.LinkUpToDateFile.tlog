@@ -1,1 +1,0 @@
-g++ -o "/home/matthewalgo/projects/picr/bin/x64/Debug/picr.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/matthewalgo/projects/picr/obj/x64/Debug/main.o
