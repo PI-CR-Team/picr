@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/styles.dir/styles.cpp.o -o styles  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/platforms/libcpp-terminal-platforms.a 
+/usr/bin/c++  -std=c++20 -O3 -DNDEBUG CMakeFiles/styles.dir/styles.cpp.o -o styles  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/platforms/libcpp-terminal-platforms.a 

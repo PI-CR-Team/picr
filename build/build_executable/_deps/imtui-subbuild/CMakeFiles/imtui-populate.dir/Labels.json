@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/imtui-subbuild/CMakeFiles/imtui-populate"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/imtui-subbuild/CMakeFiles/imtui-populate.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/imtui-subbuild/CMakeFiles/imtui-populate-complete.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/imtui-subbuild/imtui-populate-prefix/src/imtui-populate-stamp/imtui-populate-build.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/imtui-subbuild/imtui-populate-prefix/src/imtui-populate-stamp/imtui-populate-configure.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/imtui-subbuild/imtui-populate-prefix/src/imtui-populate-stamp/imtui-populate-download.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/imtui-subbuild/imtui-populate-prefix/src/imtui-populate-stamp/imtui-populate-install.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/imtui-subbuild/imtui-populate-prefix/src/imtui-populate-stamp/imtui-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/imtui-subbuild/imtui-populate-prefix/src/imtui-populate-stamp/imtui-populate-patch.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/imtui-subbuild/imtui-populate-prefix/src/imtui-populate-stamp/imtui-populate-test.rule"
+		},
+		{
+			"file" : "/home/matthewalgo/Projects/picr/build/build_executable/_deps/imtui-subbuild/imtui-populate-prefix/src/imtui-populate-stamp/imtui-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"imtui-populate"
+		],
+		"name" : "imtui-populate"
+	}
+}

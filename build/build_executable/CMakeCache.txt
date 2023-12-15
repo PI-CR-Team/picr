@@ -14,15 +14,17 @@
 # EXTERNAL cache entries
 ########################
 
+//Path to clang-tidy executable
+CLANG_TIDY_EXE:FILEPATH=CLANG_TIDY_EXE-NOTFOUND
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
-//Choose the type of build, options are: None Debug Release RelWithDebInfo
-// MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=
+//Build type
+CMAKE_BUILD_TYPE:STRING=Release
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -30,13 +32,11 @@ CMAKE_COLOR_MAKEFILE:BOOL=ON
 //CXX compiler
 CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
 
-//A wrapper around 'ar' adding the appropriate '--plugin' option
-// for the GCC compiler
-CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-11
+//LLVM archiver
+CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/llvm-ar-14
 
-//A wrapper around 'ranlib' adding the appropriate '--plugin' option
-// for the GCC compiler
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-11
+//Generate index for LLVM archive
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/llvm-ranlib-14
 
 //C++ extensions
 CMAKE_CXX_EXTENSIONS:STRING=FALSE
@@ -58,6 +58,32 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C++ standard required
 CMAKE_CXX_STANDARD_REQUIRED:STRING=TRUE
+
+//C compiler
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
+
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-11
+
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-11
+
+//Flags used by the C compiler during all build types.
+CMAKE_C_FLAGS:STRING=
+
+//Flags used by the C compiler during DEBUG builds.
+CMAKE_C_FLAGS_DEBUG:STRING=-g
+
+//Flags used by the C compiler during MINSIZEREL builds.
+CMAKE_C_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
+
+//Flags used by the C compiler during RELEASE builds.
+CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+
+//Flags used by the C compiler during RELWITHDEBINFO builds.
+CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Path to a program.
 CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
@@ -252,6 +278,24 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Enable to build RPM source packages
+CPACK_SOURCE_RPM:BOOL=OFF
+
+//Enable to build TBZ2 source packages
+CPACK_SOURCE_TBZ2:BOOL=ON
+
+//Enable to build TGZ source packages
+CPACK_SOURCE_TGZ:BOOL=ON
+
+//Enable to build TXZ source packages
+CPACK_SOURCE_TXZ:BOOL=ON
+
+//Enable to build TZ source packages
+CPACK_SOURCE_TZ:BOOL=ON
+
+//Enable to build ZIP source packages
+CPACK_SOURCE_ZIP:BOOL=OFF
+
 //Don't create a package lock file in the binary path
 CPM_DONT_CREATE_PACKAGE_LOCK:BOOL=OFF
 
@@ -337,20 +381,16 @@ FETCHCONTENT_QUIET:BOOL=ON
 FETCHCONTENT_SOURCE_DIR_CPP-TERMINAL:PATH=
 
 //When not empty, overrides where to find pre-populated content
-// for cpp-terminal-gui
-FETCHCONTENT_SOURCE_DIR_CPP-TERMINAL-GUI:PATH=
-
-//When not empty, overrides where to find pre-populated content
 // for doctest
 FETCHCONTENT_SOURCE_DIR_DOCTEST:PATH=
 
 //When not empty, overrides where to find pre-populated content
-// for PiCrLibraries
-FETCHCONTENT_SOURCE_DIR_PICRLIBRARIES:PATH=
+// for ftxui
+FETCHCONTENT_SOURCE_DIR_FTXUI:PATH=
 
 //When not empty, overrides where to find pre-populated content
-// for unicode
-FETCHCONTENT_SOURCE_DIR_UNICODE:PATH=
+// for imtui
+FETCHCONTENT_SOURCE_DIR_IMTUI:PATH=
 
 //Enables UPDATE_DISCONNECTED behavior for all content population
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
@@ -358,20 +398,73 @@ FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 //Enables UPDATE_DISCONNECTED behavior just for population of cpp-terminal
 FETCHCONTENT_UPDATES_DISCONNECTED_CPP-TERMINAL:BOOL=OFF
 
-//Enables UPDATE_DISCONNECTED behavior just for population of cpp-terminal-gui
-FETCHCONTENT_UPDATES_DISCONNECTED_CPP-TERMINAL-GUI:BOOL=OFF
-
 //Enables UPDATE_DISCONNECTED behavior just for population of doctest
 FETCHCONTENT_UPDATES_DISCONNECTED_DOCTEST:BOOL=OFF
 
-//Enables UPDATE_DISCONNECTED behavior just for population of PiCrLibraries
-FETCHCONTENT_UPDATES_DISCONNECTED_PICRLIBRARIES:BOOL=OFF
+//Enables UPDATE_DISCONNECTED behavior just for population of ftxui
+FETCHCONTENT_UPDATES_DISCONNECTED_FTXUI:BOOL=OFF
 
-//Enables UPDATE_DISCONNECTED behavior just for population of unicode
-FETCHCONTENT_UPDATES_DISCONNECTED_UNICODE:BOOL=OFF
+//Enables UPDATE_DISCONNECTED behavior just for population of imtui
+FETCHCONTENT_UPDATES_DISCONNECTED_IMTUI:BOOL=OFF
+
+//Set to ON to build docs
+FTXUI_BUILD_DOCS:BOOL=OFF
+
+//Set to ON to build examples
+FTXUI_BUILD_EXAMPLES:BOOL=OFF
+
+//Set to ON to build tests
+FTXUI_BUILD_TESTS:BOOL=OFF
+
+//Set to ON to enable fuzzing
+FTXUI_BUILD_TESTS_FUZZER:BOOL=OFF
+
+//Execute clang-tidy
+FTXUI_CLANG_TIDY:BOOL=OFF
+
+//Enable more compiler warnings and warnings as errors
+FTXUI_DEV_WARNINGS:BOOL=OFF
+
+//Execute code coverage
+FTXUI_ENABLE_COVERAGE:BOOL=OFF
+
+//Generate the install target
+FTXUI_ENABLE_INSTALL:BOOL=ON
+
+//On windows, assume the terminal used will be one of Microsoft
+// and use a set of reasonnable fallback to counteract its implementations
+// problems.
+FTXUI_MICROSOFT_TERMINAL_FALLBACK:BOOL=OFF
+
+//Set to ON for FTXUI to be quiet
+FTXUI_QUIET:BOOL=OFF
 
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
+
+//imtui: enable all compiler warnings
+IMTUI_ALL_WARNINGS:BOOL=OFF
+
+//imtui: enable all compiler warnings in 3rd party libs
+IMTUI_ALL_WARNINGS_3RD_PARTY:BOOL=OFF
+
+//imtui: build examples
+IMTUI_BUILD_EXAMPLES:BOOL=OFF
+
+//imtui: enable address sanitizer
+IMTUI_SANITIZE_ADDRESS:BOOL=OFF
+
+//imtui: enable thread sanitizer
+IMTUI_SANITIZE_THREAD:BOOL=OFF
+
+//imtui: enable undefined sanitizer
+IMTUI_SANITIZE_UNDEFINED:BOOL=OFF
+
+//imtui: support for libcurl
+IMTUI_SUPPORT_CURL:BOOL=ON
+
+//imtui: support for libncurses
+IMTUI_SUPPORT_NCURSES:BOOL=ON
 
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
@@ -387,15 +480,6 @@ PiCrExecutable_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 PiCrExecutable_SOURCE_DIR:STATIC=/home/matthewalgo/Projects/picr/executable_sources
-
-//Value Computed by CMake
-PiCrLibraries_BINARY_DIR:STATIC=/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build
-
-//Value Computed by CMake
-PiCrLibraries_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-PiCrLibraries_SOURCE_DIR:STATIC=/home/matthewalgo/Projects/picr/lib_sources
 
 //Path to a file.
 X11_ICE_INCLUDE_PATH:PATH=X11_ICE_INCLUDE_PATH-NOTFOUND
@@ -649,6 +733,33 @@ doctest_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 doctest_SOURCE_DIR:STATIC=/home/matthewalgo/Projects/picr/build/build_executable/_deps/doctest-src
 
+//Value Computed by CMake
+ftxui_BINARY_DIR:STATIC=/home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-build
+
+//Value Computed by CMake
+ftxui_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+ftxui_SOURCE_DIR:STATIC=/home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-src
+
+//Dependencies for the target
+imtui-core_LIB_DEPENDS:STATIC=general;imgui;general;dl;
+
+//Dependencies for the target
+imtui-ncurses_LIB_DEPENDS:STATIC=general;imtui-core;general;/usr/lib/x86_64-linux-gnu/libcurses.so;general;/usr/lib/x86_64-linux-gnu/libform.so;
+
+//Value Computed by CMake
+imtui_BINARY_DIR:STATIC=/home/matthewalgo/Projects/picr/build/build_executable/_deps/imtui-build
+
+//Value Computed by CMake
+imtui_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+imtui_SOURCE_DIR:STATIC=/home/matthewalgo/Projects/picr/build/build_executable/_deps/imtui-src
+
+//Path to a program.
+iwyu_path:FILEPATH=iwyu_path-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries
@@ -658,6 +769,8 @@ doctest_SOURCE_DIR:STATIC=/home/matthewalgo/Projects/picr/build/build_executable
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
+//STRINGS property for variable: CMAKE_BUILD_TYPE
+CMAKE_BUILD_TYPE-STRINGS:INTERNAL=Debug;Release;RelWithDebInfo
 //This is the directory where this CMakeCache.txt was created
 CMAKE_CACHEFILE_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable
 //Major version of cmake used to create the current loaded cache
@@ -690,6 +803,22 @@ CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_RELWITHDEBINFO
 CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER
+CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_AR
+CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB
+CMAKE_C_COMPILER_RANLIB-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS
+CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG
+CMAKE_C_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_MINSIZEREL
+CMAKE_C_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_RELEASE
+CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_RELWITHDEBINFO
+CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_DLLTOOL
 CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
 //Executable file format
@@ -782,7 +911,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -825,26 +954,35 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_RPM
+CPACK_SOURCE_RPM-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TBZ2
+CPACK_SOURCE_TBZ2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TGZ
+CPACK_SOURCE_TGZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TXZ
+CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TZ
+CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_ZIP
+CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 CPM_DIRECTORY:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/cmake
 //Don't download or configure dependencies (for testing)
 CPM_DRY_RUN:INTERNAL=OFF
 CPM_FILE:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/cmake/CPM_0.35.0.cmake
 CPM_INDENT:INTERNAL=CPM:
 CPM_MODULE_PATH:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/CPM_modules
-CPM_PACKAGES:INTERNAL=cpp-terminal;PiCrLibraries;unicode;cpp-terminal-gui
+CPM_PACKAGES:INTERNAL=cpp-terminal;ftxui;imtui
 CPM_PACKAGE_LOCK_FILE:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/cpm-package-lock.cmake
-CPM_PACKAGE_PiCrLibraries_BINARY_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/_deps/picrlibraries-build
-CPM_PACKAGE_PiCrLibraries_SOURCE_DIR:INTERNAL=/home/matthewalgo/Projects/picr/executable_sources/../lib_sources
-CPM_PACKAGE_PiCrLibraries_VERSION:INTERNAL=
-CPM_PACKAGE_cpp-terminal-gui_BINARY_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-gui-build
-CPM_PACKAGE_cpp-terminal-gui_SOURCE_DIR:INTERNAL=/home/matthewalgo/Projects/picr/executable_sources/../executable_sources/modules/cpp-terminal-gui
-CPM_PACKAGE_cpp-terminal-gui_VERSION:INTERNAL=
 CPM_PACKAGE_cpp-terminal_BINARY_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build
 CPM_PACKAGE_cpp-terminal_SOURCE_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src
 CPM_PACKAGE_cpp-terminal_VERSION:INTERNAL=80
-CPM_PACKAGE_unicode_BINARY_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/_deps/unicode-build
-CPM_PACKAGE_unicode_SOURCE_DIR:INTERNAL=/home/matthewalgo/Projects/picr/executable_sources/../executable_sources/modules/unicode
-CPM_PACKAGE_unicode_VERSION:INTERNAL=
+CPM_PACKAGE_ftxui_BINARY_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-build
+CPM_PACKAGE_ftxui_SOURCE_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-src
+CPM_PACKAGE_ftxui_VERSION:INTERNAL=5.0.0
+CPM_PACKAGE_imtui_BINARY_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/_deps/imtui-build
+CPM_PACKAGE_imtui_SOURCE_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/_deps/imtui-src
+CPM_PACKAGE_imtui_VERSION:INTERNAL=1.78
 CPM_VERSION:INTERNAL=0.35.0
 //ADVANCED property for variable: CURSES_CURSES_LIBRARY
 CURSES_CURSES_LIBRARY-ADVANCED:INTERNAL=1
@@ -852,6 +990,8 @@ CURSES_CURSES_LIBRARY-ADVANCED:INTERNAL=1
 CURSES_FORM_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CURSES_INCLUDE_PATH
 CURSES_INCLUDE_PATH-ADVANCED:INTERNAL=1
+//Have library /usr/lib/x86_64-linux-gnu/libncurses.so
+CURSES_NCURSES_HAS_NODELAY:INTERNAL=1
 //ADVANCED property for variable: CURSES_NCURSES_LIBRARY
 CURSES_NCURSES_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DOXYGEN_DIA_EXECUTABLE

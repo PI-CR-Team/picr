@@ -1,0 +1,2 @@
+/usr/bin/ar qc libimtui-core.a CMakeFiles/imtui-core.dir/imtui-impl-text.cpp.o
+/usr/bin/ranlib libimtui-core.a

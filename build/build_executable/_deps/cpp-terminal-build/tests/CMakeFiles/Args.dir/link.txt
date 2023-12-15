@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/Args.dir/args.test.cpp.o -o Args  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/platforms/libcpp-terminal-platforms.a 
+/usr/bin/c++  -std=c++20 -O3 -DNDEBUG CMakeFiles/Args.dir/args.test.cpp.o -o Args  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/platforms/libcpp-terminal-platforms.a 

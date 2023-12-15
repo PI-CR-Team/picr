@@ -140,11 +140,11 @@ PiCr: CMakeFiles/PiCrExecutable.dir/source/line.cpp.o
 PiCr: CMakeFiles/PiCrExecutable.dir/source/main.cpp.o
 PiCr: CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.o
 PiCr: CMakeFiles/PiCrExecutable.dir/build.make
-PiCr: _deps/picrlibraries-build/libPiCrLibraries.a
-PiCr: /usr/lib/x86_64-linux-gnu/libcurses.so
-PiCr: /usr/lib/x86_64-linux-gnu/libform.so
-PiCr: _deps/cpp-terminal-build/cpp-terminal/libcpp-terminal.a
-PiCr: _deps/cpp-terminal-build/cpp-terminal/platforms/libcpp-terminal-platforms.a
+PiCr: _deps/ftxui-build/libftxui-screen.a
+PiCr: _deps/ftxui-build/libftxui-dom.a
+PiCr: _deps/ftxui-build/libftxui-component.a
+PiCr: _deps/ftxui-build/libftxui-dom.a
+PiCr: _deps/ftxui-build/libftxui-screen.a
 PiCr: CMakeFiles/PiCrExecutable.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable PiCr"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PiCrExecutable.dir/link.txt --verbose=$(VERBOSE)

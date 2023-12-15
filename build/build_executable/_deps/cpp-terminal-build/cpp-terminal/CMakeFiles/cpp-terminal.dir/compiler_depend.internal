@@ -3,7 +3,6 @@
 
 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/args.cpp.o
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/args.cpp
- /usr/include/stdc-predef.h
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/args.hpp
  /usr/include/c++/11/string
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h
@@ -12,6 +11,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/args.cpp.o
  /usr/include/features-time64.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/bits/timesize.h
+ /usr/include/stdc-predef.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/include/x86_64-linux-gnu/bits/long-double.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
@@ -51,8 +51,8 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/args.cpp.o
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/x86_64-linux-gnu/bits/floatn.h
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
  /usr/include/x86_64-linux-gnu/bits/wchar.h
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h
@@ -62,7 +62,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/args.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h
  /usr/include/c++/11/cstdint
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/types.h
  /usr/include/x86_64-linux-gnu/bits/typesizes.h
@@ -112,6 +112,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/args.cpp.o
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /usr/include/c++/11/bits/std_abs.h
  /usr/include/c++/11/bits/algorithmfwd.h
@@ -156,6 +157,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/args.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
  /usr/include/c++/11/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -174,7 +176,6 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/args.cpp.o
 
 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/buffer.cpp.o
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/buffer.cpp
- /usr/include/stdc-predef.h
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/buffer.hpp
  /usr/include/c++/11/cstddef
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h
@@ -183,15 +184,17 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/buffer.cpp.o
  /usr/include/features-time64.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/bits/timesize.h
+ /usr/include/stdc-predef.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/include/x86_64-linux-gnu/bits/long-double.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h
  /usr/include/c++/11/pstl/pstl_config.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/__stddef_max_align_t.h
  /usr/include/c++/11/cstdint
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/x86_64-linux-gnu/bits/types.h
@@ -209,7 +212,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/buffer.cpp.o
  /usr/include/wchar.h
  /usr/include/x86_64-linux-gnu/bits/floatn.h
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
@@ -305,6 +308,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/buffer.cpp.o
  /usr/include/x86_64-linux-gnu/bits/select.h
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /usr/include/c++/11/bits/std_abs.h
  /usr/include/c++/11/bits/algorithmfwd.h
@@ -331,6 +335,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/buffer.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
  /usr/include/c++/11/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -377,7 +382,6 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/buffer.cpp.o
 
 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/color.cpp.o
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/color.cpp
- /usr/include/stdc-predef.h
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/color.hpp
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/terminfo.hpp
  /usr/include/c++/11/string
@@ -387,6 +391,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/color.cpp.o
  /usr/include/features-time64.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/bits/timesize.h
+ /usr/include/stdc-predef.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/include/x86_64-linux-gnu/bits/long-double.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
@@ -426,8 +431,8 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/color.cpp.o
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/x86_64-linux-gnu/bits/floatn.h
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
  /usr/include/x86_64-linux-gnu/bits/wchar.h
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h
@@ -437,7 +442,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/color.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h
  /usr/include/c++/11/cstdint
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/types.h
  /usr/include/x86_64-linux-gnu/bits/typesizes.h
@@ -487,6 +492,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/color.cpp.o
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /usr/include/c++/11/bits/std_abs.h
  /usr/include/c++/11/bits/algorithmfwd.h
@@ -531,6 +537,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/color.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
  /usr/include/c++/11/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -547,7 +554,6 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/color.cpp.o
 
 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/cursor.cpp.o
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/cursor.cpp
- /usr/include/stdc-predef.h
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/cursor.hpp
  /usr/include/c++/11/cstddef
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h
@@ -556,15 +562,17 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/cursor.cpp.o
  /usr/include/features-time64.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/bits/timesize.h
+ /usr/include/stdc-predef.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/include/x86_64-linux-gnu/bits/long-double.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h
  /usr/include/c++/11/pstl/pstl_config.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/__stddef_max_align_t.h
  /usr/include/c++/11/cstdint
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/x86_64-linux-gnu/bits/types.h
@@ -606,7 +614,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/cursor.cpp.o
  /usr/include/wchar.h
  /usr/include/x86_64-linux-gnu/bits/floatn.h
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
@@ -657,6 +665,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/cursor.cpp.o
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /usr/include/c++/11/bits/std_abs.h
  /usr/include/c++/11/bits/algorithmfwd.h
@@ -701,6 +710,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/cursor.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
  /usr/include/c++/11/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -714,7 +724,6 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/cursor.cpp.o
 
 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/event.cpp.o
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/event.cpp
- /usr/include/stdc-predef.h
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/event.hpp
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/cursor.hpp
  /usr/include/c++/11/cstddef
@@ -724,15 +733,17 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/event.cpp.o
  /usr/include/features-time64.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/bits/timesize.h
+ /usr/include/stdc-predef.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/include/x86_64-linux-gnu/bits/long-double.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h
  /usr/include/c++/11/pstl/pstl_config.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/__stddef_max_align_t.h
  /usr/include/c++/11/cstdint
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/x86_64-linux-gnu/bits/types.h
@@ -774,7 +785,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/event.cpp.o
  /usr/include/wchar.h
  /usr/include/x86_64-linux-gnu/bits/floatn.h
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
@@ -825,6 +836,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/event.cpp.o
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /usr/include/c++/11/bits/std_abs.h
  /usr/include/c++/11/bits/algorithmfwd.h
@@ -869,6 +881,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/event.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
  /usr/include/c++/11/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -937,8 +950,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/event.cpp.o
  /usr/include/c++/11/bits/atomic_lockfree_defines.h
  /usr/include/c++/11/bits/atomic_wait.h
  /usr/include/c++/11/climits
- /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/limits.h
  /usr/include/limits.h
  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h
  /usr/include/x86_64-linux-gnu/bits/local_lim.h
@@ -971,7 +983,6 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/event.cpp.o
 
 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/focus.cpp.o
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/focus.cpp
- /usr/include/stdc-predef.h
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/focus.hpp
  /usr/include/c++/11/cstdint
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h
@@ -980,13 +991,14 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/focus.cpp.o
  /usr/include/features-time64.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/bits/timesize.h
+ /usr/include/stdc-predef.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/include/x86_64-linux-gnu/bits/long-double.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h
  /usr/include/c++/11/pstl/pstl_config.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/x86_64-linux-gnu/bits/types.h
@@ -998,7 +1010,6 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/focus.cpp.o
 
 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream.cpp.o
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/iostream.cpp
- /usr/include/stdc-predef.h
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/iostream.hpp
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/stream.hpp
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/buffer.hpp
@@ -1009,15 +1020,17 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream.cpp.o
  /usr/include/features-time64.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/bits/timesize.h
+ /usr/include/stdc-predef.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/include/x86_64-linux-gnu/bits/long-double.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h
  /usr/include/c++/11/pstl/pstl_config.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/__stddef_max_align_t.h
  /usr/include/c++/11/cstdint
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/x86_64-linux-gnu/bits/types.h
@@ -1035,7 +1048,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream.cpp.o
  /usr/include/wchar.h
  /usr/include/x86_64-linux-gnu/bits/floatn.h
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
@@ -1131,6 +1144,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream.cpp.o
  /usr/include/x86_64-linux-gnu/bits/select.h
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /usr/include/c++/11/bits/std_abs.h
  /usr/include/c++/11/bits/algorithmfwd.h
@@ -1157,6 +1171,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
  /usr/include/c++/11/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -1196,7 +1211,6 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/iostream.cpp.o
 
 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/key.cpp.o
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/key.cpp
- /usr/include/stdc-predef.h
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/key.hpp
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/platforms/conversion.hpp
  /usr/include/c++/11/cstdint
@@ -1206,13 +1220,14 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/key.cpp.o
  /usr/include/features-time64.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/bits/timesize.h
+ /usr/include/stdc-predef.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/include/x86_64-linux-gnu/bits/long-double.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h
  /usr/include/c++/11/pstl/pstl_config.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/x86_64-linux-gnu/bits/types.h
@@ -1254,8 +1269,8 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/key.cpp.o
  /usr/include/wchar.h
  /usr/include/x86_64-linux-gnu/bits/floatn.h
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
@@ -1306,6 +1321,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/key.cpp.o
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /usr/include/c++/11/bits/std_abs.h
  /usr/include/c++/11/bits/algorithmfwd.h
@@ -1350,6 +1366,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/key.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
  /usr/include/c++/11/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -1368,7 +1385,6 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/key.cpp.o
 
 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/mouse.cpp.o
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/mouse.cpp
- /usr/include/stdc-predef.h
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/mouse.hpp
  /usr/include/c++/11/array
  /usr/include/c++/11/utility
@@ -1378,6 +1394,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/mouse.cpp.o
  /usr/include/features-time64.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/bits/timesize.h
+ /usr/include/stdc-predef.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/include/x86_64-linux-gnu/bits/long-double.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
@@ -1412,9 +1429,10 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/mouse.cpp.o
  /usr/include/c++/11/bits/predefined_ops.h
  /usr/include/c++/11/bits/range_access.h
  /usr/include/c++/11/cstddef
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/__stddef_max_align_t.h
  /usr/include/c++/11/cstdint
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/x86_64-linux-gnu/bits/types.h
@@ -1426,7 +1444,6 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/mouse.cpp.o
 
 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/options.cpp.o
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/options.cpp
- /usr/include/stdc-predef.h
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/options.hpp
  /usr/include/c++/11/cstdint
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h
@@ -1435,13 +1452,14 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/options.cpp.o
  /usr/include/features-time64.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/bits/timesize.h
+ /usr/include/stdc-predef.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/include/x86_64-linux-gnu/bits/long-double.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h
  /usr/include/c++/11/pstl/pstl_config.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/x86_64-linux-gnu/bits/types.h
@@ -1478,7 +1496,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/options.cpp.o
  /usr/include/c++/11/bits/stl_algo.h
  /usr/include/c++/11/cstdlib
  /usr/include/stdlib.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
  /usr/include/x86_64-linux-gnu/bits/waitflags.h
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h
  /usr/include/x86_64-linux-gnu/bits/floatn.h
@@ -1508,6 +1526,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/options.cpp.o
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /usr/include/c++/11/bits/std_abs.h
  /usr/include/c++/11/bits/algorithmfwd.h
@@ -1539,7 +1558,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/options.cpp.o
  /usr/include/c++/11/bits/postypes.h
  /usr/include/c++/11/cwchar
  /usr/include/wchar.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
@@ -1595,6 +1614,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/options.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
  /usr/include/c++/11/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -1612,6 +1632,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/options.cpp.o
  /usr/include/c++/11/exception
  /usr/include/c++/11/bits/exception_ptr.h
  /usr/include/c++/11/bits/cxxabi_init_exception.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/__stddef_max_align_t.h
  /usr/include/c++/11/typeinfo
  /usr/include/c++/11/bits/nested_exception.h
  /usr/include/c++/11/bits/streambuf.tcc
@@ -1636,7 +1657,6 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/options.cpp.o
 
 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.o
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/prompt.cpp
- /usr/include/stdc-predef.h
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/prompt.hpp
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/terminal.hpp
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/options.hpp
@@ -1647,13 +1667,14 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.o
  /usr/include/features-time64.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/bits/timesize.h
+ /usr/include/stdc-predef.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/include/x86_64-linux-gnu/bits/long-double.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h
  /usr/include/c++/11/pstl/pstl_config.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/x86_64-linux-gnu/bits/types.h
@@ -1690,7 +1711,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.o
  /usr/include/c++/11/bits/stl_algo.h
  /usr/include/c++/11/cstdlib
  /usr/include/stdlib.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
  /usr/include/x86_64-linux-gnu/bits/waitflags.h
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h
  /usr/include/x86_64-linux-gnu/bits/floatn.h
@@ -1720,6 +1741,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.o
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /usr/include/c++/11/bits/std_abs.h
  /usr/include/c++/11/bits/algorithmfwd.h
@@ -1747,7 +1769,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.o
  /usr/include/c++/11/bits/postypes.h
  /usr/include/c++/11/cwchar
  /usr/include/wchar.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
@@ -1797,6 +1819,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
  /usr/include/c++/11/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -1818,6 +1841,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.o
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/stream.hpp
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/buffer.hpp
  /usr/include/c++/11/cstddef
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/__stddef_max_align_t.h
  /usr/include/c++/11/streambuf
  /usr/include/c++/11/bits/ios_base.h
  /usr/include/c++/11/bits/locale_classes.h
@@ -1881,8 +1905,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.o
  /usr/include/c++/11/bits/atomic_lockfree_defines.h
  /usr/include/c++/11/bits/atomic_wait.h
  /usr/include/c++/11/climits
- /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/limits.h
  /usr/include/limits.h
  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h
  /usr/include/x86_64-linux-gnu/bits/local_lim.h
@@ -1919,7 +1942,6 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/prompt.cpp.o
 
 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/screen.cpp.o
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/screen.cpp
- /usr/include/stdc-predef.h
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/screen.hpp
  /usr/include/c++/11/cstdint
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h
@@ -1928,13 +1950,14 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/screen.cpp.o
  /usr/include/features-time64.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/bits/timesize.h
+ /usr/include/stdc-predef.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/include/x86_64-linux-gnu/bits/long-double.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h
  /usr/include/c++/11/pstl/pstl_config.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/x86_64-linux-gnu/bits/types.h
@@ -1976,8 +1999,8 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/screen.cpp.o
  /usr/include/wchar.h
  /usr/include/x86_64-linux-gnu/bits/floatn.h
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
@@ -2028,6 +2051,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/screen.cpp.o
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /usr/include/c++/11/bits/std_abs.h
  /usr/include/c++/11/bits/algorithmfwd.h
@@ -2072,6 +2096,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/screen.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
  /usr/include/c++/11/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -2087,7 +2112,6 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/screen.cpp.o
 
 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/stream.cpp.o
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/stream.cpp
- /usr/include/stdc-predef.h
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/stream.hpp
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/buffer.hpp
  /usr/include/c++/11/cstddef
@@ -2097,15 +2121,17 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/stream.cpp.o
  /usr/include/features-time64.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/bits/timesize.h
+ /usr/include/stdc-predef.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/include/x86_64-linux-gnu/bits/long-double.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h
  /usr/include/c++/11/pstl/pstl_config.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/__stddef_max_align_t.h
  /usr/include/c++/11/cstdint
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/x86_64-linux-gnu/bits/types.h
@@ -2123,7 +2149,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/stream.cpp.o
  /usr/include/wchar.h
  /usr/include/x86_64-linux-gnu/bits/floatn.h
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
@@ -2219,6 +2245,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/stream.cpp.o
  /usr/include/x86_64-linux-gnu/bits/select.h
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /usr/include/c++/11/bits/std_abs.h
  /usr/include/c++/11/bits/algorithmfwd.h
@@ -2245,6 +2272,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/stream.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
  /usr/include/c++/11/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -2283,7 +2311,6 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/stream.cpp.o
 
 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/style.cpp.o
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/style.cpp
- /usr/include/stdc-predef.h
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/style.hpp
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/iostream.hpp
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/stream.hpp
@@ -2295,15 +2322,17 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/style.cpp.o
  /usr/include/features-time64.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/bits/timesize.h
+ /usr/include/stdc-predef.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/include/x86_64-linux-gnu/bits/long-double.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h
  /usr/include/c++/11/pstl/pstl_config.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/__stddef_max_align_t.h
  /usr/include/c++/11/cstdint
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/x86_64-linux-gnu/bits/types.h
@@ -2321,7 +2350,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/style.cpp.o
  /usr/include/wchar.h
  /usr/include/x86_64-linux-gnu/bits/floatn.h
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
@@ -2417,6 +2446,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/style.cpp.o
  /usr/include/x86_64-linux-gnu/bits/select.h
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /usr/include/c++/11/bits/std_abs.h
  /usr/include/c++/11/bits/algorithmfwd.h
@@ -2443,6 +2473,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/style.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
  /usr/include/c++/11/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -2481,7 +2512,6 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/style.cpp.o
 
 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal.cpp.o
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/terminal.cpp
- /usr/include/stdc-predef.h
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/terminal.hpp
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/options.hpp
  /usr/include/c++/11/cstdint
@@ -2491,13 +2521,14 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal.cpp.o
  /usr/include/features-time64.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/bits/timesize.h
+ /usr/include/stdc-predef.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/include/x86_64-linux-gnu/bits/long-double.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h
  /usr/include/c++/11/pstl/pstl_config.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/x86_64-linux-gnu/bits/types.h
@@ -2534,7 +2565,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal.cpp.o
  /usr/include/c++/11/bits/stl_algo.h
  /usr/include/c++/11/cstdlib
  /usr/include/stdlib.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
  /usr/include/x86_64-linux-gnu/bits/waitflags.h
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h
  /usr/include/x86_64-linux-gnu/bits/floatn.h
@@ -2564,6 +2595,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal.cpp.o
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /usr/include/c++/11/bits/std_abs.h
  /usr/include/c++/11/bits/algorithmfwd.h
@@ -2591,7 +2623,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal.cpp.o
  /usr/include/c++/11/bits/postypes.h
  /usr/include/c++/11/cwchar
  /usr/include/wchar.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
@@ -2641,6 +2673,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
  /usr/include/c++/11/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -2653,6 +2686,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal.cpp.o
  /usr/include/c++/11/bits/basic_string.tcc
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/cursor.hpp
  /usr/include/c++/11/cstddef
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/__stddef_max_align_t.h
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/exception.hpp
  /usr/include/c++/11/exception
  /usr/include/c++/11/bits/exception_ptr.h
@@ -2706,12 +2740,10 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/terminal.cpp.o
 
 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/version.cpp.o
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/cpp-terminal/version.cpp
- /usr/include/stdc-predef.h
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/version.hpp
 
 _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/window.cpp.o
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/window.cpp
- /usr/include/stdc-predef.h
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/window.hpp
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/color.hpp
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/terminfo.hpp
@@ -2722,6 +2754,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/window.cpp.o
  /usr/include/features-time64.h
  /usr/include/x86_64-linux-gnu/bits/wordsize.h
  /usr/include/x86_64-linux-gnu/bits/timesize.h
+ /usr/include/stdc-predef.h
  /usr/include/x86_64-linux-gnu/sys/cdefs.h
  /usr/include/x86_64-linux-gnu/bits/long-double.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
@@ -2761,8 +2794,8 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/window.cpp.o
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/x86_64-linux-gnu/bits/floatn.h
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdarg.h
  /usr/include/x86_64-linux-gnu/bits/wchar.h
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h
@@ -2772,7 +2805,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/window.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h
  /usr/include/c++/11/cstdint
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/types.h
  /usr/include/x86_64-linux-gnu/bits/typesizes.h
@@ -2822,6 +2855,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/window.cpp.o
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
  /usr/include/alloca.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
  /usr/include/c++/11/bits/std_abs.h
  /usr/include/c++/11/bits/algorithmfwd.h
@@ -2866,6 +2900,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/window.cpp.o
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+ /usr/include/x86_64-linux-gnu/bits/stdio.h
  /usr/include/c++/11/cerrno
  /usr/include/errno.h
  /usr/include/x86_64-linux-gnu/bits/errno.h
@@ -2885,6 +2920,7 @@ _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/window.cpp.o
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/stream.hpp
  /home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src/cpp-terminal/buffer.hpp
  /usr/include/c++/11/cstddef
+ /usr/lib/llvm-14/lib/clang/14.0.0/include/__stddef_max_align_t.h
  /usr/include/c++/11/streambuf
  /usr/include/c++/11/bits/ios_base.h
  /usr/include/c++/11/bits/locale_classes.h

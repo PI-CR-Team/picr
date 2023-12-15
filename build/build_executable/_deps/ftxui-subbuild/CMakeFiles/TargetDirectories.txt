@@ -1,0 +1,3 @@
+/home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate.dir
+/home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-subbuild/CMakeFiles/edit_cache.dir
+/home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-subbuild/CMakeFiles/rebuild_cache.dir

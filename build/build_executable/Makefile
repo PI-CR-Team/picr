@@ -65,6 +65,26 @@ CMAKE_BINARY_DIR = /home/matthewalgo/Projects/picr/build/build_executable
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	/usr/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/matthewalgo/Projects/picr/build/build_executable/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -605,30 +625,82 @@ doc-latex/fast:
 .PHONY : doc-latex/fast
 
 #=============================================================================
-# Target rules for targets named PiCrLibraries
+# Target rules for targets named screen
 
 # Build rule for target.
-PiCrLibraries: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 PiCrLibraries
-.PHONY : PiCrLibraries
+screen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 screen
+.PHONY : screen
 
 # fast build rule for target.
-PiCrLibraries/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/build.make _deps/picrlibraries-build/CMakeFiles/PiCrLibraries.dir/build
-.PHONY : PiCrLibraries/fast
+screen/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/ftxui-build/CMakeFiles/screen.dir/build.make _deps/ftxui-build/CMakeFiles/screen.dir/build
+.PHONY : screen/fast
 
 #=============================================================================
-# Target rules for targets named cpp-terminal-gui
+# Target rules for targets named dom
 
 # Build rule for target.
-cpp-terminal-gui: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp-terminal-gui
-.PHONY : cpp-terminal-gui
+dom: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dom
+.PHONY : dom
 
 # fast build rule for target.
-cpp-terminal-gui/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build.make _deps/cpp-terminal-gui-build/CMakeFiles/cpp-terminal-gui.dir/build
-.PHONY : cpp-terminal-gui/fast
+dom/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/ftxui-build/CMakeFiles/dom.dir/build.make _deps/ftxui-build/CMakeFiles/dom.dir/build
+.PHONY : dom/fast
+
+#=============================================================================
+# Target rules for targets named component
+
+# Build rule for target.
+component: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 component
+.PHONY : component
+
+# fast build rule for target.
+component/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/ftxui-build/CMakeFiles/component.dir/build.make _deps/ftxui-build/CMakeFiles/component.dir/build
+.PHONY : component/fast
+
+#=============================================================================
+# Target rules for targets named imgui
+
+# Build rule for target.
+imgui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui
+.PHONY : imgui
+
+# fast build rule for target.
+imgui/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/imtui-build/third-party/CMakeFiles/imgui.dir/build.make _deps/imtui-build/third-party/CMakeFiles/imgui.dir/build
+.PHONY : imgui/fast
+
+#=============================================================================
+# Target rules for targets named imtui-core
+
+# Build rule for target.
+imtui-core: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imtui-core
+.PHONY : imtui-core
+
+# fast build rule for target.
+imtui-core/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/imtui-build/src/CMakeFiles/imtui-core.dir/build.make _deps/imtui-build/src/CMakeFiles/imtui-core.dir/build
+.PHONY : imtui-core/fast
+
+#=============================================================================
+# Target rules for targets named imtui-ncurses
+
+# Build rule for target.
+imtui-ncurses: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imtui-ncurses
+.PHONY : imtui-ncurses
+
+# fast build rule for target.
+imtui-ncurses/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/imtui-build/src/CMakeFiles/imtui-ncurses.dir/build.make _deps/imtui-build/src/CMakeFiles/imtui-ncurses.dir/build
+.PHONY : imtui-ncurses/fast
 
 source/file_reader.o: source/file_reader.cpp.o
 .PHONY : source/file_reader.o
@@ -737,6 +809,8 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... doc-html"
 	@echo "... doc-latex"
@@ -748,19 +822,22 @@ help:
 	@echo "... IOStream"
 	@echo "... Key"
 	@echo "... PiCrExecutable"
-	@echo "... PiCrLibraries"
 	@echo "... Screen"
 	@echo "... args"
 	@echo "... cin_cooked"
 	@echo "... cin_raw"
 	@echo "... colors"
+	@echo "... component"
 	@echo "... cout"
 	@echo "... cpp-terminal"
-	@echo "... cpp-terminal-gui"
 	@echo "... cpp-terminal-platforms"
 	@echo "... doctest_with_main"
+	@echo "... dom"
 	@echo "... events"
 	@echo "... file.test"
+	@echo "... imgui"
+	@echo "... imtui-core"
+	@echo "... imtui-ncurses"
 	@echo "... keys"
 	@echo "... kilo"
 	@echo "... menu"
@@ -770,6 +847,7 @@ help:
 	@echo "... prompt_multiline"
 	@echo "... prompt_not_immediate"
 	@echo "... prompt_simple"
+	@echo "... screen"
 	@echo "... slow_events"
 	@echo "... styles"
 	@echo "... test_terminal"

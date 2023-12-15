@@ -6,5 +6,5 @@ CXX_DEFINES = -DDOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 
 CXX_INCLUDES = -I/home/matthewalgo/Projects/picr/build/build_executable/_deps/doctest-src
 
-CXX_FLAGS = -fPIC -std=c++11
+CXX_FLAGS =  -std=c++20 -O3 -DNDEBUG -fPIC -std=c++11
 

@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/AttachConsole.dir/attach_console.test.cpp.o -o AttachConsole  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/platforms/libcpp-terminal-platforms.a 
+/usr/bin/c++  -std=c++20 -O3 -DNDEBUG CMakeFiles/AttachConsole.dir/attach_console.test.cpp.o -o AttachConsole  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/platforms/libcpp-terminal-platforms.a 

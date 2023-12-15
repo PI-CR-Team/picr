@@ -5,6 +5,14 @@ cmake_minimum_required(VERSION 3.14...3.22)
 
 project(BuildAll LANGUAGES CXX)
 
+# Set the C++ standard to C++20
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+# Use the C++17 standard for all targets
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++20")
+
 include(../cmake/tools.cmake)
 
 # needed to generate test target
