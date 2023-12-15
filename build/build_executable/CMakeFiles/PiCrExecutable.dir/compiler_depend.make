@@ -749,7 +749,13 @@ CMakeFiles/PiCrExecutable.dir/source/main.cpp.o: /home/matthewalgo/Projects/picr
   /usr/include/c++/11/bits/stl_deque.h \
   /usr/include/c++/11/bits/deque.tcc \
   /usr/include/c++/11/bits/stl_queue.h \
-  _deps/ftxui-src/include/ftxui/component/task.hpp
+  _deps/ftxui-src/include/ftxui/component/task.hpp \
+  /home/matthewalgo/Projects/picr/include/picr/file_reader.hpp \
+  /usr/include/c++/11/fstream \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
+  /home/matthewalgo/Projects/picr/include/picr/line.hpp
 
 CMakeFiles/PiCrExecutable.dir/source/terminal_renderer.cpp.o: /home/matthewalgo/Projects/picr/executable_sources/source/terminal_renderer.cpp
 
