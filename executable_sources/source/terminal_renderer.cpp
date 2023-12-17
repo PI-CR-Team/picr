@@ -12,7 +12,7 @@ using namespace ftxui;
 using namespace std::chrono_literals;
 
 TerminalRenderer::TerminalRenderer(ftxui::Element currentScreenElements) :
-    currentScreenElements(currentScreenElements), currentScreen(ScreenInteractive::Fullscreen()) {
+    currentScreenElements(currentScreenElements), currentScreenInteractive(ScreenInteractive::Fullscreen()) {
 
     // Add a border to the elements
     currentScreenElements |= border;
@@ -21,12 +21,21 @@ TerminalRenderer::TerminalRenderer(ftxui::Element currentScreenElements) :
     currentScreenElements |= size(HEIGHT, GREATER_THAN, min_width);
 }
 
+TerminalRenderer::TerminalRenderer(ftxui::Component currentScreenComponent) : 
+    currentScreenComponentToRender(currentScreenComponent), currentScreenInteractive(ScreenInteractive::Fullscreen()) {
+        currentScreenComponentToRender |= border;
+};
+
 void TerminalRenderer::startTerminalRendererThreadForElements() {
     for (int i = 0;; ++i) {
-        Render(currentScreen, currentScreenElements);
-        currentScreen.Print();
+        Render(currentScreenInteractive, currentScreenElements);
+        currentScreenInteractive.Print();
 
         const auto sleep_time = 0.03s;
         std::this_thread::sleep_for(sleep_time);
     }
+}
+
+void TerminalRenderer::startTerminalRendererThreadForComponents() {
+    this->currentScreenInteractive.Loop(this->currentScreenComponentToRender);
 }

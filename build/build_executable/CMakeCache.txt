@@ -14,6 +14,10 @@
 # EXTERNAL cache entries
 ########################
 
+//TRUE to build SFML as shared libraries, FALSE to build it as
+// static libraries
+BUILD_SHARED_LIBS:BOOL=TRUE
+
 //Path to clang-tidy executable
 CLANG_TIDY_EXE:FILEPATH=CLANG_TIDY_EXE-NOTFOUND
 
@@ -23,7 +27,7 @@ CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
-//Build type
+//Choose the type of build (Debug or Release)
 CMAKE_BUILD_TYPE:STRING=Release
 
 //Enable/Disable color output during build.
@@ -32,11 +36,13 @@ CMAKE_COLOR_MAKEFILE:BOOL=ON
 //CXX compiler
 CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
 
-//LLVM archiver
-CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/llvm-ar-14
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-11
 
-//Generate index for LLVM archive
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/llvm-ranlib-14
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-11
 
 //C++ extensions
 CMAKE_CXX_EXTENSIONS:STRING=FALSE
@@ -191,6 +197,9 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 
 //Path to a program.
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
+
+//macOS architecture to build; 64-bit is expected
+CMAKE_OSX_ARCHITECTURES:STRING=x86_64
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -392,6 +401,10 @@ FETCHCONTENT_SOURCE_DIR_FTXUI:PATH=
 // for imtui
 FETCHCONTENT_SOURCE_DIR_IMTUI:PATH=
 
+//When not empty, overrides where to find pre-populated content
+// for SFML
+FETCHCONTENT_SOURCE_DIR_SFML:PATH=
+
 //Enables UPDATE_DISCONNECTED behavior for all content population
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 
@@ -406,6 +419,24 @@ FETCHCONTENT_UPDATES_DISCONNECTED_FTXUI:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of imtui
 FETCHCONTENT_UPDATES_DISCONNECTED_IMTUI:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of SFML
+FETCHCONTENT_UPDATES_DISCONNECTED_SFML:BOOL=OFF
+
+//Path to a file.
+FLAC_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+FLAC_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libFLAC.so
+
+//Path to a file.
+FREETYPE_INCLUDE_DIR_freetype2:PATH=/usr/include/freetype2
+
+//Path to a file.
+FREETYPE_INCLUDE_DIR_ft2build:PATH=/usr/include/freetype2
+
+//Path to a library.
+FREETYPE_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libfreetype.so
 
 //Set to ON to build docs
 FTXUI_BUILD_DOCS:BOOL=OFF
@@ -466,11 +497,50 @@ IMTUI_SUPPORT_CURL:BOOL=ON
 //imtui: support for libncurses
 IMTUI_SUPPORT_NCURSES:BOOL=ON
 
+//Path to a file.
+OGG_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+OGG_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libogg.so
+
+//Path to a file.
+OPENAL_INCLUDE_DIR:PATH=/usr/include/AL
+
+//Path to a library.
+OPENAL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libopenal.so
+
+//Path to a file.
+OPENGL_EGL_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a file.
+OPENGL_GLX_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a file.
+OPENGL_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+OPENGL_egl_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libEGL.so
+
+//Path to a library.
+OPENGL_gl_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libGL.so
+
+//Path to a library.
+OPENGL_glu_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libGLU.so
+
+//Path to a library.
+OPENGL_glx_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libGLX.so
+
+//Path to a library.
+OPENGL_opengl_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libOpenGL.so
+
+//Path to a file.
+OPENGL_xmesa_INCLUDE_DIR:PATH=OPENGL_xmesa_INCLUDE_DIR-NOTFOUND
+
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
 
 //pkg-config executable
-PKG_CONFIG_EXECUTABLE:FILEPATH=PKG_CONFIG_EXECUTABLE-NOTFOUND
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
 //Value Computed by CMake
 PiCrExecutable_BINARY_DIR:STATIC=/home/matthewalgo/Projects/picr/build/build_executable
@@ -480,6 +550,73 @@ PiCrExecutable_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 PiCrExecutable_SOURCE_DIR:STATIC=/home/matthewalgo/Projects/picr/executable_sources
+
+//Value Computed by CMake
+SFML_BINARY_DIR:STATIC=/home/matthewalgo/Projects/picr/build/build_executable/_deps/sfml-build
+
+//TRUE to build SFML's Audio module.
+SFML_BUILD_AUDIO:BOOL=TRUE
+
+//TRUE to generate the API documentation, FALSE to ignore it
+SFML_BUILD_DOC:BOOL=FALSE
+
+//TRUE to build the SFML examples, FALSE to ignore them
+SFML_BUILD_EXAMPLES:BOOL=FALSE
+
+//TRUE to build SFML's Graphics module.
+SFML_BUILD_GRAPHICS:BOOL=TRUE
+
+//TRUE to build SFML's Network module.
+SFML_BUILD_NETWORK:BOOL=TRUE
+
+//TRUE to build SFML's Window module. This setting is ignored,
+// if the graphics module is built.
+SFML_BUILD_WINDOW:BOOL=TRUE
+
+//External libraries (FLAC, Freetype, Vorbis, ...) installation
+// directory
+SFML_DEPENDENCIES_INSTALL_PREFIX:PATH=.
+
+//TRUE to automatically install pkg-config files so other projects
+// can find SFML
+SFML_INSTALL_PKGCONFIG_FILES:BOOL=TRUE
+
+//Value Computed by CMake
+SFML_IS_TOP_LEVEL:STATIC=OFF
+
+//Prefix installation path for miscellaneous files
+SFML_MISC_INSTALL_PREFIX:PATH=share/SFML
+
+//TRUE to use an OpenGL ES implementation, FALSE to use a desktop
+// OpenGL implementation
+SFML_OPENGL_ES:BOOL=0
+
+//Install directory for SFML's pkg-config .pc files
+SFML_PKGCONFIG_INSTALL_PREFIX:PATH=/usr/local/lib/pkgconfig
+
+//Value Computed by CMake
+SFML_SOURCE_DIR:STATIC=/home/matthewalgo/Projects/picr/build/build_executable/_deps/sfml-src
+
+//TRUE to use system dependencies, FALSE to use the bundled ones.
+SFML_USE_SYSTEM_DEPS:BOOL=FALSE
+
+//Path to a file.
+UDEV_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+UDEV_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libudev.so
+
+//Path to a library.
+VORBISENC_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libvorbisenc.so
+
+//Path to a library.
+VORBISFILE_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libvorbisfile.so
+
+//Path to a file.
+VORBIS_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+VORBIS_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libvorbis.so
 
 //Path to a file.
 X11_ICE_INCLUDE_PATH:PATH=X11_ICE_INCLUDE_PATH-NOTFOUND
@@ -542,10 +679,10 @@ X11_Xcomposite_INCLUDE_PATH:PATH=X11_Xcomposite_INCLUDE_PATH-NOTFOUND
 X11_Xcomposite_LIB:FILEPATH=X11_Xcomposite_LIB-NOTFOUND
 
 //Path to a file.
-X11_Xcursor_INCLUDE_PATH:PATH=X11_Xcursor_INCLUDE_PATH-NOTFOUND
+X11_Xcursor_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xcursor_LIB:FILEPATH=X11_Xcursor_LIB-NOTFOUND
+X11_Xcursor_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXcursor.so
 
 //Path to a file.
 X11_Xdamage_INCLUDE_PATH:PATH=X11_Xdamage_INCLUDE_PATH-NOTFOUND
@@ -566,10 +703,10 @@ X11_Xext_INCLUDE_PATH:PATH=/usr/include
 X11_Xext_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXext.so
 
 //Path to a file.
-X11_Xfixes_INCLUDE_PATH:PATH=X11_Xfixes_INCLUDE_PATH-NOTFOUND
+X11_Xfixes_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xfixes_LIB:FILEPATH=X11_Xfixes_LIB-NOTFOUND
+X11_Xfixes_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXfixes.so
 
 //Path to a file.
 X11_Xft_INCLUDE_PATH:PATH=X11_Xft_INCLUDE_PATH-NOTFOUND
@@ -611,16 +748,16 @@ X11_Xpm_INCLUDE_PATH:PATH=X11_Xpm_INCLUDE_PATH-NOTFOUND
 X11_Xpm_LIB:FILEPATH=X11_Xpm_LIB-NOTFOUND
 
 //Path to a file.
-X11_Xrandr_INCLUDE_PATH:PATH=X11_Xrandr_INCLUDE_PATH-NOTFOUND
+X11_Xrandr_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xrandr_LIB:FILEPATH=X11_Xrandr_LIB-NOTFOUND
+X11_Xrandr_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXrandr.so
 
 //Path to a file.
-X11_Xrender_INCLUDE_PATH:PATH=X11_Xrender_INCLUDE_PATH-NOTFOUND
+X11_Xrender_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xrender_LIB:FILEPATH=X11_Xrender_LIB-NOTFOUND
+X11_Xrender_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXrender.so
 
 //Path to a file.
 X11_Xshape_INCLUDE_PATH:PATH=/usr/include
@@ -760,6 +897,27 @@ imtui_SOURCE_DIR:STATIC=/home/matthewalgo/Projects/picr/build/build_executable/_
 //Path to a program.
 iwyu_path:FILEPATH=iwyu_path-NOTFOUND
 
+//Path to a library.
+pkgcfg_lib_NCURSES_ncurses:FILEPATH=/usr/lib/x86_64-linux-gnu/libncurses.so
+
+//Path to a library.
+pkgcfg_lib_NCURSES_tinfo:FILEPATH=/usr/lib/x86_64-linux-gnu/libtinfo.so
+
+//Dependencies for the target
+sfml-audio_LIB_DEPENDS:STATIC=general;sfml-system;
+
+//Dependencies for the target
+sfml-graphics_LIB_DEPENDS:STATIC=general;sfml-window;
+
+//Dependencies for the target
+sfml-network_LIB_DEPENDS:STATIC=general;sfml-system;
+
+//Dependencies for the target
+sfml-system_LIB_DEPENDS:STATIC=general;pthread;general;rt;
+
+//Dependencies for the target
+sfml-window_LIB_DEPENDS:STATIC=general;sfml-system;
+
 
 ########################
 # INTERNAL cache entries
@@ -821,6 +979,8 @@ CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_DLLTOOL
 CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
+//Path to cache edit program executable.
+CMAKE_EDIT_COMMAND:INTERNAL=/usr/bin/cmake-gui
 //Executable file format
 CMAKE_EXECUTABLE_FORMAT:INTERNAL=ELF
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
@@ -911,7 +1071,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=21
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -972,8 +1132,11 @@ CPM_DRY_RUN:INTERNAL=OFF
 CPM_FILE:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/cmake/CPM_0.35.0.cmake
 CPM_INDENT:INTERNAL=CPM:
 CPM_MODULE_PATH:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/CPM_modules
-CPM_PACKAGES:INTERNAL=cpp-terminal;ftxui;imtui
+CPM_PACKAGES:INTERNAL=cpp-terminal;ftxui;imtui;SFML
 CPM_PACKAGE_LOCK_FILE:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/cpm-package-lock.cmake
+CPM_PACKAGE_SFML_BINARY_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/_deps/sfml-build
+CPM_PACKAGE_SFML_SOURCE_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/_deps/sfml-src
+CPM_PACKAGE_SFML_VERSION:INTERNAL=2.5.
 CPM_PACKAGE_cpp-terminal_BINARY_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build
 CPM_PACKAGE_cpp-terminal_SOURCE_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src
 CPM_PACKAGE_cpp-terminal_VERSION:INTERNAL=80
@@ -1004,16 +1167,107 @@ DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
 DOXYGEN_MSCGEN_EXECUTABLE-ADVANCED:INTERNAL=1
 //Details about finding Curses
 FIND_PACKAGE_MESSAGE_DETAILS_Curses:INTERNAL=[/usr/lib/x86_64-linux-gnu/libcurses.so][/usr/include][v()]
+//Details about finding FLAC
+FIND_PACKAGE_MESSAGE_DETAILS_FLAC:INTERNAL=[/usr/lib/x86_64-linux-gnu/libFLAC.so][/usr/include][v()]
+//Details about finding OpenAL
+FIND_PACKAGE_MESSAGE_DETAILS_OpenAL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libopenal.so][/usr/include/AL][v()]
+//Details about finding OpenGL
+FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][c ][v()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//Details about finding VORBIS
+FIND_PACKAGE_MESSAGE_DETAILS_VORBIS:INTERNAL=[/usr/lib/x86_64-linux-gnu/libvorbisenc.so;/usr/lib/x86_64-linux-gnu/libvorbisfile.so;/usr/lib/x86_64-linux-gnu/libvorbis.so;/usr/lib/x86_64-linux-gnu/libogg.so][/usr/include][/usr/include][v()]
 //Details about finding X11
 FIND_PACKAGE_MESSAGE_DETAILS_X11:INTERNAL=[/usr/include][/usr/lib/x86_64-linux-gnu/libX11.so][c ][v()]
+//ADVANCED property for variable: FLAC_INCLUDE_DIR
+FLAC_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: FLAC_LIBRARY
+FLAC_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: FREETYPE_INCLUDE_DIR_freetype2
+FREETYPE_INCLUDE_DIR_freetype2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: FREETYPE_INCLUDE_DIR_ft2build
+FREETYPE_INCLUDE_DIR_ft2build-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: FREETYPE_LIBRARY
+FREETYPE_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
+NCURSES_CFLAGS:INTERNAL=-D_DEFAULT_SOURCE;-D_XOPEN_SOURCE=600
+NCURSES_CFLAGS_I:INTERNAL=
+NCURSES_CFLAGS_OTHER:INTERNAL=-D_DEFAULT_SOURCE;-D_XOPEN_SOURCE=600
+NCURSES_FOUND:INTERNAL=1
+NCURSES_INCLUDEDIR:INTERNAL=/usr/include
+NCURSES_INCLUDE_DIRS:INTERNAL=
+NCURSES_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lncurses;-ltinfo
+NCURSES_LDFLAGS_OTHER:INTERNAL=
+NCURSES_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+NCURSES_LIBRARIES:INTERNAL=ncurses;tinfo
+NCURSES_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+NCURSES_LIBS:INTERNAL=
+NCURSES_LIBS_L:INTERNAL=
+NCURSES_LIBS_OTHER:INTERNAL=
+NCURSES_LIBS_PATHS:INTERNAL=
+NCURSES_MODULE_NAME:INTERNAL=ncurses
+NCURSES_PREFIX:INTERNAL=/usr
+NCURSES_STATIC_CFLAGS:INTERNAL=-D_DEFAULT_SOURCE;-D_XOPEN_SOURCE=600
+NCURSES_STATIC_CFLAGS_I:INTERNAL=
+NCURSES_STATIC_CFLAGS_OTHER:INTERNAL=-D_DEFAULT_SOURCE;-D_XOPEN_SOURCE=600
+NCURSES_STATIC_INCLUDE_DIRS:INTERNAL=
+NCURSES_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lncurses;-ltinfo;-ldl
+NCURSES_STATIC_LDFLAGS_OTHER:INTERNAL=
+NCURSES_STATIC_LIBDIR:INTERNAL=
+NCURSES_STATIC_LIBRARIES:INTERNAL=ncurses;tinfo;dl
+NCURSES_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+NCURSES_STATIC_LIBS:INTERNAL=
+NCURSES_STATIC_LIBS_L:INTERNAL=
+NCURSES_STATIC_LIBS_OTHER:INTERNAL=
+NCURSES_STATIC_LIBS_PATHS:INTERNAL=
+NCURSES_VERSION:INTERNAL=6.3.20211021
+NCURSES_ncurses_INCLUDEDIR:INTERNAL=
+NCURSES_ncurses_LIBDIR:INTERNAL=
+NCURSES_ncurses_PREFIX:INTERNAL=
+NCURSES_ncurses_VERSION:INTERNAL=
+//ADVANCED property for variable: OGG_INCLUDE_DIR
+OGG_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OGG_LIBRARY
+OGG_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENAL_INCLUDE_DIR
+OPENAL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENAL_LIBRARY
+OPENAL_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_EGL_INCLUDE_DIR
+OPENGL_EGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_GLX_INCLUDE_DIR
+OPENGL_GLX_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_INCLUDE_DIR
+OPENGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_egl_LIBRARY
+OPENGL_egl_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_gl_LIBRARY
+OPENGL_gl_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_glu_LIBRARY
+OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_glx_LIBRARY
+OPENGL_glx_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_opengl_LIBRARY
+OPENGL_opengl_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_xmesa_INCLUDE_DIR
+OPENGL_xmesa_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_ARGN
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: UDEV_INCLUDE_DIR
+UDEV_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: UDEV_LIBRARIES
+UDEV_LIBRARIES-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: VORBISENC_LIBRARY
+VORBISENC_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: VORBISFILE_LIBRARY
+VORBISFILE_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: VORBIS_INCLUDE_DIR
+VORBIS_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: VORBIS_LIBRARY
+VORBIS_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: X11_ICE_INCLUDE_PATH
 X11_ICE_INCLUDE_PATH-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: X11_ICE_LIB
@@ -1172,4 +1426,11 @@ X11_xkbfile_INCLUDE_PATH-ADVANCED:INTERNAL=1
 X11_xkbfile_LIB-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
+__pkg_config_arguments_NCURSES:INTERNAL=QUIET;ncurses
+__pkg_config_checked_NCURSES:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_NCURSES_ncurses
+pkgcfg_lib_NCURSES_ncurses-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_NCURSES_tinfo
+pkgcfg_lib_NCURSES_tinfo-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
 

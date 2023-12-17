@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/PiCrExecutable.dir/source/command_parser.cpp.o"
+  "CMakeFiles/PiCrExecutable.dir/source/command_parser.cpp.o.d"
   "CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.o"
   "CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.o.d"
   "CMakeFiles/PiCrExecutable.dir/source/line.cpp.o"

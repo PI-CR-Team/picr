@@ -50,6 +50,43 @@ CPMAddPackage (
     GIT_TAG v1.78
 )
 
+# SFML
+# Warning - Depends on udev - sudo apt-get install libudev-dev
+CPMAddPackage (
+    NAME SFML
+    GITHUB_REPOSITORY SFML/SFML
+    GIT_TAG 2.5.x
+)
+
+# Warning! Depends on build-essential - sudo apt-get install build-essential
+# Vorbis - sudo apt-get install -y vorbis-tools libvorbis-dev libogg-dev
+# FLAC - sudo apt-get install libflac-dev
+
+#### ALL DEPS
+
+# # # Install CMake GUI
+# sudo apt-get install cmake-gui
+
+# # SFML Dependencies
+# sudo apt-get install libpthread-stubs0-dev
+# sudo apt-get install libgl1-mesa-dev
+# sudo apt-get install libx11-dev
+# sudo apt-get install libxrandr-dev
+# sudo apt-get install libfreetype6-dev
+# sudo apt-get install libglew1.5-dev
+# sudo apt-get install libjpeg8-dev
+# sudo apt-get install libsndfile1-dev
+# sudo apt-get install libopenal-dev
+# sudo apt-get install cmake-gui libxcursor-dev libpthread-stubs0-dev libgl1-mesa-dev libx11-dev libxrandr-dev libfreetype6-dev libglew-dev libjpeg8-dev libsndfile1-dev libopenal-dev libudev-dev libxcb-image0-dev
+# # Joystick
+# sudo apt-get install libudev-dev
+set_target_properties(sfml-system PROPERTIES CXX_STANDARD 98 CXX_STANDARD_REQUIRED YES CXX_EXTENSIONS NO)
+set_target_properties(sfml-network PROPERTIES CXX_STANDARD 98 CXX_STANDARD_REQUIRED YES CXX_EXTENSIONS NO)
+set_target_properties(sfml-graphics PROPERTIES CXX_STANDARD 98 CXX_STANDARD_REQUIRED YES CXX_EXTENSIONS NO)
+set_target_properties(sfml-window PROPERTIES CXX_STANDARD 98 CXX_STANDARD_REQUIRED YES CXX_EXTENSIONS NO)
+set_target_properties(sfml-audio PROPERTIES CXX_STANDARD 98 CXX_STANDARD_REQUIRED YES CXX_EXTENSIONS NO) # Warning! Depends on openal - sudo apt-get install libopenal-dev
+find_package(SFML REQUIRED COMPONENTS graphics window system audio network)
+
 # Find the ncurses library
 find_package(Curses REQUIRED)
 
@@ -66,6 +103,7 @@ target_link_libraries(
     ftxui::screen
     ftxui::dom
     ftxui::component
+    sfml-system sfml-window sfml-graphics sfml-audio sfml-network
     # ${UNIX_LIBRARIES}
 )
 

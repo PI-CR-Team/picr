@@ -16,7 +16,7 @@
 #include "ftxui/component/screen_interactive.hpp"  // for ScreenInteractive
 #include "ftxui/dom/elements.hpp"  // for operator|, separator, text, Element, flex, vbox, border
 
-// #include "picr/terminal_renderer.hpp"
+#include "picr/terminal_renderer.hpp"
 #include "picr/file_reader.hpp"
 
 using namespace std;
@@ -51,23 +51,19 @@ int main(int argc, char** argv) {
         auto textarea_1 = Input(&content);
         auto textarea_2 = Input(&content);
         int size = 50;
-        auto layout = ResizableSplitLeft(textarea_1, textarea_2, &size);
+        auto layout = ResizableSplitTop(textarea_1, textarea_2, &size);
 
         auto component = Renderer(layout, [&] {
             return vbox({
-                    text("Input:"),
+                    text("PiCr Version 0.0.1"),
                     separator(),
                     layout->Render() | flex,
                 }) | border;
         });
 
-        auto screen = ScreenInteractive::Fullscreen();
-        screen.Loop(component);
+        TerminalRenderer renderer(component); // Render the initial component
+        renderer.startTerminalRendererThreadForComponents();
 
-        // TerminalRenderer renderer(layout);
-        // renderer.startTerminalRendererThread();
-
-        // TerminalRenderer screenRenderer();
 
     } catch (const std::exception& e) {
         // Eventually implement the new file functionality here

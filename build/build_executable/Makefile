@@ -87,8 +87,8 @@ package_source/fast: package_source
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -107,7 +107,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"bin\" \"devel\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -702,6 +702,95 @@ imtui-ncurses/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/imtui-build/src/CMakeFiles/imtui-ncurses.dir/build.make _deps/imtui-build/src/CMakeFiles/imtui-ncurses.dir/build
 .PHONY : imtui-ncurses/fast
 
+#=============================================================================
+# Target rules for targets named sfml-system
+
+# Build rule for target.
+sfml-system: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sfml-system
+.PHONY : sfml-system
+
+# fast build rule for target.
+sfml-system/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build.make _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/build
+.PHONY : sfml-system/fast
+
+#=============================================================================
+# Target rules for targets named sfml-window
+
+# Build rule for target.
+sfml-window: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sfml-window
+.PHONY : sfml-window
+
+# fast build rule for target.
+sfml-window/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/build.make _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/build
+.PHONY : sfml-window/fast
+
+#=============================================================================
+# Target rules for targets named sfml-network
+
+# Build rule for target.
+sfml-network: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sfml-network
+.PHONY : sfml-network
+
+# fast build rule for target.
+sfml-network/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build.make _deps/sfml-build/src/SFML/Network/CMakeFiles/sfml-network.dir/build
+.PHONY : sfml-network/fast
+
+#=============================================================================
+# Target rules for targets named sfml-graphics
+
+# Build rule for target.
+sfml-graphics: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sfml-graphics
+.PHONY : sfml-graphics
+
+# fast build rule for target.
+sfml-graphics/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build.make _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/build
+.PHONY : sfml-graphics/fast
+
+#=============================================================================
+# Target rules for targets named sfml-audio
+
+# Build rule for target.
+sfml-audio: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sfml-audio
+.PHONY : sfml-audio
+
+# fast build rule for target.
+sfml-audio/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build.make _deps/sfml-build/src/SFML/Audio/CMakeFiles/sfml-audio.dir/build
+.PHONY : sfml-audio/fast
+
+source/command_parser.o: source/command_parser.cpp.o
+.PHONY : source/command_parser.o
+
+# target to build an object file
+source/command_parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiCrExecutable.dir/build.make CMakeFiles/PiCrExecutable.dir/source/command_parser.cpp.o
+.PHONY : source/command_parser.cpp.o
+
+source/command_parser.i: source/command_parser.cpp.i
+.PHONY : source/command_parser.i
+
+# target to preprocess a source file
+source/command_parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiCrExecutable.dir/build.make CMakeFiles/PiCrExecutable.dir/source/command_parser.cpp.i
+.PHONY : source/command_parser.cpp.i
+
+source/command_parser.s: source/command_parser.cpp.s
+.PHONY : source/command_parser.s
+
+# target to generate assembly for a file
+source/command_parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiCrExecutable.dir/build.make CMakeFiles/PiCrExecutable.dir/source/command_parser.cpp.s
+.PHONY : source/command_parser.cpp.s
+
 source/file_reader.o: source/file_reader.cpp.o
 .PHONY : source/file_reader.o
 
@@ -848,10 +937,18 @@ help:
 	@echo "... prompt_not_immediate"
 	@echo "... prompt_simple"
 	@echo "... screen"
+	@echo "... sfml-audio"
+	@echo "... sfml-graphics"
+	@echo "... sfml-network"
+	@echo "... sfml-system"
+	@echo "... sfml-window"
 	@echo "... slow_events"
 	@echo "... styles"
 	@echo "... test_terminal"
 	@echo "... utf8"
+	@echo "... source/command_parser.o"
+	@echo "... source/command_parser.i"
+	@echo "... source/command_parser.s"
 	@echo "... source/file_reader.o"
 	@echo "... source/file_reader.i"
 	@echo "... source/file_reader.s"
