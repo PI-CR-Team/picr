@@ -660,53 +660,57 @@ dom_OBJECTS = \
 # External object files for target dom
 dom_EXTERNAL_OBJECTS =
 
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/automerge.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/blink.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/bold.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/hyperlink.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/border.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/box_helper.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/canvas.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/clear_under.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/color.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/composite_decorator.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/dbox.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/dim.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flex.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox_config.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox_helper.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/focus.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/frame.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/gauge.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/graph.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/gridbox.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/hbox.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/inverted.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/linear_gradient.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/node.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/node_decorator.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/paragraph.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/reflect.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/scroll_indicator.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/separator.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/size.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/spinner.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/strikethrough.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/table.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/text.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/underlined.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/underlined_double.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/util.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/vbox.cpp.o
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/build.make
-_deps/ftxui-build/libftxui-dom.a: _deps/ftxui-build/CMakeFiles/dom.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking CXX static library libftxui-dom.a"
-	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-build && $(CMAKE_COMMAND) -P CMakeFiles/dom.dir/cmake_clean_target.cmake
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/automerge.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/blink.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/bold.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/hyperlink.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/border.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/box_helper.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/canvas.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/clear_under.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/color.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/composite_decorator.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/dbox.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/dim.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flex.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox_config.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox_helper.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/focus.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/frame.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/gauge.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/graph.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/gridbox.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/hbox.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/inverted.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/linear_gradient.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/node.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/node_decorator.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/paragraph.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/reflect.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/scroll_indicator.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/separator.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/size.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/spinner.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/strikethrough.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/table.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/text.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/underlined.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/underlined_double.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/util.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/vbox.cpp.o
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/build.make
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/libftxui-screen.so.5.0.0
+_deps/ftxui-build/libftxui-dom.so.5.0.0: _deps/ftxui-build/CMakeFiles/dom.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking CXX shared library libftxui-dom.so"
 	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dom.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-build && $(CMAKE_COMMAND) -E cmake_symlink_library libftxui-dom.so.5.0.0 libftxui-dom.so.5.0.0 libftxui-dom.so
+
+_deps/ftxui-build/libftxui-dom.so: _deps/ftxui-build/libftxui-dom.so.5.0.0
+	@$(CMAKE_COMMAND) -E touch_nocreate _deps/ftxui-build/libftxui-dom.so
 
 # Rule to build all files generated by this target.
-_deps/ftxui-build/CMakeFiles/dom.dir/build: _deps/ftxui-build/libftxui-dom.a
+_deps/ftxui-build/CMakeFiles/dom.dir/build: _deps/ftxui-build/libftxui-dom.so
 .PHONY : _deps/ftxui-build/CMakeFiles/dom.dir/build
 
 _deps/ftxui-build/CMakeFiles/dom.dir/clean:

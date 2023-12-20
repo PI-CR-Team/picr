@@ -77,8 +77,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/dom.dir/src/ftxui/dom/util.cpp.o.d"
   "CMakeFiles/dom.dir/src/ftxui/dom/vbox.cpp.o"
   "CMakeFiles/dom.dir/src/ftxui/dom/vbox.cpp.o.d"
-  "libftxui-dom.a"
   "libftxui-dom.pdb"
+  "libftxui-dom.so"
+  "libftxui-dom.so.5.0.0"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++20 -O3 -DNDEBUG CMakeFiles/utf8.dir/utf8.cpp.o -o utf8  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/platforms/libcpp-terminal-platforms.a 

@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++20 -O3 -DNDEBUG CMakeFiles/file.test.dir/file.test.cpp.o -o file.test  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/platforms/libcpp-terminal-platforms.a 

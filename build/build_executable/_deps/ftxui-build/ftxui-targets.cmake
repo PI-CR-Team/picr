@@ -42,7 +42,7 @@ unset(_expectedTargets)
 
 
 # Create imported target ftxui::screen
-add_library(ftxui::screen STATIC IMPORTED)
+add_library(ftxui::screen SHARED IMPORTED)
 
 set_target_properties(ftxui::screen PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_17"
@@ -50,7 +50,7 @@ set_target_properties(ftxui::screen PROPERTIES
 )
 
 # Create imported target ftxui::dom
-add_library(ftxui::dom STATIC IMPORTED)
+add_library(ftxui::dom SHARED IMPORTED)
 
 set_target_properties(ftxui::dom PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_17"
@@ -59,7 +59,7 @@ set_target_properties(ftxui::dom PROPERTIES
 )
 
 # Create imported target ftxui::component
-add_library(ftxui::component STATIC IMPORTED)
+add_library(ftxui::component SHARED IMPORTED)
 
 set_target_properties(ftxui::component PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_17"
@@ -67,25 +67,25 @@ set_target_properties(ftxui::component PROPERTIES
   INTERFACE_LINK_LIBRARIES "ftxui::dom;Threads::Threads"
 )
 
-# Import target "ftxui::screen" for configuration ""
-set_property(TARGET ftxui::screen APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
+# Import target "ftxui::screen" for configuration "Release"
+set_property(TARGET ftxui::screen APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(ftxui::screen PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
-  IMPORTED_LOCATION_NOCONFIG "/home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-build/libftxui-screen.a"
+  IMPORTED_LOCATION_RELEASE "/home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-build/libftxui-screen.so.5.0.0"
+  IMPORTED_SONAME_RELEASE "libftxui-screen.so.5.0.0"
   )
 
-# Import target "ftxui::dom" for configuration ""
-set_property(TARGET ftxui::dom APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
+# Import target "ftxui::dom" for configuration "Release"
+set_property(TARGET ftxui::dom APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(ftxui::dom PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
-  IMPORTED_LOCATION_NOCONFIG "/home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-build/libftxui-dom.a"
+  IMPORTED_LOCATION_RELEASE "/home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-build/libftxui-dom.so.5.0.0"
+  IMPORTED_SONAME_RELEASE "libftxui-dom.so.5.0.0"
   )
 
-# Import target "ftxui::component" for configuration ""
-set_property(TARGET ftxui::component APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
+# Import target "ftxui::component" for configuration "Release"
+set_property(TARGET ftxui::component APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(ftxui::component PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
-  IMPORTED_LOCATION_NOCONFIG "/home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-build/libftxui-component.a"
+  IMPORTED_LOCATION_RELEASE "/home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-build/libftxui-component.so.5.0.0"
+  IMPORTED_SONAME_RELEASE "libftxui-component.so.5.0.0"
   )
 
 # This file does not depend on other imported targets which have

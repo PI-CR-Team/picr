@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/imtui-ncurses.dir/imtui-impl-ncurses.cpp.o"
   "CMakeFiles/imtui-ncurses.dir/imtui-impl-ncurses.cpp.o.d"
-  "libimtui-ncurses.a"
   "libimtui-ncurses.pdb"
+  "libimtui-ncurses.so"
 )
 
 # Per-language clean rules from dependency scanning.

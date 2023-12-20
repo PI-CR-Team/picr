@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++20 -O3 -DNDEBUG CMakeFiles/IOStream.dir/iostream.test.cpp.o -o IOStream  ../cpp-terminal/libcpp-terminal.a ../cpp-terminal/platforms/libcpp-terminal-platforms.a 

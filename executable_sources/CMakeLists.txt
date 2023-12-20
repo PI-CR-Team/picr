@@ -30,11 +30,11 @@ include(../cmake/CPM.cmake)
 # ---- Add other dependencies ----
 
 # cpp-terminal
-CPMAddPackage (
-  NAME cpp-terminal
-  GITHUB_REPOSITORY jupyter-xeus/cpp-terminal
-  GIT_TAG 80d1dd8
-)
+# CPMAddPackage (
+#   NAME cpp-terminal
+#   GITHUB_REPOSITORY jupyter-xeus/cpp-terminal
+#   GIT_TAG 80d1dd8
+# )
 
 # FTXUI
 CPMAddPackage (

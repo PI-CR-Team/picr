@@ -51,7 +51,7 @@ if(_IMPORT_PREFIX STREQUAL "/")
 endif()
 
 # Create imported target ftxui::screen
-add_library(ftxui::screen STATIC IMPORTED)
+add_library(ftxui::screen SHARED IMPORTED)
 
 set_target_properties(ftxui::screen PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_17"
@@ -60,7 +60,7 @@ set_target_properties(ftxui::screen PROPERTIES
 )
 
 # Create imported target ftxui::dom
-add_library(ftxui::dom STATIC IMPORTED)
+add_library(ftxui::dom SHARED IMPORTED)
 
 set_target_properties(ftxui::dom PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_17"
@@ -70,7 +70,7 @@ set_target_properties(ftxui::dom PROPERTIES
 )
 
 # Create imported target ftxui::component
-add_library(ftxui::component STATIC IMPORTED)
+add_library(ftxui::component SHARED IMPORTED)
 
 set_target_properties(ftxui::component PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_17"

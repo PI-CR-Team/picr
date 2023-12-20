@@ -435,38 +435,43 @@ component_OBJECTS = \
 # External object files for target component
 component_EXTERNAL_OBJECTS =
 
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/animation.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/button.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/catch_event.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/checkbox.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/collapsible.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/component.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/component_options.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/container.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/dropdown.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/event.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/hoverable.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/input.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/loop.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/maybe.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/menu.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/modal.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/radiobox.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/renderer.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/resizable_split.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/screen_interactive.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/slider.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/terminal_input_parser.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/util.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/window.cpp.o
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/build.make
-_deps/ftxui-build/libftxui-component.a: _deps/ftxui-build/CMakeFiles/component.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX static library libftxui-component.a"
-	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-build && $(CMAKE_COMMAND) -P CMakeFiles/component.dir/cmake_clean_target.cmake
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/animation.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/button.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/catch_event.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/checkbox.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/collapsible.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/component.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/component_options.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/container.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/dropdown.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/event.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/hoverable.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/input.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/loop.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/maybe.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/menu.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/modal.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/radiobox.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/renderer.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/resizable_split.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/screen_interactive.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/slider.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/terminal_input_parser.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/util.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/window.cpp.o
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/build.make
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/libftxui-dom.so.5.0.0
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/libftxui-screen.so.5.0.0
+_deps/ftxui-build/libftxui-component.so.5.0.0: _deps/ftxui-build/CMakeFiles/component.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/matthewalgo/Projects/picr/build/build_executable/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX shared library libftxui-component.so"
 	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/component.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-build && $(CMAKE_COMMAND) -E cmake_symlink_library libftxui-component.so.5.0.0 libftxui-component.so.5.0.0 libftxui-component.so
+
+_deps/ftxui-build/libftxui-component.so: _deps/ftxui-build/libftxui-component.so.5.0.0
+	@$(CMAKE_COMMAND) -E touch_nocreate _deps/ftxui-build/libftxui-component.so
 
 # Rule to build all files generated by this target.
-_deps/ftxui-build/CMakeFiles/component.dir/build: _deps/ftxui-build/libftxui-component.a
+_deps/ftxui-build/CMakeFiles/component.dir/build: _deps/ftxui-build/libftxui-component.so
 .PHONY : _deps/ftxui-build/CMakeFiles/component.dir/build
 
 _deps/ftxui-build/CMakeFiles/component.dir/clean:

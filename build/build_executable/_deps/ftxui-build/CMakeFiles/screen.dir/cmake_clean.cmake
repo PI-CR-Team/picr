@@ -11,8 +11,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/screen.dir/src/ftxui/screen/string.cpp.o.d"
   "CMakeFiles/screen.dir/src/ftxui/screen/terminal.cpp.o"
   "CMakeFiles/screen.dir/src/ftxui/screen/terminal.cpp.o.d"
-  "libftxui-screen.a"
   "libftxui-screen.pdb"
+  "libftxui-screen.so"
+  "libftxui-screen.so.5.0.0"
 )
 
 # Per-language clean rules from dependency scanning.

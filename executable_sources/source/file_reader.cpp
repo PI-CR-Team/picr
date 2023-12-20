@@ -22,6 +22,8 @@ FileReader::FileReader(const std::string& filePath) {
         for(const auto& line : *fileLines) {
             fileContentAsString += line.getContent() + "\n";
         }
+
+        fileStream.close();
 }
 
 std::vector<char> FileReader::readContent() {
@@ -43,12 +45,11 @@ std::vector<char> FileReader::readContent() {
 
         // Check if the read operation was successful
         if (!fileStream) {
-            std::cerr << "Error reading file contents." << std::endl;
+            std::cerr << "Error reading file contents. readContent()" << std::endl;
             // You may choose to throw an exception or handle the error in another way.
             // For simplicity, we'll exit the program in case of an error.
             std::exit(EXIT_FAILURE);
         }
-
         return buffer;
 }
 
@@ -60,14 +61,15 @@ std::vector<std::string> FileReader::readLinesFromFile() {
 
         std::vector<std::string> lines;
         std::string line;
-
+        fileStream.seekg(0, std::ios::beg);
+    
         while (std::getline(fileStream, line)) {
             lines.push_back(line);
         }
 
         // Check if the read operation was successful
         if (!fileStream.eof() && !fileStream) {
-            std::cerr << "Error reading file contents." << std::endl;
+            std::cerr << "Error reading file contents. readLinesFromFile()" << std::endl;
             std::exit(EXIT_FAILURE);
         }
 
@@ -89,7 +91,7 @@ std::vector<Line> FileReader::readWordsFromFile() {
 
         // Check if the read operation was successful
         if (!fileStream.eof()) {
-            std::cerr << "Error reading file contents." << std::endl;
+            std::cerr << "Error reading file contents. readWordsFromFile()" << std::endl;
             std::exit(EXIT_FAILURE);
         }
         

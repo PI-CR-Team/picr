@@ -196,435 +196,6 @@ PiCrExecutable/fast:
 .PHONY : PiCrExecutable/fast
 
 #=============================================================================
-# Target rules for targets named cpp-terminal
-
-# Build rule for target.
-cpp-terminal: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp-terminal
-.PHONY : cpp-terminal
-
-# fast build rule for target.
-cpp-terminal/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build.make _deps/cpp-terminal-build/cpp-terminal/CMakeFiles/cpp-terminal.dir/build
-.PHONY : cpp-terminal/fast
-
-#=============================================================================
-# Target rules for targets named cpp-terminal-platforms
-
-# Build rule for target.
-cpp-terminal-platforms: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp-terminal-platforms
-.PHONY : cpp-terminal-platforms
-
-# fast build rule for target.
-cpp-terminal-platforms/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/cpp-terminal/platforms/CMakeFiles/cpp-terminal-platforms.dir/build.make _deps/cpp-terminal-build/cpp-terminal/platforms/CMakeFiles/cpp-terminal-platforms.dir/build
-.PHONY : cpp-terminal-platforms/fast
-
-#=============================================================================
-# Target rules for targets named test_terminal
-
-# Build rule for target.
-test_terminal: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_terminal
-.PHONY : test_terminal
-
-# fast build rule for target.
-test_terminal/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/test_terminal.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/test_terminal.dir/build
-.PHONY : test_terminal/fast
-
-#=============================================================================
-# Target rules for targets named AttachConsole
-
-# Build rule for target.
-AttachConsole: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AttachConsole
-.PHONY : AttachConsole
-
-# fast build rule for target.
-AttachConsole/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsole.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsole.dir/build
-.PHONY : AttachConsole/fast
-
-#=============================================================================
-# Target rules for targets named AttachConsoleMinimal
-
-# Build rule for target.
-AttachConsoleMinimal: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AttachConsoleMinimal
-.PHONY : AttachConsoleMinimal
-
-# fast build rule for target.
-AttachConsoleMinimal/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsoleMinimal.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/AttachConsoleMinimal.dir/build
-.PHONY : AttachConsoleMinimal/fast
-
-#=============================================================================
-# Target rules for targets named file.test
-
-# Build rule for target.
-file.test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 file.test
-.PHONY : file.test
-
-# fast build rule for target.
-file.test/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/file.test.dir/build
-.PHONY : file.test/fast
-
-#=============================================================================
-# Target rules for targets named Key
-
-# Build rule for target.
-Key: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Key
-.PHONY : Key
-
-# fast build rule for target.
-Key/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Key.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Key.dir/build
-.PHONY : Key/fast
-
-#=============================================================================
-# Target rules for targets named Screen
-
-# Build rule for target.
-Screen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Screen
-.PHONY : Screen
-
-# fast build rule for target.
-Screen/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Screen.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Screen.dir/build
-.PHONY : Screen/fast
-
-#=============================================================================
-# Target rules for targets named Events
-
-# Build rule for target.
-Events: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Events
-.PHONY : Events
-
-# fast build rule for target.
-Events/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Events.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Events.dir/build
-.PHONY : Events/fast
-
-#=============================================================================
-# Target rules for targets named IOStream
-
-# Build rule for target.
-IOStream: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 IOStream
-.PHONY : IOStream
-
-# fast build rule for target.
-IOStream/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/IOStream.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/IOStream.dir/build
-.PHONY : IOStream/fast
-
-#=============================================================================
-# Target rules for targets named Args
-
-# Build rule for target.
-Args: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Args
-.PHONY : Args
-
-# fast build rule for target.
-Args/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/build.make _deps/cpp-terminal-build/tests/CMakeFiles/Args.dir/build
-.PHONY : Args/fast
-
-#=============================================================================
-# Target rules for targets named doctest_with_main
-
-# Build rule for target.
-doctest_with_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doctest_with_main
-.PHONY : doctest_with_main
-
-# fast build rule for target.
-doctest_with_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build.make _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build
-.PHONY : doctest_with_main/fast
-
-#=============================================================================
-# Target rules for targets named args
-
-# Build rule for target.
-args: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 args
-.PHONY : args
-
-# fast build rule for target.
-args/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/args.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/args.dir/build
-.PHONY : args/fast
-
-#=============================================================================
-# Target rules for targets named cin_cooked
-
-# Build rule for target.
-cin_cooked: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cin_cooked
-.PHONY : cin_cooked
-
-# fast build rule for target.
-cin_cooked/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/cin_cooked.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/cin_cooked.dir/build
-.PHONY : cin_cooked/fast
-
-#=============================================================================
-# Target rules for targets named cin_raw
-
-# Build rule for target.
-cin_raw: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cin_raw
-.PHONY : cin_raw
-
-# fast build rule for target.
-cin_raw/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/cin_raw.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/cin_raw.dir/build
-.PHONY : cin_raw/fast
-
-#=============================================================================
-# Target rules for targets named colors
-
-# Build rule for target.
-colors: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 colors
-.PHONY : colors
-
-# fast build rule for target.
-colors/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/colors.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/colors.dir/build
-.PHONY : colors/fast
-
-#=============================================================================
-# Target rules for targets named cout
-
-# Build rule for target.
-cout: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cout
-.PHONY : cout
-
-# fast build rule for target.
-cout/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/cout.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/cout.dir/build
-.PHONY : cout/fast
-
-#=============================================================================
-# Target rules for targets named events
-
-# Build rule for target.
-events: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 events
-.PHONY : events
-
-# fast build rule for target.
-events/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/events.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/events.dir/build
-.PHONY : events/fast
-
-#=============================================================================
-# Target rules for targets named keys
-
-# Build rule for target.
-keys: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 keys
-.PHONY : keys
-
-# fast build rule for target.
-keys/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/keys.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/keys.dir/build
-.PHONY : keys/fast
-
-#=============================================================================
-# Target rules for targets named kilo
-
-# Build rule for target.
-kilo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kilo
-.PHONY : kilo
-
-# fast build rule for target.
-kilo/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/kilo.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/kilo.dir/build
-.PHONY : kilo/fast
-
-#=============================================================================
-# Target rules for targets named menu
-
-# Build rule for target.
-menu: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 menu
-.PHONY : menu
-
-# fast build rule for target.
-menu/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/menu.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/menu.dir/build
-.PHONY : menu/fast
-
-#=============================================================================
-# Target rules for targets named menu_window
-
-# Build rule for target.
-menu_window: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 menu_window
-.PHONY : menu_window
-
-# fast build rule for target.
-menu_window/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/menu_window.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/menu_window.dir/build
-.PHONY : menu_window/fast
-
-#=============================================================================
-# Target rules for targets named minimal
-
-# Build rule for target.
-minimal: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 minimal
-.PHONY : minimal
-
-# fast build rule for target.
-minimal/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/minimal.dir/build
-.PHONY : minimal/fast
-
-#=============================================================================
-# Target rules for targets named prompt_immediate
-
-# Build rule for target.
-prompt_immediate: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 prompt_immediate
-.PHONY : prompt_immediate
-
-# fast build rule for target.
-prompt_immediate/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/prompt_immediate.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/prompt_immediate.dir/build
-.PHONY : prompt_immediate/fast
-
-#=============================================================================
-# Target rules for targets named prompt_multiline
-
-# Build rule for target.
-prompt_multiline: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 prompt_multiline
-.PHONY : prompt_multiline
-
-# fast build rule for target.
-prompt_multiline/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/prompt_multiline.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/prompt_multiline.dir/build
-.PHONY : prompt_multiline/fast
-
-#=============================================================================
-# Target rules for targets named prompt_not_immediate
-
-# Build rule for target.
-prompt_not_immediate: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 prompt_not_immediate
-.PHONY : prompt_not_immediate
-
-# fast build rule for target.
-prompt_not_immediate/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/prompt_not_immediate.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/prompt_not_immediate.dir/build
-.PHONY : prompt_not_immediate/fast
-
-#=============================================================================
-# Target rules for targets named prompt_simple
-
-# Build rule for target.
-prompt_simple: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 prompt_simple
-.PHONY : prompt_simple
-
-# fast build rule for target.
-prompt_simple/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/prompt_simple.dir/build
-.PHONY : prompt_simple/fast
-
-#=============================================================================
-# Target rules for targets named styles
-
-# Build rule for target.
-styles: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 styles
-.PHONY : styles
-
-# fast build rule for target.
-styles/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/styles.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/styles.dir/build
-.PHONY : styles/fast
-
-#=============================================================================
-# Target rules for targets named slow_events
-
-# Build rule for target.
-slow_events: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 slow_events
-.PHONY : slow_events
-
-# fast build rule for target.
-slow_events/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/slow_events.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/slow_events.dir/build
-.PHONY : slow_events/fast
-
-#=============================================================================
-# Target rules for targets named utf8
-
-# Build rule for target.
-utf8: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utf8
-.PHONY : utf8
-
-# fast build rule for target.
-utf8/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/examples/CMakeFiles/utf8.dir/build.make _deps/cpp-terminal-build/examples/CMakeFiles/utf8.dir/build
-.PHONY : utf8/fast
-
-#=============================================================================
-# Target rules for targets named docs
-
-# Build rule for target.
-docs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs
-.PHONY : docs
-
-# fast build rule for target.
-docs/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/docs/CMakeFiles/docs.dir/build.make _deps/cpp-terminal-build/docs/CMakeFiles/docs.dir/build
-.PHONY : docs/fast
-
-#=============================================================================
-# Target rules for targets named doc-html
-
-# Build rule for target.
-doc-html: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doc-html
-.PHONY : doc-html
-
-# fast build rule for target.
-doc-html/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/build.make _deps/cpp-terminal-build/docs/CMakeFiles/doc-html.dir/build
-.PHONY : doc-html/fast
-
-#=============================================================================
-# Target rules for targets named doc-latex
-
-# Build rule for target.
-doc-latex: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doc-latex
-.PHONY : doc-latex
-
-# fast build rule for target.
-doc-latex/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/cpp-terminal-build/docs/CMakeFiles/doc-latex.dir/build.make _deps/cpp-terminal-build/docs/CMakeFiles/doc-latex.dir/build
-.PHONY : doc-latex/fast
-
-#=============================================================================
 # Target rules for targets named screen
 
 # Build rule for target.
@@ -791,6 +362,30 @@ source/command_parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiCrExecutable.dir/build.make CMakeFiles/PiCrExecutable.dir/source/command_parser.cpp.s
 .PHONY : source/command_parser.cpp.s
 
+source/editor.o: source/editor.cpp.o
+.PHONY : source/editor.o
+
+# target to build an object file
+source/editor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiCrExecutable.dir/build.make CMakeFiles/PiCrExecutable.dir/source/editor.cpp.o
+.PHONY : source/editor.cpp.o
+
+source/editor.i: source/editor.cpp.i
+.PHONY : source/editor.i
+
+# target to preprocess a source file
+source/editor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiCrExecutable.dir/build.make CMakeFiles/PiCrExecutable.dir/source/editor.cpp.i
+.PHONY : source/editor.cpp.i
+
+source/editor.s: source/editor.cpp.s
+.PHONY : source/editor.s
+
+# target to generate assembly for a file
+source/editor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiCrExecutable.dir/build.make CMakeFiles/PiCrExecutable.dir/source/editor.cpp.s
+.PHONY : source/editor.cpp.s
+
 source/file_reader.o: source/file_reader.cpp.o
 .PHONY : source/file_reader.o
 
@@ -815,6 +410,30 @@ source/file_reader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiCrExecutable.dir/build.make CMakeFiles/PiCrExecutable.dir/source/file_reader.cpp.s
 .PHONY : source/file_reader.cpp.s
 
+source/file_writer.o: source/file_writer.cpp.o
+.PHONY : source/file_writer.o
+
+# target to build an object file
+source/file_writer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiCrExecutable.dir/build.make CMakeFiles/PiCrExecutable.dir/source/file_writer.cpp.o
+.PHONY : source/file_writer.cpp.o
+
+source/file_writer.i: source/file_writer.cpp.i
+.PHONY : source/file_writer.i
+
+# target to preprocess a source file
+source/file_writer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiCrExecutable.dir/build.make CMakeFiles/PiCrExecutable.dir/source/file_writer.cpp.i
+.PHONY : source/file_writer.cpp.i
+
+source/file_writer.s: source/file_writer.cpp.s
+.PHONY : source/file_writer.s
+
+# target to generate assembly for a file
+source/file_writer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiCrExecutable.dir/build.make CMakeFiles/PiCrExecutable.dir/source/file_writer.cpp.s
+.PHONY : source/file_writer.cpp.s
+
 source/line.o: source/line.cpp.o
 .PHONY : source/line.o
 
@@ -838,6 +457,30 @@ source/line.s: source/line.cpp.s
 source/line.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiCrExecutable.dir/build.make CMakeFiles/PiCrExecutable.dir/source/line.cpp.s
 .PHONY : source/line.cpp.s
+
+source/lock_file.o: source/lock_file.cpp.o
+.PHONY : source/lock_file.o
+
+# target to build an object file
+source/lock_file.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiCrExecutable.dir/build.make CMakeFiles/PiCrExecutable.dir/source/lock_file.cpp.o
+.PHONY : source/lock_file.cpp.o
+
+source/lock_file.i: source/lock_file.cpp.i
+.PHONY : source/lock_file.i
+
+# target to preprocess a source file
+source/lock_file.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiCrExecutable.dir/build.make CMakeFiles/PiCrExecutable.dir/source/lock_file.cpp.i
+.PHONY : source/lock_file.cpp.i
+
+source/lock_file.s: source/lock_file.cpp.s
+.PHONY : source/lock_file.s
+
+# target to generate assembly for a file
+source/lock_file.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiCrExecutable.dir/build.make CMakeFiles/PiCrExecutable.dir/source/lock_file.cpp.s
+.PHONY : source/lock_file.cpp.s
 
 source/main.o: source/main.cpp.o
 .PHONY : source/main.o
@@ -901,60 +544,36 @@ help:
 	@echo "... package"
 	@echo "... package_source"
 	@echo "... rebuild_cache"
-	@echo "... doc-html"
-	@echo "... doc-latex"
-	@echo "... docs"
-	@echo "... Args"
-	@echo "... AttachConsole"
-	@echo "... AttachConsoleMinimal"
-	@echo "... Events"
-	@echo "... IOStream"
-	@echo "... Key"
 	@echo "... PiCrExecutable"
-	@echo "... Screen"
-	@echo "... args"
-	@echo "... cin_cooked"
-	@echo "... cin_raw"
-	@echo "... colors"
 	@echo "... component"
-	@echo "... cout"
-	@echo "... cpp-terminal"
-	@echo "... cpp-terminal-platforms"
-	@echo "... doctest_with_main"
 	@echo "... dom"
-	@echo "... events"
-	@echo "... file.test"
 	@echo "... imgui"
 	@echo "... imtui-core"
 	@echo "... imtui-ncurses"
-	@echo "... keys"
-	@echo "... kilo"
-	@echo "... menu"
-	@echo "... menu_window"
-	@echo "... minimal"
-	@echo "... prompt_immediate"
-	@echo "... prompt_multiline"
-	@echo "... prompt_not_immediate"
-	@echo "... prompt_simple"
 	@echo "... screen"
 	@echo "... sfml-audio"
 	@echo "... sfml-graphics"
 	@echo "... sfml-network"
 	@echo "... sfml-system"
 	@echo "... sfml-window"
-	@echo "... slow_events"
-	@echo "... styles"
-	@echo "... test_terminal"
-	@echo "... utf8"
 	@echo "... source/command_parser.o"
 	@echo "... source/command_parser.i"
 	@echo "... source/command_parser.s"
+	@echo "... source/editor.o"
+	@echo "... source/editor.i"
+	@echo "... source/editor.s"
 	@echo "... source/file_reader.o"
 	@echo "... source/file_reader.i"
 	@echo "... source/file_reader.s"
+	@echo "... source/file_writer.o"
+	@echo "... source/file_writer.i"
+	@echo "... source/file_writer.s"
 	@echo "... source/line.o"
 	@echo "... source/line.i"
 	@echo "... source/line.s"
+	@echo "... source/lock_file.o"
+	@echo "... source/lock_file.i"
+	@echo "... source/lock_file.s"
 	@echo "... source/main.o"
 	@echo "... source/main.i"
 	@echo "... source/main.s"

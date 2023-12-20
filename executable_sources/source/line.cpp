@@ -17,3 +17,11 @@ const std::string& Line::getContent() const {
 const std::vector<std::string>& Line::getWords() const {
     return this->words;
 }
+
+Line& Line::operator=(const Line& line) {
+    this->content = line.content;
+    this->words = line.words;
+    return *this;
+}
+
+Line::~Line() = default;

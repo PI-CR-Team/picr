@@ -1,2 +1,1 @@
-/usr/bin/ar qc libimtui-ncurses.a CMakeFiles/imtui-ncurses.dir/imtui-impl-ncurses.cpp.o
-/usr/bin/ranlib libimtui-ncurses.a
+/usr/bin/c++ -fPIC  -std=c++20 -O3 -DNDEBUG -shared -Wl,-soname,libimtui-ncurses.so -o libimtui-ncurses.so CMakeFiles/imtui-ncurses.dir/imtui-impl-ncurses.cpp.o  -Wl,-rpath,/home/matthewalgo/Projects/picr/build/build_executable/_deps/imtui-build/src:/home/matthewalgo/Projects/picr/build/build_executable/_deps/imtui-build/third-party libimtui-core.so -lcurses /usr/lib/x86_64-linux-gnu/libform.so ../third-party/libimgui.so 

@@ -1,2 +1,1 @@
-/usr/bin/ar qc libimtui-core.a CMakeFiles/imtui-core.dir/imtui-impl-text.cpp.o
-/usr/bin/ranlib libimtui-core.a
+/usr/bin/c++ -fPIC  -std=c++20 -O3 -DNDEBUG -shared -Wl,-soname,libimtui-core.so -o libimtui-core.so CMakeFiles/imtui-core.dir/imtui-impl-text.cpp.o  -Wl,-rpath,/home/matthewalgo/Projects/picr/build/build_executable/_deps/imtui-build/third-party ../third-party/libimgui.so -ldl 

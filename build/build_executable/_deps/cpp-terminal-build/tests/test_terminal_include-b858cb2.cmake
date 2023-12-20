@@ -1,5 +1,0 @@
-if(EXISTS "/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/tests/test_terminal_tests-b858cb2.cmake")
-  include("/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build/tests/test_terminal_tests-b858cb2.cmake")
-else()
-  add_test(test_terminal_NOT_BUILT-b858cb2 test_terminal_NOT_BUILT-b858cb2)
-endif()

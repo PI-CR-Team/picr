@@ -6,8 +6,11 @@ cmake_policy(SET CMP0009 NEW)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/matthewalgo/Projects/picr/executable_sources/source/*.cpp")
 set(OLD_GLOB
   "/home/matthewalgo/Projects/picr/executable_sources/source/command_parser.cpp"
+  "/home/matthewalgo/Projects/picr/executable_sources/source/editor.cpp"
   "/home/matthewalgo/Projects/picr/executable_sources/source/file_reader.cpp"
+  "/home/matthewalgo/Projects/picr/executable_sources/source/file_writer.cpp"
   "/home/matthewalgo/Projects/picr/executable_sources/source/line.cpp"
+  "/home/matthewalgo/Projects/picr/executable_sources/source/lock_file.cpp"
   "/home/matthewalgo/Projects/picr/executable_sources/source/main.cpp"
   "/home/matthewalgo/Projects/picr/executable_sources/source/terminal_renderer.cpp"
   )

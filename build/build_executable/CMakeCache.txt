@@ -44,9 +44,6 @@ CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-11
 // for the GCC compiler
 CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-11
 
-//C++ extensions
-CMAKE_CXX_EXTENSIONS:STRING=FALSE
-
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
 
@@ -61,9 +58,6 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
-
-//C++ standard required
-CMAKE_CXX_STANDARD_REQUIRED:STRING=TRUE
 
 //C compiler
 CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
@@ -211,10 +205,10 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=PiCrExecutable
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=1.0.0
+CMAKE_PROJECT_VERSION:STATIC=5.0.0
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=5
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_MINOR:STATIC=0
@@ -330,18 +324,6 @@ CPM_USE_LOCAL_PACKAGES:BOOL=OFF
 // nested level.
 CPM_USE_NAMED_CACHE_DIRECTORIES:BOOL=OFF
 
-//Set to ON to build examples
-CPPTERMINAL_BUILD_EXAMPLES:BOOL=ON
-
-//Set to ON to generate documentation
-CPPTERMINAL_ENABLE_DOCS:BOOL=ON
-
-//Set to ON to enable install
-CPPTERMINAL_ENABLE_INSTALL:BOOL=ON
-
-//Set to ON to enable testing
-CPPTERMINAL_ENABLE_TESTING:BOOL=ON
-
 //Path to a library.
 CURSES_CURSES_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcurses.so
 
@@ -354,27 +336,6 @@ CURSES_INCLUDE_PATH:PATH=/usr/include
 //Path to a library.
 CURSES_NCURSES_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libncurses.so
 
-//Use std headers
-DOCTEST_USE_STD_HEADERS:BOOL=OFF
-
-//Build a static lib (cmake target) with a default main entry point
-DOCTEST_WITH_MAIN_IN_STATIC_LIB:BOOL=ON
-
-//Build tests/examples
-DOCTEST_WITH_TESTS:BOOL=OFF
-
-//Diagram Editor tool for use with Doxygen
-DOXYGEN_DIA_EXECUTABLE:FILEPATH=DOXYGEN_DIA_EXECUTABLE-NOTFOUND
-
-//Dot tool for use with Doxygen
-DOXYGEN_DOT_EXECUTABLE:FILEPATH=/usr/bin/dot
-
-//Doxygen documentation generation tool (http://www.doxygen.org)
-DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
-
-//Message sequence chart tool for use with Doxygen
-DOXYGEN_MSCGEN_EXECUTABLE:FILEPATH=DOXYGEN_MSCGEN_EXECUTABLE-NOTFOUND
-
 //Directory under which to collect all populated content
 FETCHCONTENT_BASE_DIR:PATH=/home/matthewalgo/Projects/picr/build/build_executable/_deps
 
@@ -384,14 +345,6 @@ FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
 
 //Enables QUIET option for all content population
 FETCHCONTENT_QUIET:BOOL=ON
-
-//When not empty, overrides where to find pre-populated content
-// for cpp-terminal
-FETCHCONTENT_SOURCE_DIR_CPP-TERMINAL:PATH=
-
-//When not empty, overrides where to find pre-populated content
-// for doctest
-FETCHCONTENT_SOURCE_DIR_DOCTEST:PATH=
 
 //When not empty, overrides where to find pre-populated content
 // for ftxui
@@ -407,12 +360,6 @@ FETCHCONTENT_SOURCE_DIR_SFML:PATH=
 
 //Enables UPDATE_DISCONNECTED behavior for all content population
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
-
-//Enables UPDATE_DISCONNECTED behavior just for population of cpp-terminal
-FETCHCONTENT_UPDATES_DISCONNECTED_CPP-TERMINAL:BOOL=OFF
-
-//Enables UPDATE_DISCONNECTED behavior just for population of doctest
-FETCHCONTENT_UPDATES_DISCONNECTED_DOCTEST:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of ftxui
 FETCHCONTENT_UPDATES_DISCONNECTED_FTXUI:BOOL=OFF
@@ -850,27 +797,6 @@ X11_xkbfile_INCLUDE_PATH:PATH=X11_xkbfile_INCLUDE_PATH-NOTFOUND
 X11_xkbfile_LIB:FILEPATH=X11_xkbfile_LIB-NOTFOUND
 
 //Value Computed by CMake
-cpp-terminal_BINARY_DIR:STATIC=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build
-
-//Value Computed by CMake
-cpp-terminal_IS_TOP_LEVEL:STATIC=OFF
-
-//Dependencies for the target
-cpp-terminal_LIB_DEPENDS:STATIC=general;cpp-terminal::cpp-terminal-platforms;
-
-//Value Computed by CMake
-cpp-terminal_SOURCE_DIR:STATIC=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src
-
-//Value Computed by CMake
-doctest_BINARY_DIR:STATIC=/home/matthewalgo/Projects/picr/build/build_executable/_deps/doctest-build
-
-//Value Computed by CMake
-doctest_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-doctest_SOURCE_DIR:STATIC=/home/matthewalgo/Projects/picr/build/build_executable/_deps/doctest-src
-
-//Value Computed by CMake
 ftxui_BINARY_DIR:STATIC=/home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-build
 
 //Value Computed by CMake
@@ -1071,7 +997,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=21
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1132,14 +1058,11 @@ CPM_DRY_RUN:INTERNAL=OFF
 CPM_FILE:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/cmake/CPM_0.35.0.cmake
 CPM_INDENT:INTERNAL=CPM:
 CPM_MODULE_PATH:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/CPM_modules
-CPM_PACKAGES:INTERNAL=cpp-terminal;ftxui;imtui;SFML
+CPM_PACKAGES:INTERNAL=ftxui;imtui;SFML
 CPM_PACKAGE_LOCK_FILE:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/cpm-package-lock.cmake
 CPM_PACKAGE_SFML_BINARY_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/_deps/sfml-build
 CPM_PACKAGE_SFML_SOURCE_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/_deps/sfml-src
 CPM_PACKAGE_SFML_VERSION:INTERNAL=2.5.
-CPM_PACKAGE_cpp-terminal_BINARY_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-build
-CPM_PACKAGE_cpp-terminal_SOURCE_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/_deps/cpp-terminal-src
-CPM_PACKAGE_cpp-terminal_VERSION:INTERNAL=80
 CPM_PACKAGE_ftxui_BINARY_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-build
 CPM_PACKAGE_ftxui_SOURCE_DIR:INTERNAL=/home/matthewalgo/Projects/picr/build/build_executable/_deps/ftxui-src
 CPM_PACKAGE_ftxui_VERSION:INTERNAL=5.0.0
@@ -1157,14 +1080,6 @@ CURSES_INCLUDE_PATH-ADVANCED:INTERNAL=1
 CURSES_NCURSES_HAS_NODELAY:INTERNAL=1
 //ADVANCED property for variable: CURSES_NCURSES_LIBRARY
 CURSES_NCURSES_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: DOXYGEN_DIA_EXECUTABLE
-DOXYGEN_DIA_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: DOXYGEN_DOT_EXECUTABLE
-DOXYGEN_DOT_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: DOXYGEN_EXECUTABLE
-DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: DOXYGEN_MSCGEN_EXECUTABLE
-DOXYGEN_MSCGEN_EXECUTABLE-ADVANCED:INTERNAL=1
 //Details about finding Curses
 FIND_PACKAGE_MESSAGE_DETAILS_Curses:INTERNAL=[/usr/lib/x86_64-linux-gnu/libcurses.so][/usr/include][v()]
 //Details about finding FLAC

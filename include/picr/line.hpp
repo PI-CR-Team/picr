@@ -10,7 +10,12 @@ protected:
 
 public:
     Line(const std::string& content);
-    
+    Line(const Line& line) = default;
+
     const std::string& getContent() const;
     const std::vector<std::string>& getWords() const;
+
+    Line& operator=(const Line& line);
+    ~Line();
+
 };

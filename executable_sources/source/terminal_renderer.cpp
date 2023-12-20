@@ -8,6 +8,9 @@
 #include "ftxui/component/screen_interactive.hpp"  // for ScreenInteractive
 #include "ftxui/dom/elements.hpp"  // for operator|, separator, text, Element, flex, vbox, border
 
+#include <chrono>  // for operator""s, chrono_literals
+#include <SFML/System.hpp>
+
 using namespace ftxui;
 using namespace std::chrono_literals;
 
@@ -36,6 +39,60 @@ void TerminalRenderer::startTerminalRendererThreadForElements() {
     }
 }
 
-void TerminalRenderer::startTerminalRendererThreadForComponents() {
+void TerminalRenderer::startTerminalRendererThreadForComponentsHelperFunction() {
     this->currentScreenInteractive.Loop(this->currentScreenComponentToRender);
+}
+
+void TerminalRenderer::joinThreadInstanceForRenderer() {
+    this->threadInstanceForRenderer->wait(); // This will wait for the thread to finish, in our case it will not finish
+}
+
+void TerminalRenderer::startTerminalRendererThreadForComponents() {
+    // Start an sf::Thread to render the component
+    this->threadInstanceForRenderer = std::make_shared<sf::Thread>(
+        [this] {  
+            this->startTerminalRendererThreadForComponentsHelperFunction();
+        });
+    this->threadInstanceForRenderer->launch();
+}
+
+void TerminalRenderer::setCurrentScreenComponentToRender(const ftxui::Component& component) {
+    this->rendererMutex.lock();
+    this->currentScreenComponentToRender = component;
+    this->rendererMutex.unlock();
+}
+
+void TerminalRenderer::setCurrentScreenComponentToRender(ftxui::Component&& component) {
+    this->rendererMutex.lock();
+    this->currentScreenComponentToRender = component;
+    this->rendererMutex.unlock();
+}
+
+void TerminalRenderer::setCurrentScreenElements(const ftxui::Element& element) {
+    this->rendererMutex.lock();
+    this->currentScreenElements = element;
+    this->rendererMutex.unlock();
+}
+
+void TerminalRenderer::setCurrentScreenElements(ftxui::Element&& element) {
+    this->currentScreenElements = element;
+}
+
+
+ftxui::Element& TerminalRenderer::getCurrentScreenElements() {
+    return this->currentScreenElements;
+}
+
+ftxui::Component& TerminalRenderer::getCurrentScreenComponentToRender() {
+    return this->currentScreenComponentToRender;
+}
+
+std::shared_ptr<sf::Thread>& TerminalRenderer::getThreadInstanceForRenderer() {
+    return this->threadInstanceForRenderer;
+}
+
+
+
+ftxui::ScreenInteractive& TerminalRenderer::getCurrentScreenInteractive() {
+    return this->currentScreenInteractive;
 }

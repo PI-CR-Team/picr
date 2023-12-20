@@ -47,8 +47,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/component.dir/src/ftxui/component/util.cpp.o.d"
   "CMakeFiles/component.dir/src/ftxui/component/window.cpp.o"
   "CMakeFiles/component.dir/src/ftxui/component/window.cpp.o.d"
-  "libftxui-component.a"
   "libftxui-component.pdb"
+  "libftxui-component.so"
+  "libftxui-component.so.5.0.0"
 )
 
 # Per-language clean rules from dependency scanning.
