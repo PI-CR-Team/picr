@@ -1,35 +1,43 @@
-#include "picr/command_parser.hpp"  
+#include "picr/command_parser.hpp"
 
 #include <string>
 
-
-PiCrCommandParser::PiCrCommandParser(const std::string& command) {
+PiCrCommandParser::PiCrCommandParser(const std::string &command)
+{
     this->command = command;
     this->arguments = std::vector<std::string>();
     std::string argument = "";
     bool isArgument = false;
-    for (const auto& character : command) {
-        if (character == ' ') {
-            if (isArgument) {
+    for (const auto &character : command)
+    {
+        if (character == ' ')
+        {
+            if (isArgument)
+            {
                 arguments.push_back(argument);
                 argument = "";
                 isArgument = false;
             }
-        } else {
+        }
+        else
+        {
             argument += character;
             isArgument = true;
         }
     }
-    if (isArgument) {
+    if (isArgument)
+    {
         arguments.push_back(argument);
     }
 }
 
-const std::string& PiCrCommandParser::getCommand() const {
+const std::string &PiCrCommandParser::getCommand() const
+{
     return command;
 }
 
-const std::vector<std::string>& PiCrCommandParser::getArguments() const {
+const std::vector<std::string> &PiCrCommandParser::getArguments() const
+{
     return arguments;
 }
 

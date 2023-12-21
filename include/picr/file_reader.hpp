@@ -11,7 +11,8 @@
 
 namespace fs = std::filesystem;
 
-class FileReader {
+class FileReader
+{
 private:
     std::ifstream fileStream;
     std::string filePath;
@@ -19,9 +20,8 @@ private:
     std::shared_ptr<std::vector<Line>> fileLines;
     std::string fileContentAsString;
 
-
 public:
-    FileReader(const std::string& filePath);
+    FileReader(const std::string &filePath);
 
     void refreshFileLines();
 
@@ -35,9 +35,9 @@ public:
 
     ~FileReader();
 
-    const std::vector<Line>* getFileLines() const;
+    const std::vector<Line> *getFileLines() const;
 
-    const std::string& getFileContentAsString() const;
+    const std::string &getFileContentAsString() const;
 };
 
 #endif // FILEREADER_HPP

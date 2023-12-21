@@ -3,27 +3,26 @@
 #include <ftxui/dom/elements.hpp>
 #include <ftxui/screen/color.hpp>
 
-#include "ftxui/component/captured_mouse.hpp"  // for ftxui
-#include "ftxui/component/component.hpp"       // for Input, Renderer, Vertical
-#include "ftxui/component/component_base.hpp"  // for ComponentBase
+#include "ftxui/component/captured_mouse.hpp"     // for ftxui
+#include "ftxui/component/component.hpp"          // for Input, Renderer, Vertical
+#include "ftxui/component/component_base.hpp"     // for ComponentBase
 #include "ftxui/component/component_options.hpp"  // for InputOption
-#include "ftxui/component/screen_interactive.hpp"  // for Component, ScreenInteractive
-#include "ftxui/dom/elements.hpp"  // for text, hbox, separator, Element, operator|, vbox, border
-#include "ftxui/util/ref.hpp"  // for Refor operator|, separator, text, Element, flex, vbox, border
+#include "ftxui/component/screen_interactive.hpp" // for Component, ScreenInteractive
+#include "ftxui/dom/elements.hpp"                 // for text, hbox, separator, Element, operator|, vbox, border
+#include "ftxui/util/ref.hpp"                     // for Refor operator|, separator, text, Element, flex, vbox, border
 
-#include <chrono>  // for operator""s, chrono_literals
+#include <chrono> // for operator""s, chrono_literals
 #include <SFML/System.hpp>
 
 #include "picr/file_reader.hpp"
 #include "picr/file_writer.hpp"
 
-
 using namespace ftxui;
 using namespace std::chrono_literals;
 
-TerminalRenderer::TerminalRenderer(const ftxui::Element& currentScreenElements) :
-    currentScreenElements(std::make_shared<ftxui::Element>(currentScreenElements)), 
-    currentScreenInteractive(ScreenInteractive::Fullscreen()) {
+TerminalRenderer::TerminalRenderer(const ftxui::Element &currentScreenElements) : currentScreenElements(std::make_shared<ftxui::Element>(currentScreenElements)),
+                                                                                  currentScreenInteractive(ScreenInteractive::Fullscreen())
+{
 
     // Add a border to the elements
     *this->currentScreenElements |= border;
@@ -32,15 +31,17 @@ TerminalRenderer::TerminalRenderer(const ftxui::Element& currentScreenElements) 
     *this->currentScreenElements |= size(HEIGHT, GREATER_THAN, min_width);
 }
 
-TerminalRenderer::TerminalRenderer(const ftxui::Component& currentScreenComponent) : 
-    currentScreenComponentToRender(std::make_shared<ftxui::Component>(currentScreenComponent)), 
-    currentScreenInteractive(ScreenInteractive::Fullscreen()) {
+TerminalRenderer::TerminalRenderer(const ftxui::Component &currentScreenComponent) : currentScreenComponentToRender(std::make_shared<ftxui::Component>(currentScreenComponent)),
+                                                                                     currentScreenInteractive(ScreenInteractive::Fullscreen())
+{
 
-        *this->currentScreenComponentToRender |= border;
+    *this->currentScreenComponentToRender |= border;
 };
 
-void TerminalRenderer::startTerminalRendererThreadForElements() {
-    for (int i = 0;; ++i) {
+void TerminalRenderer::startTerminalRendererThreadForElements()
+{
+    for (int i = 0;; ++i)
+    {
         Render(currentScreenInteractive, *currentScreenElements);
         currentScreenInteractive.Print();
 
@@ -49,104 +50,123 @@ void TerminalRenderer::startTerminalRendererThreadForElements() {
     }
 }
 
-void TerminalRenderer::startTerminalRendererThreadForComponentsHelperFunction() {
+void TerminalRenderer::startTerminalRendererThreadForComponentsHelperFunction()
+{
     this->currentScreenInteractive.Loop(*this->currentScreenComponentToRender);
 }
 
-void TerminalRenderer::joinThreadInstanceForRenderer() {
+void TerminalRenderer::joinThreadInstanceForRenderer()
+{
     this->threadInstanceForRenderer->wait(); // This will wait for the thread to finish, in our case it will not finish
 }
 
-void TerminalRenderer::startTerminalRendererThreadForComponents() {
+void TerminalRenderer::startTerminalRendererThreadForComponents()
+{
     // Start an sf::Thread to render the component
     this->threadInstanceForRenderer = std::make_shared<sf::Thread>(
-        [this] {  
+        [this]
+        {
             this->startTerminalRendererThreadForComponentsHelperFunction();
         });
     this->threadInstanceForRenderer->launch();
 }
 
-void TerminalRenderer::setCurrentScreenComponentToRender(const ftxui::Component& component) {
+void TerminalRenderer::setCurrentScreenComponentToRender(const ftxui::Component &component)
+{
     this->rendererMutex.lock();
     this->currentScreenComponentToRender = std::make_shared<ftxui::Component>(component);
     this->rendererMutex.unlock();
 }
 
-void TerminalRenderer::setCurrentScreenComponentToRender(ftxui::Component&& component) {
+void TerminalRenderer::setCurrentScreenComponentToRender(ftxui::Component &&component)
+{
     this->rendererMutex.lock();
     this->currentScreenComponentToRender = std::make_shared<ftxui::Component>(component);
     this->rendererMutex.unlock();
 }
 
-void TerminalRenderer::setCurrentScreenElements(const ftxui::Element& element) {
+void TerminalRenderer::setCurrentScreenElements(const ftxui::Element &element)
+{
     this->rendererMutex.lock();
     this->currentScreenElements = std::make_shared<ftxui::Element>(element);
     this->rendererMutex.unlock();
 }
 
-void TerminalRenderer::setCurrentScreenElements(ftxui::Element&& element) {
+void TerminalRenderer::setCurrentScreenElements(ftxui::Element &&element)
+{
     this->rendererMutex.lock();
     this->currentScreenElements = std::make_shared<ftxui::Element>(element);
     this->rendererMutex.unlock();
 }
 
-void TerminalRenderer::setInputStyle(const ftxui::InputOption& inputStyle) {
+void TerminalRenderer::setInputStyle(const ftxui::InputOption &inputStyle)
+{
     this->rendererMutex.lock();
     this->inputStyle = std::make_shared<ftxui::InputOption>(inputStyle);
     this->rendererMutex.unlock();
 }
 
-void TerminalRenderer::setInputStyle(ftxui::InputOption&& inputStyle) {
+void TerminalRenderer::setInputStyle(ftxui::InputOption &&inputStyle)
+{
     this->rendererMutex.lock();
     this->inputStyle = std::make_shared<ftxui::InputOption>(inputStyle);
     this->rendererMutex.unlock();
 }
 
-void TerminalRenderer::setCurrentOnScreenInputText(const std::string& currentOnScreenInputText) {
+void TerminalRenderer::setCurrentOnScreenInputText(const std::string &currentOnScreenInputText)
+{
     this->rendererMutex.lock();
     this->currentOnScreenInputText = currentOnScreenInputText;
     this->rendererMutex.unlock();
 }
 
-void TerminalRenderer::setCurrentOnScreenInputText(std::string&& currentOnScreenInputText) {
+void TerminalRenderer::setCurrentOnScreenInputText(std::string &&currentOnScreenInputText)
+{
     this->rendererMutex.lock();
     this->currentOnScreenInputText = currentOnScreenInputText;
     this->rendererMutex.unlock();
 }
 
-void TerminalRenderer::setCurrentOnScreenInputComponent(const ftxui::Component& currentOnScreenInputComponent) {
+void TerminalRenderer::setCurrentOnScreenInputComponent(const ftxui::Component &currentOnScreenInputComponent)
+{
     this->rendererMutex.lock();
     this->currentOnScreenInputComponent = std::make_shared<ftxui::Component>(currentOnScreenInputComponent);
     this->rendererMutex.unlock();
 }
 
-void TerminalRenderer::setCurrentOnScreenInputComponent(ftxui::Component&& currentOnScreenInputComponent) {
+void TerminalRenderer::setCurrentOnScreenInputComponent(ftxui::Component &&currentOnScreenInputComponent)
+{
     this->rendererMutex.lock();
     this->currentOnScreenInputComponent = std::make_shared<ftxui::Component>(currentOnScreenInputComponent);
     this->rendererMutex.unlock();
 }
 
-void TerminalRenderer::setCurrentMainTextAreaComponent(const ftxui::Component& currentMainTextAreaComponent) {
+void TerminalRenderer::setCurrentMainTextAreaComponent(const ftxui::Component &currentMainTextAreaComponent)
+{
     this->rendererMutex.lock();
     this->currentMainTextAreaComponent = std::make_shared<ftxui::Component>(currentMainTextAreaComponent);
     this->rendererMutex.unlock();
 }
 
-void TerminalRenderer::setCurrentMainTextAreaComponent(ftxui::Component&& currentMainTextAreaComponent) {
+void TerminalRenderer::setCurrentMainTextAreaComponent(ftxui::Component &&currentMainTextAreaComponent)
+{
     this->rendererMutex.lock();
     this->currentMainTextAreaComponent = std::make_shared<ftxui::Component>(currentMainTextAreaComponent);
     this->rendererMutex.unlock();
 }
 
-void TerminalRenderer::setMainAreaHandlerAttributes(std::function<bool (ftxui::Event)> on_event) {
+void TerminalRenderer::setMainAreaHandlerAttributes(std::function<bool(ftxui::Event)> on_event)
+{
     this->rendererMutex.lock();
     *this->currentMainTextAreaComponent |= CatchEvent(on_event);
     this->rendererMutex.unlock();
 }
 
-void TerminalRenderer::setMainAreaHandlerAttributesDefaultFunction(PiCrEditor& editor, FileReader& fileReader, FileWriter& fileWriter) {
+void TerminalRenderer::setMainAreaHandlerAttributesDefaultFunction(PiCrEditor &editor, FileReader &fileReader, FileWriter &fileWriter)
+{
     this->rendererMutex.lock();
-    *this->currentMainTextAreaComponent |= CatchEvent([&](Event event) {
+    *this->currentMainTextAreaComponent |= CatchEvent([&](Event event)
+                                                      {
         auto reset_layout_helper_function = [&] () {
             // Lock the mutex
             this->rendererMutex.lock();
@@ -210,7 +230,7 @@ void TerminalRenderer::setMainAreaHandlerAttributesDefaultFunction(PiCrEditor& e
                 if (event == Event::Character('S')) {
 
                     // Set the editor mode to command
-                    editor.setFileBuffer(this->currentOnScreenInputText); // Set the file buffer to the current content
+                    editor.setFileBuffer(this->currentOnScreenInputText + "\n"); // Set the file buffer to the current content
                     editor.saveFile();
 
                     // Set the new content to the file buffer
@@ -248,54 +268,59 @@ void TerminalRenderer::setMainAreaHandlerAttributesDefaultFunction(PiCrEditor& e
 
         
 
-        return false;
-    });
+        return false; });
     this->rendererMutex.unlock();
 }
 
-
-void TerminalRenderer::setThreadInstanceForRenderer(const std::shared_ptr<sf::Thread>& threadInstanceForRenderer) {
+void TerminalRenderer::setThreadInstanceForRenderer(const std::shared_ptr<sf::Thread> &threadInstanceForRenderer)
+{
     this->rendererMutex.lock();
     this->threadInstanceForRenderer = threadInstanceForRenderer;
     this->rendererMutex.unlock();
 }
 
-
-
-std::shared_ptr<ftxui::Element>& TerminalRenderer::getCurrentScreenElements() {
+std::shared_ptr<ftxui::Element> &TerminalRenderer::getCurrentScreenElements()
+{
     return this->currentScreenElements;
 }
 
-std::shared_ptr<ftxui::Component>& TerminalRenderer::getCurrentScreenComponentToRender() {
+std::shared_ptr<ftxui::Component> &TerminalRenderer::getCurrentScreenComponentToRender()
+{
     return this->currentScreenComponentToRender;
 }
 
-std::shared_ptr<sf::Thread>& TerminalRenderer::getThreadInstanceForRenderer() {
+std::shared_ptr<sf::Thread> &TerminalRenderer::getThreadInstanceForRenderer()
+{
     return this->threadInstanceForRenderer;
 }
 
-ftxui::ScreenInteractive& TerminalRenderer::getCurrentScreenInteractive() {
+ftxui::ScreenInteractive &TerminalRenderer::getCurrentScreenInteractive()
+{
     return this->currentScreenInteractive;
 }
 
 // Creates a new pointer that points to a new InputOption
-void TerminalRenderer::setTerminalRendererInputStyle(const ftxui::InputOption& inputStyle) {
+void TerminalRenderer::setTerminalRendererInputStyle(const ftxui::InputOption &inputStyle)
+{
     this->inputStyle = std::make_shared<ftxui::InputOption>(inputStyle);
 }
 
-
-std::shared_ptr<ftxui::InputOption>& TerminalRenderer::getInputStyle() {
+std::shared_ptr<ftxui::InputOption> &TerminalRenderer::getInputStyle()
+{
     return this->inputStyle;
 }
 
-std::string& TerminalRenderer::getCurrentOnScreenInputText() {
+std::string &TerminalRenderer::getCurrentOnScreenInputText()
+{
     return this->currentOnScreenInputText;
 }
 
-std::shared_ptr<ftxui::Component>& TerminalRenderer::getCurrentOnScreenInputComponent() {
+std::shared_ptr<ftxui::Component> &TerminalRenderer::getCurrentOnScreenInputComponent()
+{
     return this->currentOnScreenInputComponent;
 }
 
-std::shared_ptr<ftxui::Component>& TerminalRenderer::getCurrentMainTextAreaComponent() {
+std::shared_ptr<ftxui::Component> &TerminalRenderer::getCurrentMainTextAreaComponent()
+{
     return this->currentMainTextAreaComponent;
 }
