@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -std=c++20 -O3 -DNDEBUG -shared -Wl,-soname,libimgui.so -o libimgui.so CMakeFiles/imgui.dir/imgui/imgui/imgui.cpp.o CMakeFiles/imgui.dir/imgui/imgui/imgui_draw.cpp.o CMakeFiles/imgui.dir/imgui/imgui/imgui_demo.cpp.o CMakeFiles/imgui.dir/imgui/imgui/imgui_widgets.cpp.o 

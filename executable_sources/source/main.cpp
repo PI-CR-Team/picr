@@ -24,7 +24,7 @@
 using namespace std;
 namespace fs = std::filesystem;
 
-constexpr bool IS_DEBUG_ENABLED = true;
+constexpr bool IS_DEBUG_ENABLED = false;
 const std::string PICR_VERSION = "PiCr Version 0.0.1";
 
 int main(int argc, char** argv) {
@@ -75,18 +75,19 @@ int main(int argc, char** argv) {
         } else {
             LockFile::lockFile(filePath);
             FileReader fileReader(filePath.string());
+            FileWriter fileWriter(filePath.string());
+
+            // Start the editor thread on the current file
+            TerminalRenderer renderer; // Fullscreen interactive component chosen by default
+            PiCrEditor editor(filePath.string());
+            // editor.startEditorMainThread();
 
             std::vector<Line> vec = fileReader.readWordsFromFile();
-            
             if (IS_DEBUG_ENABLED) {
                 for(const auto& line : vec) {
                     std::cout<<std::string(line.getContent() + "\n");
                 }
             }
-
-            // Start the editor thread on the current file
-            PiCrEditor editor(filePath.string());
-            editor.startEditorMainThread();
 
             // Set the style for the input component
             InputOption inputOptionsTextStyle = InputOption::Spacious();
@@ -113,36 +114,37 @@ int main(int argc, char** argv) {
             
                 return state.element;
             };
-            
-            std::string local_input_buffer_content = fileReader.getFileContentAsString();
+            renderer.setInputStyle(inputOptionsTextStyle);
+            renderer.setCurrentOnScreenInputText(fileReader.getFileContentAsString());
             // Also set the editor file buffer to the current content
-            editor.setFileBuffer(local_input_buffer_content);
+            editor.setFileBuffer(renderer.getCurrentOnScreenInputText()); // Set the file buffer to the current content
 
-            auto main_textarea = Input(&local_input_buffer_content, "File content", 
+            renderer.setCurrentMainTextAreaComponent(Input(&renderer.getCurrentOnScreenInputText(), "The file is empty.", 
                 inputOptionsTextStyle
-            ) | color(Color::DarkBlue);
+            ) | color(Color::DarkBlue));
 
             // Use this to catch events from the input component
-            // main_textarea |= CatchEvent([&] (Event event) {
-            //     return true;
-            // });
+            renderer.setMainAreaHandlerAttributesDefaultFunction(editor, fileReader, fileWriter); // Set the default handler for the events happening inside the main area
 
             // Create a layout that just renders the textarea_1 
-            ftxui::Component layout = main_textarea | ftxui::border;
-
-            auto component = Renderer(layout, [&] {
+            ftxui::Component layout = *renderer.getCurrentMainTextAreaComponent() | ftxui::border;
+            renderer.setCurrentScreenComponentToRender(Renderer(layout, [&] {
                 return vbox({
                         text(PICR_VERSION),
                         separator(),
                         layout->Render() | flex,
+                        text("Press ESC to enter Visual mode."),
+                        text("Press SHIFT+I to enter Insert mode."),
+                        separator(),
+                        text("Current file path: " + filePath.string()),
+                        text("Current mode " + std::string(editor.getEditorMode())),
                     }) | border | color(Color::BlueLight);
-            });
+            }));
 
-            TerminalRenderer renderer(component); // Render the initial component
+            // TerminalRenderer renderer(component); // Render the initial component
             renderer.startTerminalRendererThreadForComponents();
-
             renderer.joinThreadInstanceForRenderer(); // Wait for the renderer thread to finish
-            editor.joinEditorMainThread(); // Wait for the editor thread to finish
+            // editor.joinEditorMainThread(); // Wait for the editor thread to finish
 
             LockFile::unlockFile(filePath);
             std::cout<<"Renderer exited"<<std::endl;

@@ -1,1 +1,1 @@
-PICR Editor - Vim inspiredd
+PICR Editor - Vim inspired

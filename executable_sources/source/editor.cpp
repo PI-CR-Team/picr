@@ -74,18 +74,37 @@ void PiCrEditor::setFileBuffer(const std::vector<std::string>& fileBuffer) {
 
 void PiCrEditor::setFileBuffer(const std::vector<char>& fileBuffer) {
     std::vector<Line> lines;
-    for (const auto& line : fileBuffer) {
-        lines.push_back(Line(std::string(1, line)));
+
+    // The vector contains the whole file, as char. We need to split it into lines
+    std::string line;
+    for (const auto& character : fileBuffer) {
+        if (character == '\n') {
+            lines.push_back(Line(line));
+            line = "";
+        } else {
+            line += character;
+        }
     }
+    
     PiCrEditor::fileBuffer = lines;
 }
 
 // Also for string
 void PiCrEditor::setFileBuffer(const std::string& fileBuffer) {
     std::vector<Line> lines;
-    for (const auto& line : fileBuffer) {
-        lines.push_back(Line(std::string(1, line)));
+
+    // The string contains the whole file, as char. We need to split it into lines
+    std::string line;
+    for (const auto& character : fileBuffer) {
+        if (character == '\n') {
+            lines.push_back(Line(line));
+            line = "";
+        } else {
+            line += character;
+        }
     }
+
+
     PiCrEditor::fileBuffer = lines;
 }
 
@@ -98,40 +117,54 @@ void PiCrEditor::setFilePath(const std::string& filePath) {
     PiCrEditor::filePath = filePath;
 }
 
-
-const std::shared_ptr<sf::Thread>& PiCrEditor::getEditorThread() const {
-    return editorThread;
+void PiCrEditor::setEditorMode(short editorMode) {
+    PiCrEditor::currentEditorMode = editorMode;
 }
 
-void PiCrEditor::setEditorThread(const std::shared_ptr<sf::Thread>& editorThread) {
-    PiCrEditor::editorThread = editorThread;
+const char* PiCrEditor::getEditorMode() const {
+    switch (currentEditorMode) {
+        case EDITOR_STATE_VISUAL:
+            return "VISUAL";
+        case EDITOR_STATE_INSERT:
+            return "INSERT";
+        case EDITOR_STATE_COMMAND:
+            return "COMMAND";
+        case EDITOR_STATE_SEARCH:
+            return "SEARCH";
+        case EDITOR_STATE_QUIT:
+            return "QUIT";
+        default:
+            return "UNKNOWN";
+    }
+}
+
+short PiCrEditor::getEditorModeAsShort() const {
+    return currentEditorMode;
 }
 
 
-void PiCrEditor::readKeyboardStatus() {
+// const std::shared_ptr<sf::Thread>& PiCrEditor::getEditorThread() const {
+//     return editorThread;
+// }
+
+// void PiCrEditor::setEditorThread(const std::shared_ptr<sf::Thread>& editorThread) {
+//     PiCrEditor::editorThread = editorThread;
+// }
+
+// void PiCrEditor::startEditorMainThread() {
+//     editorThread = std::make_shared<sf::Thread>(&PiCrEditor::readEventFromInputBox, this);
+//     editorThread->launch();
+// }
+
+// void PiCrEditor::joinEditorMainThread() {
+//     editorThread->wait();
+// }
+
+
+
+
+void PiCrEditor::readEventFromInputBox(const ftxui::Event& event, ftxui::Component* component) {
     // Check if ":" was pressed
     // If it was pressed, then we need to check if the next character is "w" or "q"
-
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::LShift) || sf::Keyboard::isKeyPressed(sf::Keyboard::Key::RShift)) {
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::SemiColon)) {
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
-                // Save file
-                saveFile();
-            } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Q)) {
-                // Quit
-                std::exit(EXIT_SUCCESS);
-            }
-        }
-    }
-
-}
-
-void PiCrEditor::startEditorMainThread() {
-    editorThread = std::make_shared<sf::Thread>(&PiCrEditor::readKeyboardStatus, this);
-    editorThread->launch();
-}
-
-void PiCrEditor::joinEditorMainThread() {
-    editorThread->wait();
 }
 

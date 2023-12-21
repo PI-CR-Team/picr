@@ -23,6 +23,8 @@ private:
 public:
     FileReader(const std::string& filePath);
 
+    void refreshFileLines();
+
     std::vector<char> readContent();
 
     std::vector<Line> readWordsFromFile();

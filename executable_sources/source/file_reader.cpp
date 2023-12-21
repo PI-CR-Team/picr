@@ -26,10 +26,48 @@ FileReader::FileReader(const std::string& filePath) {
         fileStream.close();
 }
 
+// Function to read the file contents again
+void FileReader::refreshFileLines() {
+
+    if (!fs::exists(this->filePath)) {
+        std::cerr << "Error: File not found - " << this->filePath << std::endl;
+        throw std::exception();
+    }
+
+    // Open the file
+    this->fileStream.open(filePath, std::ios::in);
+
+    // Check if the file is opened successfully
+    if (!this->fileStream.is_open()) {
+        std::cerr << "Error opening file: " << filePath << std::endl;
+        // You may choose to throw an exception or handle the error in another way.
+        // For simplicity, we'll exit the program in case of an error.
+        std::exit(EXIT_FAILURE);
+    }
+    fileLines = std::make_shared<std::vector<Line>>(this->readWordsFromFile()); // Fill in the file lines unique ptr
+    
+    fileContentAsString = "";
+    for(const auto& line : *fileLines) {
+        fileContentAsString += line.getContent() + "\n";
+    }
+
+    fileStream.close();
+    
+}
+
 std::vector<char> FileReader::readContent() {
      if (!fs::exists(this->filePath)) {
             std::cerr << "Error: File not found - " << filePath << std::endl;
             throw std::exception();
+        }
+
+        // If the filestream is not open, open it
+        if (!fileStream.is_open()) {
+            fileStream.open(filePath, std::ios::in);
+        } else {
+            // If the filestream is open, close it and open it again
+            fileStream.close();
+            fileStream.open(filePath, std::ios::in);
         }
 
         // Move the file cursor to the end to get the file size
@@ -50,6 +88,8 @@ std::vector<char> FileReader::readContent() {
             // For simplicity, we'll exit the program in case of an error.
             std::exit(EXIT_FAILURE);
         }
+
+        fileStream.close();
         return buffer;
 }
 
@@ -57,6 +97,15 @@ std::vector<std::string> FileReader::readLinesFromFile() {
      if (!fs::exists(this->filePath)) {
             std::cerr << "Error: File not found - " << filePath << std::endl;
             throw std::exception();
+        }
+
+        // If the filestream is not open, open it
+        if (!fileStream.is_open()) {
+            fileStream.open(filePath, std::ios::in);
+        } else {
+            // If the filestream is open, close it and open it again
+            fileStream.close();
+            fileStream.open(filePath, std::ios::in);
         }
 
         std::vector<std::string> lines;
@@ -73,6 +122,7 @@ std::vector<std::string> FileReader::readLinesFromFile() {
             std::exit(EXIT_FAILURE);
         }
 
+        fileStream.close();
         return lines;
 }
 
@@ -80,6 +130,15 @@ std::vector<Line> FileReader::readWordsFromFile() {
     if (!fs::exists(this->filePath)) {
             std::cerr << "Error: File not found - " << filePath << std::endl;
             throw std::exception();
+        }
+
+        // If the filestream is not open, open it
+        if (!fileStream.is_open()) {
+            fileStream.open(filePath, std::ios::in);
+        } else {
+            // If the filestream is open, close it and open it again
+            fileStream.close();
+            fileStream.open(filePath, std::ios::in);
         }
 
         std::vector<Line> lines;
@@ -94,7 +153,7 @@ std::vector<Line> FileReader::readWordsFromFile() {
             std::cerr << "Error reading file contents. readWordsFromFile()" << std::endl;
             std::exit(EXIT_FAILURE);
         }
-        
+        fileStream.close();
         return lines;
 }
 
