@@ -1,5 +1,7 @@
 # PICR Editor
 
+![example_picr](/docs/assets/example.jpeg "Example PiCr image")
+
 Welcome to PICR Editor, a Vim-inspired terminal text editor designed for efficiency and ease of use. This editor is powered by the SFML library for mutexes and threading, and the FTXUI library for rendering and general terminal logic.
 
 ## Table of Contents
