@@ -1,0 +1,3 @@
+/home/stegan/Documents/picr/build/build_executable/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate.dir
+/home/stegan/Documents/picr/build/build_executable/_deps/ftxui-subbuild/CMakeFiles/edit_cache.dir
+/home/stegan/Documents/picr/build/build_executable/_deps/ftxui-subbuild/CMakeFiles/rebuild_cache.dir

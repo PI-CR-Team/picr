@@ -1,0 +1,14 @@
+# Target labels
+ ftxui-populate
+# Source files and their labels
+/home/stegan/Documents/picr/build/build_executable/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate
+/home/stegan/Documents/picr/build/build_executable/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate.rule
+/home/stegan/Documents/picr/build/build_executable/_deps/ftxui-subbuild/CMakeFiles/ftxui-populate-complete.rule
+/home/stegan/Documents/picr/build/build_executable/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-build.rule
+/home/stegan/Documents/picr/build/build_executable/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-configure.rule
+/home/stegan/Documents/picr/build/build_executable/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-download.rule
+/home/stegan/Documents/picr/build/build_executable/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-install.rule
+/home/stegan/Documents/picr/build/build_executable/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-mkdir.rule
+/home/stegan/Documents/picr/build/build_executable/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-patch.rule
+/home/stegan/Documents/picr/build/build_executable/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-test.rule
+/home/stegan/Documents/picr/build/build_executable/_deps/ftxui-subbuild/ftxui-populate-prefix/src/ftxui-populate-stamp/ftxui-populate-update.rule

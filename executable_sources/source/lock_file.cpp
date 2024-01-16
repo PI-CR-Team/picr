@@ -38,10 +38,11 @@ bool LockFile::writeBufferToLockFile(const std::filesystem::path &fileToLockFile
     std::string lockFilePath = fileToLockFilePath.string() + ".lock";
     std::ofstream fileStream(lockFilePath);
 
-    for (const auto &line : buffer)
+    for (const auto &character : buffer)
     {
-        fileStream << line << std::endl;
+        fileStream << character;
     }
+    fileStream.flush();
 
     fileStream.close();
     LockFile::lockFileMutex.unlock();

@@ -7,6 +7,7 @@
 #include <thread>
 #include <vector>
 #include <filesystem>
+#include <iomanip>
 
 #include "ftxui/dom/node.hpp"
 #include "ftxui/screen/color.hpp"                 // for Color, Color::BlueLight, Color::RedLight, Color::YellowLight, ftxui
@@ -29,6 +30,18 @@ namespace fs = std::filesystem;
 constexpr bool IS_DEBUG_ENABLED = false;
 const std::string PICR_VERSION = "PiCr Version 0.0.1";
 
+void copyFileContents(const std::string& sourcePath, const std::string& destinationPath) {
+    std::ifstream sourceFile(sourcePath, std::ios::binary);
+    std::ofstream destinationFile(destinationPath, std::ios::binary);
+
+    if (sourceFile.is_open() && destinationFile.is_open()) {
+        destinationFile << sourceFile.rdbuf();
+        std::cout << "File written successfully." << std::endl;
+    } else {
+        std::cerr << "Error opening files." << std::endl;
+    }
+}
+
 int main(int argc, char **argv)
 {
     using namespace ftxui;
@@ -42,6 +55,62 @@ int main(int argc, char **argv)
     fs::path currentPath = fs::current_path();
     fs::path filePath = currentPath / argv[1];
     cout << "Full file path: " << filePath << endl;
+
+
+
+    std::string pathToHome;
+    // here we determine the path to the home folder using popen (it runs a command in a shell and outputs stuff with a file descriptor)
+    {
+        const char * command = "cd ~ && pwd";
+        const int bufferSize = 32;
+        char buffer[bufferSize];
+
+        FILE * pipe = popen(command, "r");
+        if(!pipe){
+            cerr << "Error opening pipe." << std::endl;
+            return EXIT_FAILURE;
+        }
+
+        while (fgets(buffer, bufferSize, pipe) != nullptr){
+            pathToHome += buffer;
+        }
+
+        pclose(pipe);
+    }
+    pathToHome.pop_back(); // removes a newline character
+    cout << "Path to home: " << pathToHome << endl;
+
+    fs::path directoryForBackups = pathToHome + "/.picr/backup/";
+    std::cout << "Full path to backup: " << directoryForBackups << endl;
+
+    // we create the folders for the backup
+    if (!fs::exists(directoryForBackups))
+    {
+        try {
+            fs::create_directories(directoryForBackups);
+
+            std::cout << "Created backup directory: " << directoryForBackups << endl;
+        } catch (const std::exception& e){
+            std::cerr << "Cannot create backup directory: " << e.what() << std::endl;
+            return EXIT_FAILURE;
+        }
+    }
+
+    std::string currentDate;
+    // this just converts the current date into a string having a specific format
+    {
+        std::ostringstream oss;
+        auto currentTimePoint = std::chrono::system_clock::now();
+        std::time_t currentTime = std::chrono::system_clock::to_time_t(currentTimePoint);
+        oss << std::put_time(std::localtime(&currentTime), "%d-%m-%Y %H-%M-%S");
+        currentDate = oss.str();
+    }
+    cout << "Current time: " << currentDate << endl;
+
+    fs::path backupFilePath = directoryForBackups.string() + filePath.filename().string() + " " + currentDate;
+
+    cout << "Backup path: " << backupFilePath << endl;
+
 
     // We want to have 2 initial behaviours for the renderer, we either have a lock file or we don't on the file provided by the user
     try
@@ -87,6 +156,21 @@ int main(int argc, char **argv)
             }
             else
             { // The file exists and is not locked
+
+                // we create the backup file
+                {
+                    std::ofstream fileStream(backupFilePath.string());
+                    if(fileStream.is_open())
+                    {
+                        std::cout << "Backup file created succesfully: " << backupFilePath.string() << std::endl;
+                    }
+                    else
+                    {
+                        std::cerr << "Error creating backup file: " << backupFilePath.string() << std::endl;
+                        return EXIT_FAILURE;
+                    }
+                }
+
                 LockFile::lockFile(filePath);
                 FileReader fileReader(filePath.string());
                 FileWriter fileWriter(filePath.string());
@@ -168,7 +252,8 @@ int main(int argc, char **argv)
                 renderer.startTerminalRendererThreadForComponents();
                 
                 // Start the auto file saver thread
-                AutoFileSaver autoFileSaver(filePath.string(), renderer.getCurrentOnScreenInputText());
+                AutoFileSaver autoFileSaver(backupFilePath.string(), renderer.getCurrentOnScreenInputText());
+                // AutoFileSaver autoFileSaver(filePath.string(), renderer.getCurrentOnScreenInputText());
                 autoFileSaver.start();
 
                 renderer.joinThreadInstanceForRenderer(); // Wait for the renderer thread to finish
@@ -176,10 +261,27 @@ int main(int argc, char **argv)
 
                 LockFile::unlockFile(filePath);
                 std::cout << "Renderer exited" << std::endl;
+
+                copyFileContents(backupFilePath.string(), filePath.string());
             }
         }
         else
         { // The file did not exist, create it
+
+            // create the backup file
+            {
+                std::ofstream fileStream(backupFilePath.string());
+                if(fileStream.is_open())
+                {
+                    std::cout << "Backup file created succesfully: " << backupFilePath.string() << std::endl;
+                }
+                else
+                {
+                    std::cerr << "Error creating backup file: " << backupFilePath.string() << std::endl;
+                    return EXIT_FAILURE;
+                }
+            }
+
             // Create the file and open the editor
             std::ofstream fileStream(filePath);
             fileStream.close();
@@ -269,7 +371,9 @@ int main(int argc, char **argv)
             renderer.startTerminalRendererThreadForComponents();
 
             // Start the auto file saver thread
-            AutoFileSaver autoFileSaver(filePath.string(), renderer.getCurrentOnScreenInputText());
+
+            AutoFileSaver autoFileSaver(backupFilePath.string(), renderer.getCurrentOnScreenInputText());
+            // AutoFileSaver autoFileSaver(filePath.string(), renderer.getCurrentOnScreenInputText());
             autoFileSaver.start();
 
             renderer.joinThreadInstanceForRenderer(); // Wait for the renderer thread to finish
@@ -277,6 +381,8 @@ int main(int argc, char **argv)
 
             LockFile::unlockFile(filePath);
             std::cout << "Renderer exited" << std::endl;
+
+            copyFileContents(backupFilePath.string(), filePath.string());
         }
     }
     // If the file doesn't exist or there are any errors, create a temporary file with the given name. If the user issues a write buffer command, then write the content to the actual file

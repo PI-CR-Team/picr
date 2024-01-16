@@ -1,0 +1,14 @@
+# Target labels
+ imtui-populate
+# Source files and their labels
+/home/stegan/Documents/picr/build/build_executable/_deps/imtui-subbuild/CMakeFiles/imtui-populate
+/home/stegan/Documents/picr/build/build_executable/_deps/imtui-subbuild/CMakeFiles/imtui-populate.rule
+/home/stegan/Documents/picr/build/build_executable/_deps/imtui-subbuild/CMakeFiles/imtui-populate-complete.rule
+/home/stegan/Documents/picr/build/build_executable/_deps/imtui-subbuild/imtui-populate-prefix/src/imtui-populate-stamp/imtui-populate-build.rule
+/home/stegan/Documents/picr/build/build_executable/_deps/imtui-subbuild/imtui-populate-prefix/src/imtui-populate-stamp/imtui-populate-configure.rule
+/home/stegan/Documents/picr/build/build_executable/_deps/imtui-subbuild/imtui-populate-prefix/src/imtui-populate-stamp/imtui-populate-download.rule
+/home/stegan/Documents/picr/build/build_executable/_deps/imtui-subbuild/imtui-populate-prefix/src/imtui-populate-stamp/imtui-populate-install.rule
+/home/stegan/Documents/picr/build/build_executable/_deps/imtui-subbuild/imtui-populate-prefix/src/imtui-populate-stamp/imtui-populate-mkdir.rule
+/home/stegan/Documents/picr/build/build_executable/_deps/imtui-subbuild/imtui-populate-prefix/src/imtui-populate-stamp/imtui-populate-patch.rule
+/home/stegan/Documents/picr/build/build_executable/_deps/imtui-subbuild/imtui-populate-prefix/src/imtui-populate-stamp/imtui-populate-test.rule
+/home/stegan/Documents/picr/build/build_executable/_deps/imtui-subbuild/imtui-populate-prefix/src/imtui-populate-stamp/imtui-populate-update.rule
